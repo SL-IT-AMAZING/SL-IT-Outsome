@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Founder Sprint — SL:IT × Outsome</title>
+  <meta name="description" content="6주 집중 파운더 액셀러레이터. AI 바이브코딩으로 제품을 만들고, YC 출신 멘토에게 피드백 받으며, 실리콘밸리 파운더처럼 성장하세요." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    @font-face { font-family: "BDO Grotesk"; src: url("https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe664_BDOGrotesk-VF.ttf") format("truetype"); font-weight: 300 900; font-style: normal; font-display: swap; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --color-light-1: #FEFAF3;
+      --color-light-2: #F1EADD;
+      --color-dark: #000;
+      --color-dark-7: rgba(47,44,37,0.06);
+      --color-dark-12: rgba(47,44,37,0.12);
+      --color-light-1-10: rgba(254,250,243,0.1);
+      --color-light-1-30: rgba(254,250,243,0.3);
+      --color-glass-border: rgba(255,255,255,0.4);
+      --color-glass-surface: rgba(254,250,243,0.6);
+      --font-body: "BDO Grotesk", "DM Sans", "Noto Sans KR", Arial, sans-serif;
+      --font-headings: "Libre Caslon Condensed", "Times New Roman", serif;
+      --font-badges: "Roboto Mono", "Trebuchet MS", monospace;
+      --gap: 24px;
+      --gap-05: 12px;
+      --gap-075: 18px;
+      --gap-15: 36px;
+      --gap-2: 48px;
+      --gap-3: 72px;
+      --gap-4: 96px;
+      --gap-5: 120px;
+      --grid-gap-s: 12px;
+      --grid-gap-m: 24px;
+      --container-max: 1440px;
+      --container-gutter: 24px;
+      --radius: 6px;
+      --radius-2x: 12px;
+      --btn-height: 48px;
+      --btn-px: 24px;
+      --btn-radius: 9px;
+      --btn-height-sm: 42px;
+      --btn-px-sm: 18px;
+      --nav-height: 72px;
+      --glass-blur: 12px;
+      --glass-shadow: 0 2px 18px 0 rgba(0,0,0,0.12);
+    }
+    html { font-family: var(--font-body); font-size: 14px; line-height: 1.4; color: var(--color-dark); scroll-behavior: smooth; }
+    body { background: var(--color-light-1); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    img { max-width: 100%; display: inline-block; vertical-align: middle; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, h4, h5 { font-family: var(--font-headings); font-weight: 400; margin: 0; }
+    .text-lead { font-size: 17.64px; line-height: 1.4em; }
+    .text-small { font-size: 11.11px; line-height: 1.4em; }
+    .text-badge { font-family: var(--font-badges); font-size: 11.11px; line-height: 1.4; letter-spacing: 0.1em; text-transform: uppercase; }
+    .text-muted { opacity: 0.5; }
+    .text-bold { font-variation-settings: "wght" 550; }
+    .font-kr { font-family: "Noto Sans KR", var(--font-body); }
+
+    /* ── NAV ── */
+    .navbar { z-index: 99; background: var(--color-light-1); position: sticky; top: 0; border-bottom: 1px solid var(--color-dark-12); }
+    .navbar-row { height: var(--nav-height); gap: var(--gap-2); display: flex; align-items: center; max-width: var(--container-max); padding: 0 var(--container-gutter); width: 100%; margin: 0 auto; }
+    .nav-links { gap: var(--gap); display: flex; align-items: center; }
+    .nav-link { font-size: 14px; opacity: .7; transition: opacity .2s; }
+    .nav-link:hover, .nav-link.active { opacity: 1; }
+    .nav-link.active { font-weight: 600; }
+    .navbar-right { gap: var(--gap); display: flex; align-items: center; margin-left: auto; }
+    .nav-btns { gap: var(--gap-05); display: flex; }
+    .nav-logo { height: 18px; width: auto; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 12px; }
+    .mobile-menu { display: none; background: var(--color-light-1); border-top: 1px solid var(--color-dark-12); padding: var(--gap-075) var(--container-gutter) var(--gap); }
+    .mobile-menu.open { display: flex; flex-direction: column; gap: var(--gap-075); }
+
+    /* ── BUTTONS ── */
+    .button { height: var(--btn-height); padding: 0 var(--btn-px); gap: var(--gap-05); border-radius: var(--btn-radius); background: var(--color-dark); color: var(--color-light-1); font-weight: 500; font-size: 14px; display: inline-flex; justify-content: center; align-items: center; border: 1px solid transparent; cursor: pointer; overflow: hidden; transition: background-color 100ms ease-in-out, border-color 100ms ease-in-out, box-shadow 100ms ease-in-out, opacity 100ms ease-in-out; text-decoration: none; white-space: nowrap; font-family: var(--font-body); }
+    .button:hover { background-color: rgba(25,25,24,0.75); box-shadow: rgba(0,0,0,0.12) 0px 1px 1px 0px, rgba(32,32,31,0.16) 0px 0px 0px 1px, rgba(32,32,31,0.08) 0px 3px 9px 0px, rgba(32,32,31,0.08) 0px 2px 5px 0px; }
+    .button.sm { height: var(--btn-height-sm); padding: 0 var(--btn-px-sm); }
+    .button.light-2 { background: var(--color-light-2); color: var(--color-dark); }
+    .button.light-2:hover { background-color: #e8e1d4; }
+    .button.outline { background: transparent; color: var(--color-dark); border: 1px solid var(--color-dark-12); }
+    .button.outline:hover { background-color: rgba(47,44,37,0.04); border-color: rgba(47,44,37,0.24); }
+    .btn-wrap { height: 1.4em; display: flex; flex-direction: column; overflow: hidden; }
+    .btn-init { transition: transform .35s cubic-bezier(.76,0,.24,1); }
+    .btn-reveal { transform: translateY(80%); transition: transform .35s cubic-bezier(.76,0,.24,1); }
+    .button:hover .btn-init { transform: translateY(-100%); }
+    .button:hover .btn-reveal { transform: translateY(0); }
+
+    /* ── NOTION-STYLE CONTENT ── */
+    .page-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: var(--gap-2) var(--container-gutter) var(--gap-5);
+    }
+
+    .page-icon-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: var(--gap);
+    }
+    .page-icon {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      background: var(--color-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .page-icon img {
+      width: 42px;
+      height: 42px;
+    }
+    .page-icon .slit-text { font-family: var(--font-headings); font-size: 18px; color: var(--color-light-1); letter-spacing: 0.5px; font-weight: 400; }
+    .page-icon-sep { font-size: 20px; font-weight: 300; color: var(--color-dark); opacity: 0.25; }
+
+    .page-title {
+      font-size: 56px;
+      line-height: 1.08em;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--gap-05);
+    }
+
+    .page-subtitle {
+      font-size: 22px;
+      line-height: 1.45;
+      opacity: 0.55;
+      margin-bottom: var(--gap-15);
+      font-family: "Noto Sans KR", var(--font-body);
+    }
+
+    .page-intro {
+      font-size: 16px;
+      line-height: 1.7;
+      color: rgba(0,0,0,0.7);
+      margin-bottom: var(--gap-2);
+      font-family: "Noto Sans KR", var(--font-body);
+    }
+    .page-intro strong {
+      color: var(--color-dark);
+    }
+
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--color-dark-12);
+      margin: var(--gap-2) 0;
+    }
+
+    .section-heading {
+      font-size: 32px;
+      line-height: 1.2em;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--gap);
+    }
+
+    .section-subheading {
+      font-size: 22px;
+      line-height: 1.3em;
+      letter-spacing: -0.01em;
+      margin-bottom: var(--gap-075);
+    }
+
+    /* ── CTA BUTTON ── */
+    .cta-block {
+      margin: var(--gap-15) 0;
+    }
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      height: 54px;
+      padding: 0 32px;
+      background: var(--color-dark);
+      color: var(--color-light-1);
+      border-radius: var(--btn-radius);
+      font-size: 16px;
+      font-weight: 600;
+      font-family: "Noto Sans KR", var(--font-body);
+      text-decoration: none;
+      transition: opacity .2s, transform .2s;
+      border: none;
+      cursor: pointer;
+    }
+    .cta-button:hover {
+      opacity: .88;
+      transform: translateY(-1px);
+    }
+
+    /* ── PETER SECTION ── */
+    .peter-section {
+      display: flex;
+      gap: var(--gap);
+      align-items: center;
+      padding: var(--gap) 0;
+    }
+    .peter-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      flex-shrink: 0;
+      border: 2px solid var(--color-dark-12);
+    }
+    .peter-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .peter-name {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .peter-role {
+      font-size: 14px;
+      opacity: 0.5;
+      font-family: "Noto Sans KR", var(--font-body);
+      line-height: 1.5;
+    }
+
+    /* ── TABLES ── */
+    .notion-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: var(--gap-075) 0 var(--gap) 0;
+    }
+    .notion-table th {
+      background: var(--color-light-2);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+      border: 1px solid var(--color-dark-12);
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .notion-table td {
+      padding: 12px 16px;
+      border: 1px solid var(--color-dark-12);
+      vertical-align: top;
+      line-height: 1.6;
+      font-family: "Noto Sans KR", var(--font-body);
+    }
+    .notion-table tr:hover td {
+      background: rgba(241,234,221,0.3);
+    }
+    .notion-table .week-label {
+      font-weight: 600;
+      white-space: nowrap;
+      font-family: var(--font-badges);
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* ── BULLET LIST ── */
+    .notion-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--gap-075) 0 var(--gap) 0;
+    }
+    .notion-list li {
+      position: relative;
+      padding: 8px 0 8px 24px;
+      font-size: 15px;
+      line-height: 1.6;
+      font-family: "Noto Sans KR", var(--font-body);
+      color: rgba(0,0,0,0.8);
+    }
+    .notion-list li::before {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 16px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-dark);
+      opacity: 0.25;
+    }
+    .notion-list li strong {
+      color: var(--color-dark);
+    }
+
+    /* ── FAQ TOGGLES ── */
+    .faq-item {
+      border-bottom: 1px solid var(--color-dark-12);
+    }
+    .faq-item:first-child {
+      border-top: 1px solid var(--color-dark-12);
+    }
+    .faq-item summary {
+      padding: 18px 0;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: "Noto Sans KR", var(--font-body);
+      transition: color .2s;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::before {
+      content: "▶";
+      font-size: 10px;
+      opacity: 0.3;
+      transition: transform .25s ease;
+      flex-shrink: 0;
+    }
+    .faq-item[open] summary::before {
+      transform: rotate(90deg);
+    }
+    .faq-item summary:hover {
+      color: rgba(0,0,0,0.7);
+    }
+    .faq-answer {
+      padding: 0 0 18px 22px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(0,0,0,0.6);
+      font-family: "Noto Sans KR", var(--font-body);
+    }
+
+    /* ── CALLOUT BOX ── */
+    .callout {
+      background: var(--color-light-2);
+      border-radius: var(--radius);
+      padding: var(--gap) var(--gap);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin: var(--gap) 0;
+    }
+    .callout-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+      line-height: 1;
+      margin-top: 2px;
+    }
+    .callout-text {
+      font-size: 14px;
+      line-height: 1.7;
+      font-family: "Noto Sans KR", var(--font-body);
+      color: rgba(0,0,0,0.75);
+    }
+    .callout-text strong { color: var(--color-dark); }
+    .callout-text a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 600;
+    }
+
+    /* ── TIMELINE ── */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: var(--gap-075) 0 var(--gap) 0;
+    }
+    .timeline-step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      position: relative;
+      padding-bottom: 24px;
+    }
+    .timeline-step:last-child { padding-bottom: 0; }
+    .timeline-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--color-dark);
+      flex-shrink: 0;
+      margin-top: 6px;
+      position: relative;
+      z-index: 1;
+    }
+    .timeline-step:not(:last-child) .timeline-dot::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1.5px;
+      height: calc(100% + 16px);
+      background: var(--color-dark-12);
+    }
+    .timeline-content {
+      flex: 1;
+    }
+    .timeline-label {
+      font-size: 13px;
+      font-weight: 600;
+      font-family: var(--font-badges);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .timeline-desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: rgba(0,0,0,0.6);
+      font-family: "Noto Sans KR", var(--font-body);
+    }
+
+    /* ── FOOTER ── */
+    .footer { padding: var(--gap-4) 0 var(--gap-2); background: var(--color-dark); color: var(--color-light-1); }
+    .footer-inner { max-width: var(--container-max); padding: 0 var(--container-gutter); width: 100%; margin: 0 auto; }
+    .footer-cr { padding-top: var(--gap); border-top: 1px solid var(--color-light-1-10); display: flex; justify-content: space-between; align-items: center; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 991px) {
+      .nav-links, .nav-btns, .navbar-right { display: none !important; }
+      .nav-hamburger { display: flex !important; }
+      .page-title { font-size: 36px; }
+      .section-heading { font-size: 24px; }
+      .section-subheading { font-size: 18px; }
+      .peter-section { flex-direction: column; align-items: flex-start; }
+      .notion-table { font-size: 12px; }
+      .notion-table th, .notion-table td { padding: 8px 10px; }
+      .page-container { padding: var(--gap) var(--container-gutter) var(--gap-4); }
+    }
+    @media (min-width: 992px) { .nav-hamburger { display: none !important; } }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    .anim { animation: fadeUp .6s ease forwards; opacity: 0; }
+    .anim-d1 { animation-delay: .1s; }
+    .anim-d2 { animation-delay: .2s; }
+    .anim-d3 { animation-delay: .3s; }
+  </style>
+</head>
+<body>
+
+<!-- ══════ NAVBAR ══════ -->
+<nav class="navbar">
+  <div class="navbar-row">
+    <a href="index.html" style="display:flex;align-items:center;gap:8px;"><img src="slit-logo-dark.svg" alt="SL:IT" style="height:16px;width:auto;" /><span style="opacity:.25;font-size:14px;font-weight:300;">×</span><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" style="height:24px;width:24px;filter:invert(1);" /></a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="programs.html" class="nav-link active">Programs</a>
+    </div>
+    <div class="navbar-right">
+      <div class="nav-btns">
+        <a href="index.html#contact" class="button sm light-2"><span class="btn-wrap"><span class="btn-init">Book a call</span><span class="btn-reveal">Book a call</span></span></a>
+        <a href="apply.html" class="button sm"><span class="btn-wrap"><span class="btn-init">Apply Now</span><span class="btn-reveal">Apply Now</span></span></a>
+      </div>
+    </div>
+    <button class="nav-hamburger" onclick="document.getElementById('mob-nav').classList.toggle('open')">
+      <svg width="20" height="14" fill="none"><line y1="1" x2="20" y2="1" stroke="#000" stroke-width="1.5"/><line y1="7" x2="20" y2="7" stroke="#000" stroke-width="1.5"/><line y1="13" x2="14" y2="13" stroke="#000" stroke-width="1.5"/></svg>
+    </button>
+  </div>
+  <div id="mob-nav" class="mobile-menu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="programs.html" class="nav-link active">Programs</a>
+    <div style="display:flex;gap:var(--gap-05);padding-top:var(--gap-075);border-top:1px solid var(--color-dark-12);">
+      <a href="index.html#contact" class="button sm light-2" style="flex:1">Book a call</a>
+      <a href="apply.html" class="button sm" style="flex:1">Apply Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════ PAGE CONTENT ══════ -->
+<main class="page-container">
+
+  <div class="page-icon-wrap anim">
+    <div class="page-icon">
+      <span class="slit-text">SL:IT</span>
+    </div>
+    <span class="page-icon-sep">×</span>
+    <div class="page-icon">
+      <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" />
+    </div>
+  </div>
+
+  <!-- Title -->
+  <h1 class="page-title anim anim-d1">Founder Sprint</h1>
+  <p class="page-subtitle anim anim-d2">We are <strong style="opacity:1;">The Global Founder School.</strong></p>
+
+  <!-- Intro -->
+  <div class="page-intro anim anim-d3">
+    <p><strong>SL:IT × Outsome Founder Sprint</strong>는 한국 기반 파운더를 위한 6주 집중 액셀러레이터입니다. AI 바이브코딩으로 빠르게 제품을 만들고, YC 출신 멘토와 실리콘밸리 오퍼레이터에게 직접 피드백을 받으며, 미국 시장 진출에 필요한 모든 것을 단 6주 안에 완성합니다.</p>
+    <br />
+    <p>이론이 아닌 실행. 수개월이 아닌 수주. 한국의 가능성을 글로벌 무대로 확장하는 가장 빠른 경로입니다.</p>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <a href="apply.html" class="cta-button">🔥 다음 배치 지원하기 (모집 중)</a>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- ── PETER INTRO ── -->
+  <div class="peter-section">
+    <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe78d_Peter.png" alt="Peter" class="peter-photo" />
+    <div class="peter-info">
+      <div class="peter-name">Hi, I am Peter.</div>
+      <div class="peter-role">Ex-VC, YC Founder. Founder of Outsome.<br />한국 파운더가 글로벌 시장에서 성공하는 것을 돕는 것이 제 사명입니다.</div>
+    </div>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- ══════ 6-WEEK CURRICULUM TABLE ══════ -->
+  <h2 class="section-heading">6-Week Acceleration Curriculum</h2>
+  <p class="page-intro" style="margin-bottom:var(--gap);">매주 구체적인 결과물을 완성하며, 6주 후에는 투자 유치와 미국 시장 진출에 필요한 모든 에셋이 완성됩니다.</p>
+
+  <div style="overflow-x:auto;">
+    <table class="notion-table">
+      <thead>
+        <tr>
+          <th style="width:100px;">Weeks</th>
+          <th>Topics</th>
+          <th>Action Tasks / Deliverables</th>
+          <th style="width:140px;">Instructor / Mentor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="week-label">Week 0</td>
+          <td>1:1 스타트업 진단</td>
+          <td>현재 상태 평가, 목표 설정, 개인화된 6주 로드맵 수립</td>
+          <td>Peter S.</td>
+        </tr>
+        <tr>
+          <td class="week-label">Week 1</td>
+          <td>Understanding the US Market + 바이브코딩 with Anyon</td>
+          <td>US 시장 포지셔닝 문서, One-Liner 완성, Anyon 바이브코딩 환경 세팅 및 첫 MVP 프로토타입</td>
+          <td>Peter S. + Anyon</td>
+        </tr>
+        <tr>
+          <td class="week-label">Week 2</td>
+          <td>GTM Design + 바이브코딩 실전</td>
+          <td>ICP 정의, 20개 US 리드 리스트, GTM 전략 초안, 바이브코딩으로 랜딩페이지 완성</td>
+          <td>Peter S. + Anyon</td>
+        </tr>
+        <tr>
+          <td class="week-label">Week 3</td>
+          <td>Setting KPIs + 바이브코딩 데모</td>
+          <td>KPI 대시보드, 프라이싱 모델, 바이브코딩 데모 완성 및 피드백</td>
+          <td>Peter S. + Anyon</td>
+        </tr>
+        <tr>
+          <td class="week-label">Week 4</td>
+          <td>IR Structure &amp; Storytelling</td>
+          <td>10페이지 IR 덱, 투자자 대상 내러티브, 피치 리허설</td>
+          <td>Peter S.</td>
+        </tr>
+        <tr>
+          <td class="week-label">Week 5–6</td>
+          <td>멘토 프레젠테이션 + 연쇄창업 기초</td>
+          <td>멘토 앞 최종 피치, US VC 네트워킹 세션, 연쇄창업 마인드셋 워크숍, 졸업</td>
+          <td>Peter S. + Guest Mentors</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- ══════ CURRICULUM OVERVIEW ══════ -->
+  <h2 class="section-heading">Curriculum Overview</h2>
+  <p class="page-intro" style="margin-bottom:var(--gap);">각 모듈은 실행 중심으로 설계되었습니다. 이론 강의가 아닌, 매주 당신의 스타트업에 직접 적용하는 실전 프로그램입니다.</p>
+
+  <div style="overflow-x:auto;">
+    <table class="notion-table">
+      <thead>
+        <tr>
+          <th style="width:160px;">Module</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:600;">1:1 스타트업 진단</td>
+          <td>Peter가 직접 팀의 현재 단계, 핵심 과제, 성장 병목을 진단합니다. 개인화된 6주 액션 플랜을 설계하여 가장 효율적인 경로를 수립합니다.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">US Market Understanding</td>
+          <td>미국 시장의 구조, 의사결정 프로세스, 바이어 심리를 이해합니다. 한국에서 통하는 방식과 미국에서 통하는 방식의 차이를 실전 사례로 학습합니다.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">바이브코딩 with Anyon</td>
+          <td>AI 바이브코딩 도구 Anyon을 활용하여 빠르게 MVP를 구축합니다. 코딩 경험이 없어도, 아이디어를 실제 작동하는 프로덕트로 전환하는 방법을 체득합니다.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">GTM Design</td>
+          <td>ICP(Ideal Customer Profile) 정의부터 콜드 아웃리치, 세일즈 스크립트, 프라이싱까지. 미국 시장에서 첫 고객을 확보하기 위한 GTM 플레이북을 완성합니다.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">KPI &amp; Metrics</td>
+          <td>투자자와 팀 모두가 신뢰하는 KPI 체계를 구축합니다. 어떤 지표가 진짜 중요한지, 어떻게 추적하고 개선하는지를 실습합니다.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">IR &amp; Storytelling</td>
+          <td>투자자를 움직이는 내러티브 구조를 학습합니다. 10페이지 IR 덱, 엘리베이터 피치, Q&A 대응까지 투자 유치 프로세스 전체를 준비합니다.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">연쇄창업 기초</td>
+          <td>하나의 스타트업에 그치지 않는 '연쇄창업가' 마인드셋. 반복 가능한 실행 시스템, 네트워크 구축, 다음 기회를 포착하는 프레임워크를 배웁니다.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- ══════ WHO SHOULD APPLY ══════ -->
+  <h2 class="section-heading">Who Should Apply</h2>
+
+  <ul class="notion-list">
+    <li><strong>Korea-based founders</strong> — 한국에 기반을 둔 파운더 (국적 무관, 한국에서 활동 중인 분)</li>
+    <li><strong>Pre-seed to Series B stage</strong> — 아이디어 단계부터 시리즈 B까지 모든 스테이지 환영</li>
+    <li><strong>US 시장 진출을 진지하게 고려하는 팀</strong> — 미국 시장에 대한 관심이 아닌, 실제 진출 의지가 있는 팀</li>
+    <li><strong>Product-driven founder</strong> — 제품 중심의 사고와 실행을 중시하는 파운더</li>
+    <li><strong>기꺼이 피드백을 받고 빠르게 실행할 의지가 있는 팀</strong></li>
+    <li><strong>영어 또는 한국어로 소통 가능한 팀</strong> — 프로그램은 영어/한국어 병행</li>
+    <li><strong>바이브코딩(AI 기반 제품 개발)에 관심이 있는 팀</strong> — 기술 배경 불문</li>
+  </ul>
+
+  <hr class="section-divider" />
+
+  <!-- ══════ SELECTION CRITERIA ══════ -->
+  <h2 class="section-heading">Program Selection Criteria</h2>
+
+  <p class="page-intro" style="margin-bottom:var(--gap-075);">모든 지원자를 수용할 수 없기에, 다음 기준으로 선발합니다:</p>
+
+  <ul class="notion-list">
+    <li><strong>문제 정의의 명확성</strong> — 해결하려는 문제가 구체적이고 시장성이 있는가?</li>
+    <li><strong>실행 속도와 의지</strong> — 빠르게 배우고, 빠르게 적용하고, 빠르게 피벗할 준비가 되어있는가?</li>
+    <li><strong>팀 구성</strong> — 핵심 멤버가 헌신적이고 상호 보완적인가?</li>
+    <li><strong>US 시장 적합성</strong> — 제품이나 서비스가 미국 시장에서 작동할 가능성이 있는가?</li>
+    <li><strong>코칭 수용성</strong> — 기존 방식을 버리고 새로운 프레임워크를 받아들일 열린 자세가 있는가?</li>
+  </ul>
+
+  <div class="callout">
+    <span class="callout-icon">💡</span>
+    <div class="callout-text">완벽한 준비가 필요한 것이 아닙니다. <strong>명확한 문제의식과 실행 의지</strong>만 있으면 됩니다. 지원서에 솔직하게 현재 상태와 목표를 적어주세요.</div>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- ══════ BENEFITS ══════ -->
+  <h2 class="section-heading">Benefits for Participating Teams</h2>
+
+  <div style="overflow-x:auto;">
+    <table class="notion-table">
+      <thead>
+        <tr>
+          <th style="width:200px;">Benefit</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:600;">🎯 1:1 Operator Sessions</td>
+          <td>Peter 및 실리콘밸리 오퍼레이터와 매주 1:1 세션. GTM, IR, Sales Ops 등 당신의 스타트업에 맞춤화된 가이드.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">🤖 바이브코딩 VOD 전체</td>
+          <td>45개 클립, 총 ~11시간의 Anyon 바이브코딩 강의. 프로그램 종료 후에도 무제한 접근 가능.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">📊 IR Deck &amp; KPI Dashboard</td>
+          <td>투자자급 10페이지 IR 덱과 KPI 대시보드를 직접 완성. 프로그램 종료 후 바로 투자 유치에 활용 가능.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">🌎 US VC 네트워킹</td>
+          <td>Zoom을 통한 미국 VC, YC 파운더, FAANG 출신 멘토와의 네트워킹 세션.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">🍽️ 식사 &amp; 네트워킹</td>
+          <td>6주간의 식사, 커피, 네트워킹 이벤트 포함. 파운더 간 깊은 교류의 장.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">🔑 Lifetime Alumni Access</td>
+          <td>Outsome Founder Group 영구 액세스. 졸업 후에도 AMA, 소개, GTM 클리닉 등 지속적 지원.</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;">📝 No Equity / No Rev-Share</td>
+          <td>지분이나 수익 배분 요구 없음. 모든 결과물의 지적 재산권은 참가자에게 100% 귀속.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- ══════ APPLICATION PROCESS ══════ -->
+  <h2 class="section-heading">Application Process</h2>
+
+  <div class="timeline">
+    <div class="timeline-step">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-label">Step 1 — 지원서 작성</div>
+        <div class="timeline-desc">온라인 지원서를 작성합니다. 팀 소개, 현재 단계, 해결하려는 문제, US 시장에 대한 생각을 간단히 적어주세요. (한국어 또는 영어 가능)</div>
+      </div>
+    </div>
+    <div class="timeline-step">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-label">Step 2 — 1차 서류 심사</div>
+        <div class="timeline-desc">Outsome 팀이 지원서를 검토합니다. 1주일 이내에 결과를 이메일로 알려드립니다.</div>
+      </div>
+    </div>
+    <div class="timeline-step">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-label">Step 3 — 진단 미팅 (30분)</div>
+        <div class="timeline-desc">Peter와 1:1 화상 미팅을 진행합니다. 팀의 현재 상태를 깊이 이해하고, 프로그램 적합성을 상호 확인합니다.</div>
+      </div>
+    </div>
+    <div class="timeline-step">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-label">Step 4 — 최종 합격 통보</div>
+        <div class="timeline-desc">진단 미팅 후 48시간 이내에 최종 결과를 안내합니다. 합격 시 프로그램 시작 준비 가이드를 함께 전달합니다.</div>
+      </div>
+    </div>
+    <div class="timeline-step">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-label">Step 5 — 프로그램 시작 🚀</div>
+        <div class="timeline-desc">Week 0 (1:1 진단)부터 6주 여정이 시작됩니다. 서울 오프라인, Peter와 대면 진행.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- ══════ APPLY CTA ══════ -->
+  <div style="text-align:center;padding:var(--gap-2) 0;">
+    <h2 class="section-heading" style="text-align:center;">Fill out your application now.</h2>
+    <p class="page-intro" style="text-align:center;margin-bottom:var(--gap);">다음 배치 모집이 진행 중입니다. 자리가 제한되어 있으므로 빠른 지원을 권장합니다.</p>
+    <a href="apply.html" class="cta-button">🔥 다음 배치 지원하기 (모집 중)</a>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- ══════ FAQ ══════ -->
+  <h2 class="section-heading">FAQ</h2>
+
+  <details class="faq-item">
+    <summary>Q. 어떤 언어로 지원서를 작성해야 하나요?</summary>
+    <div class="faq-answer">한국어 또는 영어 모두 가능합니다. 가장 편한 언어로 작성해 주세요. 지원서 내용의 질이 언어보다 중요합니다. 다만, 프로그램 진행 시 일부 세션은 영어로 진행될 수 있습니다.</div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Q. 진단 미팅은 어떤 언어로 진행되나요?</summary>
+    <div class="faq-answer">Peter와의 진단 미팅은 한국어와 영어를 병행합니다. 파운더가 더 편안하게 소통할 수 있는 언어로 유연하게 진행됩니다.</div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Q. 1인 창업가도 지원 가능한가요?</summary>
+    <div class="faq-answer">네, 물론입니다. 1인 창업가도 적극 환영합니다. 오히려 바이브코딩을 활용하면 혼자서도 빠르게 제품을 만들고 시장에 진입할 수 있습니다. 프로그램을 통해 필요한 팀원을 찾는 것도 가능합니다.</div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Q. 6주 커리큘럼은 어떻게 구성되나요?</summary>
+    <div class="faq-answer">Week 0 (1:1 진단)부터 시작하여 매주 구체적인 주제와 결과물이 정해져 있습니다. US 시장 이해 → 바이브코딩 → GTM 설계 → KPI 수립 → IR 스토리텔링 → 멘토 피치 순서로 진행됩니다. 모든 세션은 서울에서 오프라인으로 Peter와 대면 진행되며, 일부 멘토 세션은 Zoom으로 진행됩니다.</div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Q. 미국 VC와의 네트워킹 기회가 있나요?</summary>
+    <div class="faq-answer">네, 프로그램 기간 중 Zoom을 통해 미국 VC, YC 파운더, FAANG 출신 멘토와의 네트워킹 세션이 포함되어 있습니다. Founder Sprint 수료 후 US Track(13박, 샌프란시스코 현지)에 참여하면 직접 대면 네트워킹 기회도 제공됩니다.</div>
+  </details>
+
+  <hr class="section-divider" />
+
+  <!-- ══════ LEGAL DISCLAIMER ══════ -->
+  <div style="padding-top:var(--gap-075);">
+    <p style="font-size:10px;opacity:.25;line-height:1.6;">본 프로그램은 교육 목적으로 제공되며, 투자 조언이나 수익 보장을 하지 않습니다. SL:IT × Outsome은 참가자에게 지분이나 수익 배분을 요구하지 않습니다. 모든 콘텐츠와 결과물의 지적 재산권은 참가자에게 귀속됩니다. © 2026 SL:IT × Outsome. All rights reserved.</p>
+  </div>
+
+</main>
+
+<!-- ══════ FOOTER ══════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-cr">
+      <a href="index.html" style="display:flex;align-items:center;gap:10px;"><img src="slit-logo-light.svg" alt="SL:IT" style="height:32px;width:auto;" /><span style="opacity:.3;font-size:24px;font-weight:300;color:var(--color-light-1);">×</span><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" style="height:36px;width:36px;" /></a>
+      <p class="text-small" style="opacity:.2;">© Copyright SL:IT × Outsome</p>
+    </div>
+    <div style="padding-top:var(--gap);border-top:1px solid var(--color-light-1-10);margin-top:var(--gap);">
+      <p style="font-size:10px;opacity:.15;line-height:1.6;max-width:900px;">본 프로그램은 교육 목적으로 제공되며, 투자 조언이나 수익 보장을 하지 않습니다. SL:IT × Outsome은 참가자에게 지분이나 수익 배분을 요구하지 않습니다. 모든 콘텐츠와 결과물의 지적 재산권은 참가자에게 귀속됩니다. © 2026 SL:IT × Outsome. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

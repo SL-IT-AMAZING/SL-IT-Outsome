@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply Now - SL:IT × Outsome 파운더 스프린트</title>
+  <meta name="description" content="SL:IT × Outsome 파운더 스프린트 지원서. 6주 만에 아이디어를 제품으로." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    @font-face { font-family: "BDO Grotesk"; src: url("https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe664_BDOGrotesk-VF.ttf") format("truetype"); font-weight: 300 900; font-style: normal; font-display: swap; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --color-light-1: #FEFAF3;
+      --color-light-2: #F1EADD;
+      --color-dark: #000;
+      --color-dark-7: rgba(47,44,37,0.06);
+      --color-dark-12: rgba(47,44,37,0.12);
+      --color-light-1-10: rgba(254,250,243,0.1);
+      --color-light-1-30: rgba(254,250,243,0.3);
+      --color-glass-border: rgba(255,255,255,0.4);
+      --color-glass-surface: rgba(254,250,243,0.6);
+      --font-body: "BDO Grotesk", "DM Sans", "Noto Sans KR", Arial, sans-serif;
+      --font-headings: "Libre Caslon Condensed", "Times New Roman", serif;
+      --font-badges: "Roboto Mono", "Trebuchet MS", monospace;
+      --gap: 24px;
+      --gap-05: 12px;
+      --gap-075: 18px;
+      --gap-15: 36px;
+      --gap-2: 48px;
+      --gap-3: 72px;
+      --gap-4: 96px;
+      --gap-5: 120px;
+      --container-max: 1440px;
+      --container-gutter: 24px;
+      --radius: 6px;
+      --radius-2x: 12px;
+      --btn-height: 48px;
+      --btn-px: 24px;
+      --btn-radius: 9px;
+      --btn-height-sm: 42px;
+      --btn-px-sm: 18px;
+      --nav-height: 72px;
+      --glass-blur: 12px;
+      --glass-shadow: 0 2px 18px 0 rgba(0,0,0,0.12);
+    }
+    html { font-family: var(--font-body); font-size: 14px; line-height: 1.4; color: var(--color-dark); scroll-behavior: smooth; }
+    body { background: var(--color-light-1); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    img { max-width: 100%; display: inline-block; vertical-align: middle; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, h4, h5 { font-family: var(--font-headings); font-weight: 400; margin: 0; }
+    .text-lead { font-size: 17.64px; line-height: 1.4em; }
+    .text-small { font-size: 11.11px; line-height: 1.4em; }
+    .text-badge { font-family: var(--font-badges); font-size: 11.11px; line-height: 1.4; letter-spacing: 0.1em; text-transform: uppercase; }
+    .text-muted { opacity: 0.5; }
+    .text-bold { font-variation-settings: "wght" 550; }
+    .font-kr { font-family: "Noto Sans KR", var(--font-body); }
+    .button { height: var(--btn-height); padding: 0 var(--btn-px); gap: var(--gap-05); border-radius: var(--btn-radius); background: var(--color-dark); color: var(--color-light-1); font-weight: 500; font-size: 14px; display: inline-flex; justify-content: center; align-items: center; border: 1px solid transparent; cursor: pointer; overflow: hidden; transition: background-color 100ms ease-in-out, border-color 100ms ease-in-out, box-shadow 100ms ease-in-out, opacity 100ms ease-in-out; text-decoration: none; white-space: nowrap; }
+    .button:hover { background-color: rgba(25,25,24,0.75); box-shadow: rgba(0,0,0,0.12) 0px 1px 1px 0px, rgba(32,32,31,0.16) 0px 0px 0px 1px, rgba(32,32,31,0.08) 0px 3px 9px 0px, rgba(32,32,31,0.08) 0px 2px 5px 0px; }
+    .button.sm { height: var(--btn-height-sm); padding: 0 var(--btn-px-sm); }
+    .button.light-2 { background: var(--color-light-2); color: var(--color-dark); }
+    .button.full-w { width: 100%; }
+
+    /* ══════ NAVBAR ══════ */
+    .navbar { z-index: 99; background: var(--color-light-1); position: sticky; top: 0; border-bottom: 1px solid var(--color-dark-7); }
+    .navbar-row { height: var(--nav-height); gap: var(--gap-2); display: flex; align-items: center; }
+    .nav-logo { height: 18px; width: auto; }
+    .main-container { max-width: var(--container-max); padding: 0 var(--container-gutter); width: 100%; margin: 0 auto; }
+    .navbar-right { gap: var(--gap); display: flex; align-items: center; margin-left: auto; }
+    .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; opacity: .6; transition: opacity .2s; }
+    .back-link:hover { opacity: 1; }
+    .back-link svg { width: 16px; height: 16px; }
+
+    /* ══════ FORM CONTAINER ══════ */
+    .form-page { padding: 48px 0 96px; display: flex; justify-content: center; }
+    .form-wrapper { width: 100%; max-width: 640px; display: flex; flex-direction: column; gap: 40px; }
+
+    /* ══════ LOGO CIRCLES ══════ */
+    .form-logo-wrap { display: flex; justify-content: center; align-items: center; gap: 12px; }
+    .form-logo-circle {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--color-dark);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    }
+    .form-logo-circle img { width: 40px; height: 40px; }
+    .form-logo-circle .slit-text { font-family: var(--font-headings); font-size: 16px; color: var(--color-light-1); letter-spacing: 0.5px; font-weight: 400; }
+    .form-logo-sep { font-size: 18px; font-weight: 300; color: var(--color-dark); opacity: 0.25; }
+
+    /* ══════ PROGRESS INDICATOR ══════ */
+    .progress-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    .progress-bar-track { width: 100%; height: 4px; background: var(--color-dark-7); border-radius: 2px; overflow: hidden; }
+    .progress-bar-fill { width: 100%; height: 100%; background: var(--color-dark); border-radius: 2px; }
+    .progress-label { font-family: var(--font-badges); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.35; }
+
+    /* ══════ FORM TITLE ══════ */
+    .form-title { font-family: var(--font-headings); font-size: 32px; line-height: 1.2em; letter-spacing: -0.02em; text-align: center; }
+
+    /* ══════ INFO BLOCK ══════ */
+    .info-block {
+      background: white;
+      border: 1px solid var(--color-dark-12);
+      border-radius: var(--radius-2x);
+      padding: 28px;
+      display: flex; flex-direction: column; gap: 24px;
+    }
+    .info-block-title {
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 15px;
+      font-variation-settings: "wght" 600;
+    }
+    .info-block p {
+      font-family: "Noto Sans KR", var(--font-body);
+      font-size: 13.5px;
+      line-height: 1.7;
+      opacity: 0.7;
+    }
+    .info-block p strong { opacity: 1; font-weight: 600; }
+
+    .check-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .check-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-family: "Noto Sans KR", var(--font-body);
+      font-size: 13.5px; line-height: 1.6; opacity: 0.7;
+    }
+    .check-icon {
+      flex-shrink: 0; width: 20px; height: 20px; margin-top: 1px;
+      background: var(--color-dark);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .check-icon svg { width: 11px; height: 11px; }
+
+    .timeline-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+    .timeline-cell {
+      background: var(--color-light-2);
+      border-radius: var(--radius);
+      padding: 16px;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .timeline-cell .label {
+      font-family: var(--font-badges);
+      font-size: 9px; letter-spacing: 0.12em;
+      text-transform: uppercase; opacity: 0.35;
+    }
+    .timeline-cell .value {
+      font-family: "Noto Sans KR", var(--font-body);
+      font-size: 14px; font-weight: 600;
+    }
+
+    /* ══════ DIVIDER ══════ */
+    .form-divider { border: none; border-top: 1px solid var(--color-dark-12); margin: 8px 0; }
+
+    /* ══════ SECTION HEADING ══════ */
+    .section-heading {
+      font-family: var(--font-headings);
+      font-size: 24px;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      padding-bottom: 4px;
+    }
+    .section-subheading {
+      font-family: "Noto Sans KR", var(--font-body);
+      font-size: 13px; opacity: 0.4; margin-top: -4px;
+    }
+
+    /* ══════ FORM FIELDS ══════ */
+    .field-group { display: flex; flex-direction: column; gap: 20px; }
+    .field {
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .field-label {
+      font-family: "Noto Sans KR", var(--font-body);
+      font-size: 13.5px; font-weight: 500;
+    }
+    .field-label .req { color: #E53935; margin-left: 2px; }
+    .field-hint {
+      font-family: "Noto Sans KR", var(--font-body);
+      font-size: 11.5px; opacity: 0.35; margin-top: -2px;
+    }
+    .field input[type="text"],
+    .field input[type="email"],
+    .field input[type="tel"],
+    .field input[type="url"],
+    .field textarea,
+    .field select {
+      width: 100%;
+      height: 48px;
+      padding: 0 16px;
+      background: #fff;
+      border: 1px solid var(--color-dark-12);
+      border-radius: var(--radius);
+      font-family: "Noto Sans KR", var(--font-body);
+      font-size: 14px;
+      color: var(--color-dark);
+      transition: border-color .2s, box-shadow .2s;
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .field input:focus,
+    .field textarea:focus,
+    .field select:focus {
+      border-color: var(--color-dark);
+      box-shadow: 0 0 0 3px rgba(0,0,0,0.06);
+    }
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: rgba(47,44,37,0.25);
+    }
+    .field textarea {
+      height: 100px;
+      padding: 14px 16px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+    .field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+
+    /* ══════ RADIO GROUP (A/B Track Selection) ══════ */
+    .radio-group { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .radio-card {
+      position: relative;
+      border: 1.5px solid var(--color-dark-12);
+      border-radius: var(--radius-2x);
+      padding: 20px;
+      cursor: pointer;
+      transition: border-color .2s, box-shadow .2s, background .2s;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .radio-card:hover { border-color: rgba(47,44,37,0.3); }
+    .radio-card input[type="radio"] { display: none; }
+    .radio-card input[type="radio"]:checked + .radio-card-inner { }
+    .radio-card:has(input:checked) {
+      border-color: var(--color-dark);
+      background: rgba(0,0,0,0.02);
+      box-shadow: 0 0 0 3px rgba(0,0,0,0.06);
+    }
+    .radio-card-inner { display: flex; flex-direction: column; gap: 8px; }
+    .radio-dot-row { display: flex; align-items: center; gap: 10px; }
+    .radio-dot {
+      width: 20px; height: 20px;
+      border: 2px solid var(--color-dark-12);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: border-color .2s;
+    }
+    .radio-card:has(input:checked) .radio-dot {
+      border-color: var(--color-dark);
+    }
+    .radio-card:has(input:checked) .radio-dot::after {
+      content: "";
+      width: 10px; height: 10px;
+      background: var(--color-dark);
+      border-radius: 50%;
+    }
+    .radio-track-name {
+      font-weight: 600;
+      font-size: 15px;
+      font-variation-settings: "wght" 600;
+    }
+    .radio-track-tag {
+      font-family: var(--font-badges);
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      width: fit-content;
+    }
+    .radio-card:first-child .radio-track-tag {
+      background: rgba(34,197,94,0.1);
+      color: #16a34a;
+    }
+    .radio-card:last-child .radio-track-tag {
+      background: rgba(59,130,246,0.1);
+      color: #2563eb;
+    }
+    .radio-track-desc {
+      font-family: "Noto Sans KR", var(--font-body);
+      font-size: 12px; line-height: 1.5; opacity: 0.5;
+    }
+
+    /* ══════ SUBMIT ══════ */
+    .submit-btn {
+      width: 100%;
+      height: 56px;
+      background: var(--color-dark);
+      color: var(--color-light-1);
+      border: none;
+      border-radius: var(--btn-radius);
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity .2s, transform .15s;
+      letter-spacing: 0.01em;
+    }
+    .submit-btn:hover { opacity: 0.85; }
+    .submit-btn:active { transform: scale(0.99); }
+
+    /* ══════ DISCLAIMER ══════ */
+    .disclaimer {
+      text-align: center;
+      font-family: "Noto Sans KR", var(--font-body);
+      font-size: 11px;
+      opacity: 0.3;
+      line-height: 1.6;
+      padding: 8px 0;
+    }
+
+    /* ══════ ANIMATIONS ══════ */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .anim-fade-up { animation: fadeUp .6s ease forwards; opacity: 0; }
+    .anim-delay-1 { animation-delay: .08s; }
+    .anim-delay-2 { animation-delay: .16s; }
+    .anim-delay-3 { animation-delay: .24s; }
+    .anim-delay-4 { animation-delay: .32s; }
+    .anim-delay-5 { animation-delay: .40s; }
+    .anim-delay-6 { animation-delay: .48s; }
+    .anim-delay-7 { animation-delay: .56s; }
+
+    /* ══════ RESPONSIVE ══════ */
+    @media (max-width: 680px) {
+      .form-wrapper { gap: 32px; }
+      .form-title { font-size: 24px; }
+      .section-heading { font-size: 20px; }
+      .radio-group { grid-template-columns: 1fr; }
+      .timeline-row { grid-template-columns: 1fr; }
+      .info-block { padding: 20px; }
+      .form-page { padding: 32px 0 72px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════ NAVBAR ══════ -->
+<nav class="navbar">
+  <div class="main-container">
+    <div class="navbar-row">
+      <a href="index.html" style="display:flex;align-items:center;gap:8px;"><img src="slit-logo-dark.svg" alt="SL:IT" style="height:16px;width:auto;" /><span style="opacity:.25;font-size:14px;font-weight:300;">×</span><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" style="height:24px;width:24px;filter:invert(1);" /></a>
+      <div class="navbar-right">
+        <a href="index.html" class="back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Home
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════ FORM PAGE ══════ -->
+<div class="form-page">
+  <div class="main-container" style="display:flex;justify-content:center;">
+    <div class="form-wrapper">
+
+      <!-- Logo Circles -->
+      <div class="form-logo-wrap anim-fade-up">
+        <div class="form-logo-circle">
+          <span class="slit-text">SL:IT</span>
+        </div>
+        <span class="form-logo-sep">×</span>
+        <div class="form-logo-circle">
+          <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" />
+        </div>
+      </div>
+
+      <!-- Progress Indicator -->
+      <div class="progress-wrap anim-fade-up anim-delay-1">
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill"></div>
+        </div>
+        <span class="progress-label">Page 1 of 1</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="form-title anim-fade-up anim-delay-2" style="font-family:var(--font-headings);">
+        SL:IT <span style="opacity:.3;">&times;</span> Outsome<br/>파운더 스프린트 지원서
+      </h1>
+
+      <!-- ══════ PROGRAM INFO BLOCK ══════ -->
+      <div class="info-block anim-fade-up anim-delay-3">
+        <div class="info-block-title font-kr">프로그램 개요</div>
+        <p>
+          <strong>SL:IT &times; Outsome 파운더 스프린트</strong>는 Pre-Seed 단계 한국 스타트업을 위한 <strong>6주 집중 액셀러레이팅 프로그램</strong>입니다. YC 출신 오퍼레이터, 실리콘밸리 VC, 현직 FAANG 엔지니어가 멘토로 참여하여, 이론이 아닌 <strong>실전 중심</strong>의 GTM, IR, 세일즈 운영을 지도합니다.
+        </p>
+
+        <!-- 대상 기업 -->
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div class="info-block-title font-kr">대상 기업</div>
+          <ul class="check-list">
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FEFAF3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              Pre-Seed ~ Seed 단계의 스타트업 (아이디어 ~ 초기 제품)
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FEFAF3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              바이브코딩(AI 기반 개발)으로 제품을 만들거나 만들 계획이 있는 팀
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FEFAF3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              미국 시장 진출을 목표로 하는 B2B / B2C SaaS 기업
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FEFAF3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              풀타임으로 커밋할 수 있는 대표자 (6주간 서울 기반 오프라인 참여)
+            </li>
+          </ul>
+        </div>
+
+        <!-- 프로그램 기간 -->
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div class="info-block-title font-kr">프로그램 기간</div>
+          <div class="timeline-row">
+            <div class="timeline-cell">
+              <span class="label">Founder Sprint</span>
+              <span class="value font-kr">6주 (서울)</span>
+            </div>
+            <div class="timeline-cell">
+              <span class="label">US Track (선택)</span>
+              <span class="value font-kr">2주 (샌프란시스코)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 신청 접수 -->
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div class="info-block-title font-kr">신청 접수</div>
+          <p>
+            지원서는 <strong>롤링 베이시스</strong>로 접수되며, 정원이 채워지는 즉시 마감됩니다. 서류 심사 후 1:1 인터뷰를 거쳐 최종 선발됩니다. 지원서 제출 후 <strong>영업일 기준 3일 이내</strong>에 결과를 안내드립니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- ══════ DIVIDER ══════ -->
+      <hr class="form-divider anim-fade-up anim-delay-4" />
+
+      <!-- ══════ FORM ══════ -->
+      <form autocomplete="off">
+
+        <!-- ── Personal Information ── -->
+        <div class="anim-fade-up anim-delay-4" style="display:flex;flex-direction:column;gap:24px;margin-bottom:40px;">
+          <div>
+            <h2 class="section-heading">Personal Information</h2>
+            <p class="section-subheading font-kr">대표자 기본 정보를 입력해주세요.</p>
+          </div>
+
+          <div class="field-group">
+            <div class="field">
+              <label class="field-label font-kr">대표자 한글이름 <span class="req">*</span></label>
+              <input type="text" placeholder="홍길동" />
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">대표자 영문이름 <span class="req">*</span></label>
+              <input type="text" placeholder="Gildong Hong" />
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">대표자 연락처 <span class="req">*</span></label>
+              <input type="tel" placeholder="010-1234-5678" />
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">이메일 주소 <span class="req">*</span></label>
+              <input type="email" placeholder="founder@startup.com" />
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">링크드인 URL <span class="req">*</span></label>
+              <input type="url" placeholder="https://linkedin.com/in/yourprofile" />
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">거주지 주소 <span class="req">*</span></label>
+              <input type="text" placeholder="서울특별시 강남구 ..." />
+              <span class="field-hint">프로그램 기간 중 서울 기반 오프라인 참여가 가능해야 합니다.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Track Selection ── -->
+        <div class="anim-fade-up anim-delay-5" style="display:flex;flex-direction:column;gap:16px;margin-bottom:40px;">
+          <div>
+            <label class="field-label font-kr" style="font-size:14px;font-weight:600;">트랙 선택 <span class="req">*</span></label>
+            <span class="field-hint" style="display:block;margin-top:4px;">참여하고자 하는 트랙을 선택해주세요.</span>
+          </div>
+          <div class="radio-group">
+            <label class="radio-card">
+              <input type="radio" name="track" value="pre-launch" checked />
+              <div class="radio-card-inner">
+                <div class="radio-dot-row">
+                  <span class="radio-dot"></span>
+                  <span class="radio-track-name">Pre-Launch 트랙</span>
+                </div>
+                <span class="radio-track-tag">Track A</span>
+                <span class="radio-track-desc font-kr">아이디어 검증 ~ MVP 단계. 프로덕트를 아직 만들고 있거나, 시장 검증이 필요한 팀.</span>
+              </div>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="track" value="post-launch" />
+              <div class="radio-card-inner">
+                <div class="radio-dot-row">
+                  <span class="radio-dot"></span>
+                  <span class="radio-track-name">Post-Launch 트랙</span>
+                </div>
+                <span class="radio-track-tag">Track B</span>
+                <span class="radio-track-desc font-kr">MVP 이후 ~ 초기 매출 단계. 제품은 있지만 GTM, 세일즈, IR을 개선해야 하는 팀.</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- ══════ DIVIDER ══════ -->
+        <hr class="form-divider" style="margin-bottom:40px;" />
+
+        <!-- ── Company Information ── -->
+        <div class="anim-fade-up anim-delay-6" style="display:flex;flex-direction:column;gap:24px;margin-bottom:40px;">
+          <div>
+            <h2 class="section-heading">Company Information</h2>
+            <p class="section-subheading font-kr">스타트업 정보를 입력해주세요.</p>
+          </div>
+
+          <div class="field-group">
+            <div class="field">
+              <label class="field-label font-kr">기업명 <span class="req">*</span></label>
+              <input type="text" placeholder="주식회사 OO" />
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">서비스 웹사이트</label>
+              <input type="url" placeholder="https://yourstartup.com" />
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">한문장 서비스 설명</label>
+              <input type="text" placeholder="AI 기반 B2B SaaS 플랫폼" maxlength="30" />
+              <span class="field-hint">30자 이내로 간결하게 작성해주세요.</span>
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">프로덕트/서비스의 분야 <span class="req">*</span></label>
+              <select>
+                <option value="" disabled selected>분야를 선택해주세요</option>
+                <option value="ai-ml">AI / Machine Learning</option>
+                <option value="saas">SaaS</option>
+                <option value="fintech">Fintech</option>
+                <option value="healthtech">HealthTech / BioTech</option>
+                <option value="edtech">EdTech</option>
+                <option value="ecommerce">E-Commerce / Marketplace</option>
+                <option value="deeptech">DeepTech / Hardware</option>
+                <option value="consumer">Consumer App</option>
+                <option value="enterprise">Enterprise Software</option>
+                <option value="proptech">PropTech / Real Estate</option>
+                <option value="logistics">Logistics / Supply Chain</option>
+                <option value="creator">Creator Economy / Media</option>
+                <option value="sustainability">Sustainability / CleanTech</option>
+                <option value="other">기타 (Other)</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">회사 소개서 / IR덱 URL</label>
+              <input type="url" placeholder="Google Drive, Notion, 또는 직접 링크" />
+              <span class="field-hint">PDF, Google Slides, Notion 등 공유 가능한 링크를 입력해주세요.</span>
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">프로덕트 개발 현황</label>
+              <textarea placeholder="현재 프로덕트 개발 상태를 간략히 설명해주세요. (예: MVP 완성, 베타 테스트 중, 아이디어 단계 등)"></textarea>
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">유료고객 거래액</label>
+              <input type="text" placeholder="예: 월 500만원, 아직 없음, 등" />
+              <span class="field-hint">정확하지 않아도 괜찮습니다. 대략적인 규모를 알려주세요.</span>
+            </div>
+
+            <div class="field">
+              <label class="field-label font-kr">Business Model <span class="req">*</span></label>
+              <select>
+                <option value="" disabled selected>비즈니스 모델을 선택해주세요</option>
+                <option value="subscription">Subscription (구독)</option>
+                <option value="transactional">Transactional (거래 기반)</option>
+                <option value="marketplace">Marketplace (중개)</option>
+                <option value="freemium">Freemium</option>
+                <option value="licensing">Licensing (라이선싱)</option>
+                <option value="advertising">Advertising (광고)</option>
+                <option value="hardware">Hardware + Software</option>
+                <option value="consulting">Consulting / Service</option>
+                <option value="undecided">아직 미정</option>
+                <option value="other">기타 (Other)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══════ SUBMIT ══════ -->
+        <div class="anim-fade-up anim-delay-7" style="display:flex;flex-direction:column;gap:16px;">
+          <button type="submit" class="submit-btn font-kr">지원서 제출</button>
+          <p class="disclaimer">
+            본 프로그램은 교육 목적으로 제공됩니다.<br/>
+            제출된 정보는 심사 목적으로만 사용되며, 외부에 공유되지 않습니다.
+          </p>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
