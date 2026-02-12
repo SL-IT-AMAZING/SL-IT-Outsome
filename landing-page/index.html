@@ -222,7 +222,9 @@
     .anim-fade-up { animation: fadeUp .7s ease forwards; opacity: 0; }
     @media (max-width: 991px) {
       .nav-links, .nav-btns, .navbar-right { display: none !important; }
-      .nav-hamburger { display: flex !important; }
+      .nav-hamburger { display: flex !important; margin-left: auto; }
+      .navbar-row { justify-content: space-between; }
+      html, body { overflow-x: hidden; }
       h1 { font-size: 47.31px; line-height: 1em; } h2 { font-size: 37.5px; line-height: 1.1em; } h3 { font-size: 29.7px; line-height: 1.2em; } h4 { font-size: 23.6px; line-height: 1.25em; }
       .grid-2col, .pricing-duo, .footer-top { grid-template-columns: 1fr; }
       .card-grid { grid-template-columns: 1fr; }
@@ -235,6 +237,56 @@
       .emblem-box { width: 200px; height: 280px; }
       .hero-subtitle { max-width: 100% !important; }
       .hero-subtitle br { display: none; }
+      .logo-row { gap: 24px 32px !important; padding: 12px 20px !important; }
+      .hero-social-proof { justify-content: center; }
+      .star-rating { flex-direction: column; align-items: flex-start; }
+      .section { padding: 48px 0; }
+      .footer { padding: 48px 0 24px; }
+      .ted-quote { flex-direction: column !important; gap: var(--gap) !important; padding: var(--gap) !important; }
+      .ted-avatar { width: 56px !important; height: 56px !important; }
+      .grid-2col { gap: var(--gap-15) !important; }
+      .help-cta { flex-direction: column !important; align-items: flex-start !important; gap: var(--gap) !important; }
+      .help-cta .button { width: 100%; }
+
+      /* Slide cards — fit viewport */
+      .slide-card { flex: 0 0 calc(100vw - 48px) !important; max-width: calc(100vw - 48px) !important; }
+      .slide-track { gap: var(--gap) !important; }
+
+      /* Pricing */
+      .pricing-duo { max-width: 100% !important; }
+      .pricing-card { padding: 24px 16px !important; }
+      .pricing-list { gap: 12px !important; }
+
+      /* Widget */
+      .widget { max-width: 100% !important; }
+
+      /* CTA banner */
+      .cta-banner { padding: 24px !important; }
+
+      /* Dropdown safety (already hidden, but in case) */
+      .dropdown-panel { min-width: auto !important; max-width: 90vw !important; }
+
+      /* Carousel tap targets */
+      .circle-btn { width: 48px !important; height: 48px !important; }
+
+      /* Footer spacing */
+      .footer-content { gap: 48px !important; }
+
+      /* Subscribe form — stack on mobile */
+      .subscribe-form { flex-direction: column !important; max-width: 100% !important; }
+      .subscribe-form .button { width: 100%; }
+
+      /* Social links — left-align on mobile */
+      .footer-social-col { align-items: flex-start !important; }
+      .footer-social-col .text-badge { text-align: left !important; }
+      .footer-social-links { justify-content: flex-start !important; gap: var(--gap-075) !important; }
+    }
+
+    /* Extra-small screens */
+    @media (max-width: 480px) {
+      h1 { font-size: 36px !important; }
+      .logo-row { gap: 12px 16px !important; padding: 8px 12px !important; }
+      .emblem-box { width: 160px !important; height: 220px !important; }
     }
     @media (min-width: 992px) { .nav-hamburger { display: none !important; } }
     .mobile-menu { display: none; background: #0A0A0A; border-top: 1px solid rgba(255,255,255,0.1); padding: var(--gap-075) var(--container-gutter) var(--gap); }
@@ -399,14 +451,14 @@
           <a href="apply.html" class="button"><span class="btn-wrap"><span class="btn-init">Apply Now</span><span class="btn-reveal">Apply Now</span></span></a>
           <a href="https://outsome.notion.site/foundersprint" target="_blank" class="button light-2"><span class="btn-wrap"><span class="btn-init">Explore more</span><span class="btn-reveal">Explore more</span></span></a>
         </div>
-        <div style="display:flex;gap:var(--gap-05);align-items:center;">
+        <div class="hero-social-proof" style="display:flex;gap:var(--gap-05);align-items:center;flex-wrap:wrap;">
           <div class="avatars">
             <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe757_Group%20316.png" alt="" class="avatar-item" />
             <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe758_Group%20318.png" alt="" class="avatar-item" />
             <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe759_Group%20320.png" alt="" class="avatar-item" />
             <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe756_Group%20321-min.png" alt="" class="avatar-item" />
           </div>
-          <div style="display:flex;gap:6px;align-items:center;">
+          <div class="star-rating" style="display:flex;gap:6px;align-items:center;">
             <div style="display:flex;gap:2px;"><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe66d_icon-interface-star.svg" alt="" style="width:14px;height:14px;" /><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe66d_icon-interface-star.svg" alt="" style="width:14px;height:14px;" /><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe66d_icon-interface-star.svg" alt="" style="width:14px;height:14px;" /><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe66d_icon-interface-star.svg" alt="" style="width:14px;height:14px;" /><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe66d_icon-interface-star.svg" alt="" style="width:14px;height:14px;" /></div>
             <span class="text-small text-muted">Rated 4.97/5 from 100+ founder reviews</span>
           </div>
@@ -525,6 +577,7 @@
 </section>
 
 <!-- ══════ MENTORSHIP ══════ -->
+
 <section id="mentors" class="section">
   <div class="main-container">
     <div class="grid-2col" style="gap:var(--gap-2);align-items:stretch;">
@@ -535,8 +588,8 @@
           <p class="text-lead text-muted">Startup founders move faster when execution becomes predictable. <strong>Outsome</strong> mentors give founders clear GTM steps, customer-ready interview preps, and global partnership frameworks.</p>
         <p class="text-small text-muted font-kr" style="opacity:.4;margin-top:-4px;">스타트업 파운더는 실행이 예측 가능해질 때 더 빨라집니다. 명확한 GTM, 고객 인터뷰 준비, 글로벌 파트너십 프레임워크를 제공합니다.</p>
         </div>
-        <div style="display:flex;gap:var(--gap-15);align-items:flex-start;padding:var(--gap-15);background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);">
-          <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7b1_ted%20kim%20profile.webp" alt="Ted Kim" style="width:80px;height:80px;border-radius:var(--radius);object-fit:cover;flex-shrink:0;" />
+        <div class="ted-quote" style="display:flex;gap:var(--gap-15);align-items:flex-start;padding:var(--gap-15);background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);">
+          <img class="ted-avatar" src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7b1_ted%20kim%20profile.webp" alt="Ted Kim" style="width:80px;height:80px;border-radius:var(--radius);object-fit:cover;flex-shrink:0;" />
           <div style="display:flex;flex-direction:column;gap:var(--gap-075);">
             <div style="display:flex;gap:2px;"><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe66d_icon-interface-star.svg" alt="" style="width:14px;height:14px;" /><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe66d_icon-interface-star.svg" alt="" style="width:14px;height:14px;" /><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe66d_icon-interface-star.svg" alt="" style="width:14px;height:14px;" /><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe66d_icon-interface-star.svg" alt="" style="width:14px;height:14px;" /><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe66d_icon-interface-star.svg" alt="" style="width:14px;height:14px;" /></div>
             <p style="font-weight:600;line-height:1.4;">"<strong>Outsome changed everything for us — how we enter enterprises.</strong>"</p>
@@ -548,11 +601,11 @@
       <!-- Right: Widget on photo -->
       <div style="position:relative;border-radius:var(--radius);overflow:hidden;min-height:520px;">
         <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe6ba_photo-square-02.webp" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
-        <div style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;height:100%;padding:var(--gap-15);">
+        <div style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;height:100%;padding:var(--gap-05);">
           <div class="progress-widget" style="background:rgba(0,0,0,0.75);backdrop-filter:blur(12px);border-radius:var(--radius);padding:var(--gap-15);display:flex;flex-direction:column;gap:var(--gap-15);color:#fff;">
             <div style="display:flex;flex-direction:column;gap:var(--gap-05);">
               <p style="font-weight:600;">Founder Progress Summary</p>
-              <div class="text-small text-muted" style="line-height:1.8;">Week 1: One-Liner + IR Narrative<br/>Week 2: ICP + 20 US Leads<br/>Week 3: Pricing Model + KPI Dashboard<br/>Week 4: IR Deck + Demo Ready</div>
+              <div style="display:flex;flex-direction:column;gap:8px;"><div><span class="text-small" style="font-weight:600;opacity:.5;display:block;">Week 0</span><span class="text-small text-muted">환경 세팅 + 스타트업 진단</span></div><div><span class="text-small" style="font-weight:600;opacity:.5;display:block;">Week 1</span><span class="text-small text-muted">MVP 설계 + US 시장 이해</span></div><div><span class="text-small" style="font-weight:600;opacity:.5;display:block;">Week 2</span><span class="text-small text-muted">MVP 빌딩 + 고객 검증</span></div><div><span class="text-small" style="font-weight:600;opacity:.5;display:block;">Week 3</span><span class="text-small text-muted">배포 + KPI & Pricing</span></div><div><span class="text-small" style="font-weight:600;opacity:.5;display:block;">Week 4</span><span class="text-small text-muted">IR Deck + 피칭</span></div><div><span class="text-small" style="font-weight:600;opacity:.5;display:block;">Week 5</span><span class="text-small text-muted">멘토 프레젠테이션 + US Track</span></div></div>
             </div>
             <div style="display:flex;flex-direction:column;gap:10px;">
               <div><div style="display:flex;justify-content:space-between;font-size:11.11px;margin-bottom:6px;"><span class="text-muted">Resources Spent</span><span style="font-weight:600;">74%</span></div><div style="width:100%;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;"><div style="width:74%;height:100%;background:#fff;border-radius:3px;"></div></div></div>
@@ -561,6 +614,17 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="mobile-week-breakdown" style="display:none;flex-direction:column;gap:var(--gap);margin-top:var(--gap-15);padding:var(--gap);background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);">
+      <p style="font-weight:600;font-size:15px;">Founder Progress Summary</p>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="display:flex;gap:12px;align-items:baseline;"><span style="font-weight:700;font-size:13px;opacity:.5;white-space:nowrap;">Week 0</span><span class="text-small text-muted">환경 세팅 + 스타트업 진단</span></div>
+        <div style="display:flex;gap:12px;align-items:baseline;"><span style="font-weight:700;font-size:13px;opacity:.5;white-space:nowrap;">Week 1</span><span class="text-small text-muted">MVP 설계 + US 시장 이해</span></div>
+        <div style="display:flex;gap:12px;align-items:baseline;"><span style="font-weight:700;font-size:13px;opacity:.5;white-space:nowrap;">Week 2</span><span class="text-small text-muted">MVP 빌딩 + 고객 검증</span></div>
+        <div style="display:flex;gap:12px;align-items:baseline;"><span style="font-weight:700;font-size:13px;opacity:.5;white-space:nowrap;">Week 3</span><span class="text-small text-muted">배포 + KPI & Pricing</span></div>
+        <div style="display:flex;gap:12px;align-items:baseline;"><span style="font-weight:700;font-size:13px;opacity:.5;white-space:nowrap;">Week 4</span><span class="text-small text-muted">IR Deck + 피칭</span></div>
+        <div style="display:flex;gap:12px;align-items:baseline;"><span style="font-weight:700;font-size:13px;opacity:.5;white-space:nowrap;">Week 5</span><span class="text-small text-muted">멘토 프레젠테이션 + US Track</span></div>
       </div>
     </div>
   </div>
@@ -608,7 +672,7 @@
         <p class="text-small text-muted font-kr" style="opacity:.4;margin-top:-4px;">검증 단계든 확장 단계든, 당신의 성장에 맞춘 프로그램.</p>
       </div>
       <div class="pricing-duo" style="margin:0 auto;">
-        <div class="pricing-card"><div style="display:flex;flex-direction:column;gap:var(--gap-15);"><div><h3 style="font-size:28px;">Founder Sprint</h3><p class="text-muted" style="margin-top:var(--gap-05);">A 6-week high-intensity hybrid accelerator for traction, clarity, and momentum.</p><p class="text-small font-kr" style="margin-top:6px;opacity:.3;">No equity, no revenue-share, no hidden terms.</p><p class="text-small font-kr" style="margin-top:6px;opacity:.4;"><em style="font-family:var(--font-headings);font-style:italic;">* Required to join the <strong>US Track.</strong></em></p></div><a href="apply.html" class="button full-w"><span class="btn-wrap"><span class="btn-init">Join Founder Sprint</span><span class="btn-reveal">Join Founder Sprint</span></span></a></div><div style="border-top:1px solid var(--color-dark-12);padding-top:var(--gap-15);"><div class="text-badge text-muted" style="margin-bottom:var(--gap-075);">Includes:</div><div class="pricing-list font-kr"><div class="pricing-item"><span class="pricing-dot"></span>6-Weeks in Seoul, In-Person with Peter</div><div class="pricing-item"><span class="pricing-dot"></span>바이브코딩 VOD 전체 (45클립, ~11시간)</div><div class="pricing-item"><span class="pricing-dot"></span>Meals, coffees, and networking events included</div><div class="pricing-item"><span class="pricing-dot"></span>Zoomcalls with U.S. VCs, YC Founders, and FAANGs</div><div class="pricing-item"><span class="pricing-dot"></span>Pricing model + KPI dashboard</div><div class="pricing-item"><span class="pricing-dot"></span>Investor-grade 10-page IR Deck</div><div class="pricing-item"><span class="pricing-dot"></span>1:1 Operator Sessions (GTM / IR / Sales Ops)</div><div class="pricing-item"><span class="pricing-dot"></span>Lifetime access to Outsome Founder Group</div><div class="pricing-item"><span class="pricing-dot"></span>U.S.-ready One-Liner + IR Narrative</div><div class="pricing-item"><span class="pricing-dot"></span>ICP Design + 20 U.S. lead list</div><div class="pricing-item"><span class="pricing-dot"></span>Access to apply for US Track</div></div></div></div>
+        <div class="pricing-card"><div style="display:flex;flex-direction:column;gap:var(--gap-15);"><div><h3 style="font-size:28px;">Founder Sprint</h3><p class="text-muted" style="margin-top:var(--gap-05);">A 6-week high-intensity hybrid accelerator for traction, clarity, and momentum.</p><p class="text-small font-kr" style="margin-top:6px;opacity:.3;">No equity, no revenue-share, no hidden terms.</p><p class="text-small font-kr" style="margin-top:6px;opacity:.4;"><em style="font-family:var(--font-headings);font-style:italic;">* Required to join the <strong>US Track.</strong></em></p></div><a href="apply.html" class="button full-w"><span class="btn-wrap"><span class="btn-init">Join Founder Sprint</span><span class="btn-reveal">Join Founder Sprint</span></span></a></div><div style="border-top:1px solid var(--color-dark-12);padding-top:var(--gap-15);"><div class="text-badge text-muted" style="margin-bottom:var(--gap-075);">Includes:</div><div class="pricing-list font-kr"><div class="pricing-item"><span class="pricing-dot"></span>6주 서울 오프라인 (Peter Shin 직접 진행)</div><div class="pricing-item"><span class="pricing-dot"></span>바이브코딩 오프라인 워크숍 (주 1회) + 보충 VOD</div><div class="pricing-item"><span class="pricing-dot"></span>Outsome 비즈니스 세션 (주 1회)</div><div class="pricing-item"><span class="pricing-dot"></span>Peter Shin 1:1 오피스아워 (매주)</div><div class="pricing-item"><span class="pricing-dot"></span>실리콘밸리 멘토 세션 (YC, FAANG 출신)</div><div class="pricing-item"><span class="pricing-dot"></span>U.S. VC / YC Fireside Chat (Zoom)</div><div class="pricing-item"><span class="pricing-dot"></span>Pricing model + KPI dashboard</div><div class="pricing-item"><span class="pricing-dot"></span>Investor-grade 10-page IR Deck</div><div class="pricing-item"><span class="pricing-dot"></span>1:1 Operator Sessions (GTM / IR / Sales Ops)</div><div class="pricing-item"><span class="pricing-dot"></span>U.S.-ready One-Liner + IR Narrative</div><div class="pricing-item"><span class="pricing-dot"></span>ICP Design + 20 U.S. lead list</div><div class="pricing-item"><span class="pricing-dot"></span>Meals, coffees, and networking events</div><div class="pricing-item"><span class="pricing-dot"></span>Outsome 알럼나이 네트워크 + US Track 지원 자격</div></div><div class="pricing-item"><span class="pricing-dot"></span>Access to apply for US Track</div></div></div></div>
         <div class="pricing-card dark" style="border-color:rgba(255,255,255,0.15);"><div style="display:flex;flex-direction:column;gap:var(--gap-15);"><div><h3 style="font-size:28px;">US Track</h3><p class="text-muted" style="margin-top:var(--gap-05);">A 13-night immersive Bay Area experience for founders ready to meet U.S. buyers and operators.</p><p class="text-small font-kr" style="margin-top:6px;opacity:.3;">No lock-ins. Join only when you're ready.</p><p class="text-small font-kr" style="margin-top:6px;opacity:.4;"><em style="font-family:var(--font-headings);font-style:italic;">* Available only to <strong>Founder Sprint alumni.</strong></em></p></div><span class="button outline full-w" style="opacity:.5;pointer-events:none;cursor:default;"><span class="btn-wrap"><span class="btn-init">Coming Soon</span><span class="btn-reveal">Coming Soon</span></span></span></div><div style="border-top:1px solid var(--color-dark-12);padding-top:var(--gap-15);"><div class="text-badge text-muted" style="margin-bottom:var(--gap-075);">Includes:</div><div class="pricing-list font-kr"><div class="pricing-item"><span class="pricing-dot"></span>2-Weeks in San Francisco, In-Person with Peter</div><div class="pricing-item"><span class="pricing-dot"></span>Full accommodation, meals, local transport (13 nights)</div><div class="pricing-item"><span class="pricing-dot"></span>Network with U.S. VCs, YC Founders, and FAANGs</div><div class="pricing-item"><span class="pricing-dot"></span>Office visits (e.g., Notion, Google, YC Startups)</div><div class="pricing-item"><span class="pricing-dot"></span>U.S. buyer / mentor meetings curated by Outsome</div><div class="pricing-item"><span class="pricing-dot"></span>Hands-on pitch reviews before investor meetings</div><div class="pricing-item"><span class="pricing-dot"></span>Alumni private dinner + Outsome Launch event</div><div class="pricing-item"><span class="pricing-dot"></span>Meta-level production crew creating social content</div></div></div></div>
       </div>
     </div>
@@ -629,7 +693,7 @@
         </div>
         <div style="display:flex;gap:var(--gap-05);margin-top:var(--gap-15);"><button class="circle-btn" onclick="document.getElementById('carousel').scrollBy({left:-500,behavior:'smooth'})" style="transform:scaleX(-1);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button><button class="circle-btn" onclick="document.getElementById('carousel').scrollBy({left:500,behavior:'smooth'})"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button></div>
       </div>
-      <div style="padding:var(--gap-15) 0 0;display:flex;align-items:center;gap:var(--gap-15);"><div><h4 style="font-size:22px;margin-bottom:4px;">Need some help?</h4><p class="text-muted" style="font-size:14px;">We're here to provide support and assistance.</p><p class="text-small text-muted font-kr" style="opacity:.4;">언제든 연락하세요.</p></div><a href="request-demo.html" class="button" style="flex-shrink:0;"><span class="btn-wrap"><span class="btn-init">Contact our team</span><span class="btn-reveal">Contact our team</span></span></a></div>
+      <div class="help-cta" style="padding:var(--gap-15) 0 0;display:flex;align-items:center;gap:var(--gap-15);"><div><h4 style="font-size:22px;margin-bottom:4px;">Need some help?</h4><p class="text-muted" style="font-size:14px;">We're here to provide support and assistance.</p><p class="text-small text-muted font-kr" style="opacity:.4;">언제든 연락하세요.</p></div><a href="request-demo.html" class="button" style="flex-shrink:0;"><span class="btn-wrap"><span class="btn-init">Contact our team</span><span class="btn-reveal">Contact our team</span></span></a></div>
     </div>
   </div>
 </section>
@@ -643,7 +707,7 @@
           <h3 style="max-width:var(--grid-col-4);">Fast-Track to building startup from ground zero.</h3>
           <div><div class="text-badge text-muted" style="margin-bottom:var(--gap-075);">monthly Newsletter</div><div class="subscribe-form"><input type="email" placeholder="Email" class="subscribe-input" /><button class="button light-1">Subscribe</button></div><p class="text-small" style="opacity:.2;margin-top:var(--gap-05);">We won't share your data with third parties. Ever.</p></div>
         </div>
-        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:var(--gap-3);"><div><div class="text-badge text-muted" style="margin-bottom:var(--gap-075);text-align:right;">social</div><div style="display:flex;gap:var(--gap);"><a href="https://www.linkedin.com/school/107497789" target="_blank" class="footer-link">Linkedin</a><a href="https://www.linkedin.com/in/shndon0220/" target="_blank" class="footer-link">LinkedIn - Peter</a><a href="https://www.instagram.com/outsome.co/" target="_blank" class="footer-link">Instagram</a><a href="https://x.com/_seoulrider" target="_blank" class="footer-link">X (Twitter)</a></div></div></div>
+        <div class="footer-social-col" style="display:flex;flex-direction:column;align-items:flex-end;gap:var(--gap-3);"><div><div class="text-badge text-muted" style="margin-bottom:var(--gap-075);text-align:right;">social</div><div class="footer-social-links" style="display:flex;gap:var(--gap);flex-wrap:wrap;justify-content:flex-end;"><a href="https://www.linkedin.com/school/107497789" target="_blank" class="footer-link">Linkedin</a><a href="https://www.linkedin.com/in/shndon0220/" target="_blank" class="footer-link">LinkedIn - Peter</a><a href="https://www.instagram.com/outsome.co/" target="_blank" class="footer-link">Instagram</a><a href="https://x.com/_seoulrider" target="_blank" class="footer-link">X (Twitter)</a></div></div></div>
       </div>
       <div>
         <div class="footer-cr"><a href="/" style="display:flex;align-items:center;gap:10px;"><img src="slit-logo-light.svg" alt="SL:IT" style="height:32px;width:auto;" /><span style="opacity:.3;font-size:24px;font-weight:300;color:#FEFAF3;">×</span><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" style="height:36px;width:36px;" /></a><p class="text-small" style="opacity:.2;">© Copyright SL:IT × Outsome</p></div>
