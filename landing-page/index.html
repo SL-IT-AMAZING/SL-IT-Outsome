@@ -182,7 +182,7 @@
 .customer-cluster:not(:hover) .cv-section.main .cv-content { opacity:1; }
 .customer-cluster:has(.cv-section.side:hover) .cv-section.main .cv-content { opacity:0; }
     .logo-interaction-wrap:hover .logo-row { filter:blur(6px); }
-    .logo-interaction-wrap:hover .logo-hover-btn { opacity:1; transform:translateY(0); pointer-events:auto; }
+    .logo-interaction-wrap:hover .logo-hover-btn { opacity:1 !important; transform:translateY(0) !important; pointer-events:auto !important; }
     .pricing-duo { max-width: var(--grid-col-8); gap: var(--gap-05); display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
     .pricing-card { padding: var(--gap-15) var(--gap); gap: var(--gap-2); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius); background: #141414; color: #FEFAF3; display: flex; flex-direction: column; }
     .pricing-card.dark { background: #1a1a1a; color: #FEFAF3; border-color: rgba(255,255,255,0.15); }
@@ -356,7 +356,6 @@
         </div>
       </div>
       <div class="navbar-right">
-        <div style="display:flex;align-items:center;gap:6px;cursor:pointer;opacity:.6;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span style="font-size:14px;">Search</span></div>
         <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
           <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
           <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
@@ -516,7 +515,7 @@
           <div class="card" style="flex:1;">
           <div style="overflow:hidden;border-radius:var(--radius) var(--radius) 0 0;max-height:200px;"><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7d3_IMG_2903.webp" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" /></div>
           <div class="card-body" style="flex:1;justify-content:space-between;">
-            <div style="display:flex;flex-direction:column;gap:var(--gap-075);"><p style="font-family:var(--font-headings);font-size:17.64px;line-height:1.4;">"With <strong>Outsome</strong>, we secured our first U.S. leads <em style="font-style:italic;">in just weeks</em>."</p><p class="text-small text-muted">— Weaver FS4</p></div>
+            <div style="display:flex;flex-direction:column;gap:var(--gap-075);"><p style="font-family:var(--font-headings);font-size:28px;line-height:1.35;">"With <strong>Outsome</strong>, we secured our first U.S. leads <em style="font-style:italic;">in just weeks</em>."</p><p class="text-muted" style="font-size:15px;">— Weaver FS4</p></div>
             <a href="apply.html" class="button" style="align-self:flex-start;margin-top:var(--gap);"><span class="btn-wrap"><span class="btn-init">Apply Now</span><span class="btn-reveal">Apply Now</span></span></a>
           </div>
         </div>
@@ -528,7 +527,7 @@
 <!-- ══════ MENTORSHIP ══════ -->
 <section id="mentors" class="section">
   <div class="main-container">
-    <div class="grid-2col" style="gap:var(--gap-2);align-items:start;">
+    <div class="grid-2col" style="gap:var(--gap-2);align-items:stretch;">
       <!-- Left: Heading + Quote -->
       <div style="display:flex;flex-direction:column;gap:var(--gap-3);">
         <div style="display:flex;flex-direction:column;gap:var(--gap-15);">
@@ -549,7 +548,7 @@
       <!-- Right: Widget on photo -->
       <div style="position:relative;border-radius:var(--radius);overflow:hidden;min-height:520px;">
         <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe6ba_photo-square-02.webp" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
-        <div style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:flex-end;height:100%;padding:var(--gap-15);">
+        <div style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;height:100%;padding:var(--gap-15);">
           <div class="progress-widget" style="background:rgba(0,0,0,0.75);backdrop-filter:blur(12px);border-radius:var(--radius);padding:var(--gap-15);display:flex;flex-direction:column;gap:var(--gap-15);color:#fff;">
             <div style="display:flex;flex-direction:column;gap:var(--gap-05);">
               <p style="font-weight:600;">Founder Progress Summary</p>
