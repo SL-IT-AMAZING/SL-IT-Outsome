@@ -435,14 +435,18 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 991px) {
       .nav-links, .nav-btns, .navbar-right { display: none !important; }
-      .nav-hamburger { display: flex !important; }
+      .nav-hamburger { display: flex !important; margin-left: auto; }
+      .navbar-row { justify-content: space-between; }
+      html, body { overflow-x: hidden; }
       .page-title { font-size: 36px; }
       .section-heading { font-size: 24px; }
       .section-subheading { font-size: 18px; }
       .peter-section { flex-direction: column; align-items: flex-start; }
       .notion-table { font-size: 12px; }
       .notion-table th, .notion-table td { padding: 8px 10px; }
-      .page-container { padding: var(--gap) var(--container-gutter) var(--gap-4); }
+      .page-container { padding: var(--gap) var(--container-gutter) var(--gap-2); }
+      .footer { padding: 48px 0 24px !important; }
+      .section-divider { margin: var(--gap-2) 0 !important; }
     }
     @media (min-width: 992px) { .nav-hamburger { display: none !important; } }
 

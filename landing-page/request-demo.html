@@ -177,12 +177,21 @@
     /* ═══════ RESPONSIVE ═══════ */
     @media (max-width: 991px) {
       .nav-links, .nav-btns, .navbar-right { display: none !important; }
-      .nav-hamburger { display: flex !important; }
+      .nav-hamburger { display: flex !important; margin-left: auto; }
+      .navbar-row { justify-content: space-between; }
+      html, body { overflow-x: hidden; }
       h1 { font-size: 47.31px; line-height: 1em; } h2 { font-size: 37.5px; line-height: 1.1em; } h3 { font-size: 29.7px; line-height: 1.2em; } h4 { font-size: 23.6px; line-height: 1.25em; }
       .footer-top { grid-template-columns: 1fr; }
       .demo-grid { grid-template-columns: 1fr; gap: var(--gap-2); }
       .demo-left { position: static; }
       .form-grid { grid-template-columns: 1fr; }
+      .subscribe-form { flex-direction: column !important; max-width: 100% !important; }
+      .subscribe-form .button { width: 100%; }
+      .footer-social-col { align-items: flex-start !important; }
+      .footer-social-col .text-badge { text-align: left !important; }
+      .footer-social-links { justify-content: flex-start !important; gap: var(--gap-075) !important; }
+      .section { padding: 48px 0 !important; }
+      .footer { padding: 48px 0 24px !important; }
     }
     @media (min-width: 992px) { .nav-hamburger { display: none !important; } }
     @media (max-width: 479px) {
@@ -463,7 +472,7 @@
           <h3 style="max-width:var(--grid-col-4);">Fast-Track to building startup from ground zero.</h3>
           <div><div class="text-badge text-muted" style="margin-bottom:var(--gap-075);">monthly Newsletter</div><div class="subscribe-form"><input type="email" placeholder="Email" class="subscribe-input" /><button class="button light-1">Subscribe</button></div><p class="text-small" style="opacity:.2;margin-top:var(--gap-05);">We won't share your data with third parties. Ever.</p></div>
         </div>
-        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:var(--gap-3);"><div><div class="text-badge text-muted" style="margin-bottom:var(--gap-075);text-align:right;">social</div><div style="display:flex;gap:var(--gap);"><a href="https://www.linkedin.com/school/107497789" target="_blank" class="footer-link">Linkedin</a><a href="https://www.linkedin.com/in/shndon0220/" target="_blank" class="footer-link">LinkedIn - Peter</a><a href="https://www.instagram.com/outsome.co/" target="_blank" class="footer-link">Instagram</a><a href="https://x.com/_seoulrider" target="_blank" class="footer-link">X (Twitter)</a></div></div></div>
+        <div class="footer-social-col" style="display:flex;flex-direction:column;align-items:flex-end;gap:var(--gap-3);"><div><div class="text-badge text-muted" style="margin-bottom:var(--gap-075);text-align:right;">social</div><div class="footer-social-links" style="display:flex;gap:var(--gap);flex-wrap:wrap;justify-content:flex-end;"><a href="https://www.linkedin.com/school/107497789" target="_blank" class="footer-link">Linkedin</a><a href="https://www.linkedin.com/in/shndon0220/" target="_blank" class="footer-link">LinkedIn - Peter</a><a href="https://www.instagram.com/outsome.co/" target="_blank" class="footer-link">Instagram</a><a href="https://x.com/_seoulrider" target="_blank" class="footer-link">X (Twitter)</a></div></div></div>
       </div>
       <div>
         <div class="footer-cr"><a href="/" style="display:flex;align-items:center;gap:10px;"><img src="slit-logo-light.svg" alt="SL:IT" style="height:32px;width:auto;" /><span style="opacity:.3;font-size:24px;font-weight:300;color:#FEFAF3;">&times;</span><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" style="height:36px;width:36px;" /></a><p class="text-small" style="opacity:.2;">&copy; Copyright SL:IT &times; Outsome</p></div>

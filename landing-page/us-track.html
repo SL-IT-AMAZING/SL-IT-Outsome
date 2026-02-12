@@ -269,7 +269,9 @@
     /* ═══════ RESPONSIVE ═══════ */
     @media (max-width: 991px) {
       .nav-links, .nav-btns, .navbar-right { display: none !important; }
-      .nav-hamburger { display: flex !important; }
+      .nav-hamburger { display: flex !important; margin-left: auto; }
+      .navbar-row { justify-content: space-between; }
+      html, body { overflow-x: hidden; }
       h1 { font-size: 47.31px; line-height: 1em; }
       h2 { font-size: 37.5px; line-height: 1.1em; }
       h3 { font-size: 29.7px; line-height: 1.2em; }
@@ -280,6 +282,13 @@
       .us-hero-content { padding: var(--section-pad) var(--container-gutter); }
       .hero-email-form { flex-direction: column; }
       .partner-logos-row { gap: var(--gap-15); }
+      .subscribe-form { flex-direction: column !important; max-width: 100% !important; }
+      .subscribe-form .button { width: 100%; }
+      .footer-social-col { align-items: flex-start !important; }
+      .footer-social-col .text-badge { text-align: left !important; }
+      .footer-social-links { justify-content: flex-start !important; gap: var(--gap-075) !important; }
+      .section { padding: 48px 0 !important; }
+      .footer { padding: 48px 0 24px !important; }
     }
     @media (min-width: 992px) { .nav-hamburger { display: none !important; } }
 
@@ -529,10 +538,10 @@
             <p class="text-small" style="opacity:.2;margin-top:var(--gap-05);">We won't share your data with third parties. Ever.</p>
           </div>
         </div>
-        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:var(--gap-3);">
+        <div class="footer-social-col" style="display:flex;flex-direction:column;align-items:flex-end;gap:var(--gap-3);">
           <div>
             <div class="text-badge text-muted" style="margin-bottom:var(--gap-075);text-align:right;">social</div>
-            <div style="display:flex;gap:var(--gap);">
+            <div class="footer-social-links" style="display:flex;gap:var(--gap);flex-wrap:wrap;justify-content:flex-end;">
               <a href="https://www.linkedin.com/school/107497789" target="_blank" class="footer-link">Linkedin</a>
               <a href="https://www.linkedin.com/in/shndon0220/" target="_blank" class="footer-link">LinkedIn - Peter</a>
               <a href="https://www.instagram.com/outsome.co/" target="_blank" class="footer-link">Instagram</a>
