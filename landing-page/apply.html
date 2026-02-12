@@ -587,7 +587,7 @@
 
             <div class="field">
               <label class="field-label font-kr">서비스 웹사이트</label>
-              <input id="f-website" type="url" placeholder="https://yourstartup.com" />
+              <input id="f-website" type="text" placeholder="https://yourstartup.com" />
             </div>
 
             <div class="field">
@@ -619,7 +619,7 @@
 
             <div class="field">
               <label class="field-label font-kr">회사 소개서 / IR덱 URL</label>
-              <input id="f-irDeck" type="url" placeholder="Google Drive, Notion, 또는 직접 링크" />
+              <input id="f-irDeck" type="text" placeholder="Google Drive, Notion, 또는 직접 링크" />
               <span class="field-hint">PDF, Google Slides, Notion 등 공유 가능한 링크를 입력해주세요.</span>
             </div>
 
@@ -716,10 +716,10 @@
       address: document.getElementById('f-address').value.trim(),
       track: (document.querySelector('input[name="track"]:checked') || {}).value || '',
       company: document.getElementById('f-company').value.trim(),
-      website: document.getElementById('f-website').value.trim(),
+      website: (function(v){ v = v.trim(); if (v && !/^https?:\/\//i.test(v)) v = 'https://' + v; return v; })(document.getElementById('f-website').value),
       oneLiner: document.getElementById('f-oneLiner').value.trim(),
       sector: document.getElementById('f-sector').value,
-      irDeck: document.getElementById('f-irDeck').value.trim(),
+      irDeck: (function(v){ v = v.trim(); if (v && !/^https?:\/\//i.test(v)) v = 'https://' + v; return v; })(document.getElementById('f-irDeck').value),
       devStatus: document.getElementById('f-devStatus').value.trim(),
       revenue: document.getElementById('f-revenue').value.trim(),
       businessModel: document.getElementById('f-businessModel').value
