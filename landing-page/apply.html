@@ -537,7 +537,7 @@
 
             <div class="field">
               <label class="field-label font-kr">링크드인 URL <span class="req">*</span></label>
-              <input id="f-linkedin" type="url" placeholder="https://linkedin.com/in/yourprofile" required />
+              <input id="f-linkedin" type="text" placeholder="https://linkedin.com/in/yourprofile" required />
             </div>
 
             <div class="field">
@@ -712,7 +712,7 @@
       nameEn: document.getElementById('f-nameEn').value.trim(),
       phone: document.getElementById('f-phone').value.trim(),
       email: document.getElementById('f-email').value.trim(),
-      linkedin: document.getElementById('f-linkedin').value.trim(),
+      linkedin: (function(v){ v = v.trim(); if (v && !/^https?:\/\//i.test(v)) v = 'https://' + v; return v; })(document.getElementById('f-linkedin').value),
       address: document.getElementById('f-address').value.trim(),
       track: (document.querySelector('input[name="track"]:checked') || {}).value || '',
       company: document.getElementById('f-company').value.trim(),
