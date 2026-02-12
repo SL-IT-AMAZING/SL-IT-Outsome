@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>US Track — SL:IT × Outsome | Live together. Build together. Enter the U.S. together.</title>
+  <meta name="description" content="US Track brings founders into a shared living and working environment in SF, where GTM and narrative are pressure-tested daily with operators, YC founders, and real U.S. buyers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    @font-face { font-family: "BDO Grotesk"; src: url("https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe664_BDOGrotesk-VF.ttf") format("truetype"); font-weight: 300 900; font-style: normal; font-display: swap; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --color-light-1: #0A0A0A;
+      --color-light-2: #141414;
+      --color-dark: #FEFAF3;
+      --color-dark-7: rgba(255,255,255,0.06);
+      --color-dark-12: rgba(255,255,255,0.12);
+      --color-light-1-10: rgba(10,10,10,0.1);
+      --color-light-1-30: rgba(10,10,10,0.3);
+      --color-glass-border: rgba(255,255,255,0.08);
+      --color-glass-surface: rgba(20,20,20,0.6);
+      --font-body: "BDO Grotesk", "DM Sans", "Noto Sans KR", Arial, sans-serif;
+      --font-headings: "Libre Caslon Condensed", "Times New Roman", serif;
+      --font-badges: "Roboto Mono", "Trebuchet MS", monospace;
+      --gap: 24px;
+      --gap-05: 12px;
+      --gap-075: 18px;
+      --gap-15: 36px;
+      --gap-2: 48px;
+      --gap-3: 72px;
+      --gap-4: 96px;
+      --gap-5: 120px;
+      --grid-gap-s: 12px;
+      --grid-gap-m: 24px;
+      --grid-col-3: 330px;
+      --grid-col-4: 448px;
+      --grid-col-5: 566px;
+      --grid-col-6: 684px;
+      --grid-col-8: 920px;
+      --grid-col-10: 1156px;
+      --container-max: 1440px;
+      --container-gutter: 24px;
+      --section-pad: 96px;
+      --section-pad-lg: 144px;
+      --radius: 6px;
+      --radius-2x: 12px;
+      --btn-height: 48px;
+      --btn-px: 24px;
+      --btn-radius: 9px;
+      --btn-height-sm: 42px;
+      --btn-px-sm: 18px;
+      --nav-height: 72px;
+      --glass-blur: 12px;
+      --glass-shadow: 0 2px 18px 0 rgba(0,0,0,0.4);
+    }
+    html { font-family: var(--font-body); font-size: 14px; line-height: 1.4; color: var(--color-dark); scroll-behavior: smooth; }
+    body { background: var(--color-light-1); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    ::selection { background: rgba(254,250,243,0.2); color: #FEFAF3; }
+    img { max-width: 100%; display: inline-block; vertical-align: middle; }
+    a { color: inherit; text-decoration: none; }
+    .main-container { max-width: var(--container-max); padding: 0 var(--container-gutter); width: 100%; margin: 0 auto; }
+    .section { padding: var(--section-pad) 0; overflow: clip; }
+    h1, h2, h3, h4, h5 { font-family: var(--font-headings); font-weight: 400; margin: 0; }
+    h1 { font-size: 70.59px; line-height: 1em; letter-spacing: -0.02em; }
+    h2 { font-size: 56.02px; line-height: 1.1em; letter-spacing: -0.02em; }
+    h3 { font-size: 44.46px; line-height: 1.2em; letter-spacing: -0.02em; }
+    h4 { font-size: 35.29px; line-height: 1.25em; letter-spacing: -0.02em; }
+    h5 { font-size: 28.01px; line-height: 1.3em; letter-spacing: -0.01em; }
+    .text-lead { font-size: 17.64px; line-height: 1.4em; }
+    .text-small { font-size: 11.11px; line-height: 1.4em; }
+    .text-badge { font-family: var(--font-badges); font-size: 11.11px; line-height: 1.4; letter-spacing: 0.1em; text-transform: uppercase; }
+    .text-muted { opacity: 0.5; }
+    .text-bold { font-variation-settings: "wght" 550; }
+    .font-kr { font-family: "Noto Sans KR", var(--font-body); }
+    .button { height: var(--btn-height); padding: 0 var(--btn-px); gap: var(--gap-05); border-radius: var(--btn-radius); background: var(--color-dark); color: var(--color-light-1); font-weight: 500; font-size: 14px; display: inline-flex; justify-content: center; align-items: center; border: 1px solid transparent; cursor: pointer; overflow: hidden; transition: background-color 100ms ease-in-out, border-color 100ms ease-in-out, box-shadow 100ms ease-in-out, opacity 100ms ease-in-out; text-decoration: none; white-space: nowrap; }
+    .button:hover { background-color: #e8e1d4; box-shadow: rgba(254,250,243,0.1) 0px 1px 1px 0px, rgba(254,250,243,0.12) 0px 0px 0px 1px, rgba(254,250,243,0.06) 0px 3px 9px 0px; }
+    .button.sm { height: var(--btn-height-sm); padding: 0 var(--btn-px-sm); }
+    .button.light-2 { background: rgba(255,255,255,0.1); color: #FEFAF3; border: 1px solid rgba(255,255,255,0.15); }
+    .button.light-2:hover { background-color: rgba(255,255,255,0.18); }
+    .button.light-1 { background: rgba(255,255,255,0.1); color: #FEFAF3; border: 1px solid rgba(255,255,255,0.12); }
+    .button.light-1:hover { background-color: rgba(255,255,255,0.18); }
+    .button.outline { background: transparent; color: #FEFAF3; border: 1px solid rgba(255,255,255,0.2); }
+    .button.outline:hover { background-color: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.35); }
+    .button.full-w { width: 100%; }
+    .btn-wrap { height: 1.4em; display: block; position: relative; overflow: hidden; }
+    .btn-init { display: block; transition: transform .35s cubic-bezier(.76,0,.24,1); }
+    .btn-reveal { position: absolute; top: 0; left: 0; width: 100%; transform: translateY(100%); transition: transform .35s cubic-bezier(.76,0,.24,1); }
+    .button:hover .btn-init, a:hover > .btn-wrap .btn-init { transform: translateY(-100%); }
+    .button:hover .btn-reveal, a:hover > .btn-wrap .btn-reveal { transform: translateY(0); }
+    .navbar { z-index: 99; background: var(--color-light-1); position: sticky; top: 0; }
+    .navbar-row { height: var(--nav-height); gap: var(--gap-2); display: flex; align-items: center; }
+    .nav-links { gap: var(--gap); display: flex; align-items: center; }
+    .nav-link { font-size: 14px; font-weight: 500; opacity: .7; transition: opacity .2s; }
+     .nav-link:hover { opacity: 1; }
+     .nav-dropdown { position: relative; }
+     .nav-dropdown .nav-link { display:flex;align-items:center;gap:4px;cursor:pointer; }
+     .nav-dropdown .nav-link svg { width:12px;height:12px;transition:transform .2s; }
+     .nav-dropdown:hover .nav-link svg { transform:rotate(180deg); }
+     .nav-dropdown:hover .nav-link { opacity:1; }
+     .dropdown-panel { position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(8px);opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;min-width:560px;background:var(--color-light-1);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);overflow:hidden;display:flex;box-shadow:0 16px 48px rgba(0,0,0,0.4); }
+     .nav-dropdown:hover .dropdown-panel { opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto; }
+     .dropdown-left { padding:var(--gap-15);display:flex;flex-direction:column;gap:4px;flex:1; }
+     .dropdown-title { font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;opacity:.4;margin-bottom:8px; }
+     .dropdown-item { display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:8px;transition:background .2s; }
+     .dropdown-item:hover { background:rgba(255,255,255,0.06); }
+     .dropdown-item-label { font-weight:600;font-size:14px; }
+     .dropdown-item-desc { font-size:12px;opacity:.5;line-height:1.4; }
+     .dropdown-item.disabled { opacity:.35;pointer-events:none; }
+     .dropdown-right { width:240px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end; }
+     .dropdown-right img.dropdown-cta-bg { position:absolute;inset:0;width:100%;height:100%;object-fit:cover; }
+     .dropdown-cta-content { position:relative;z-index:1;padding:var(--gap);display:flex;flex-direction:column;gap:var(--gap-075);background:linear-gradient(transparent,rgba(0,0,0,0.7) 30%); }
+     [data-theme='light'] .dropdown-panel { background:#FEFAF3;border-color:rgba(0,0,0,0.1);box-shadow:0 16px 48px rgba(0,0,0,0.12); }
+     [data-theme='light'] .dropdown-item:hover { background:rgba(0,0,0,0.04); }
+     .navbar-right { gap: var(--gap); display: flex; align-items: center; margin-left: auto; }
+    .nav-btns { gap: var(--gap-05); display: flex; }
+    .nav-logo { height: 18px; width: auto; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 12px; }
+    img[src*="icon-interface-arrow-up-right"], img[src*="icon-interface-star"] { filter: invert(1); }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    .anim-fade-up { animation: fadeUp .7s ease forwards; opacity: 0; }
+
+    /* ═══════ HERO ═══════ */
+    .us-hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .us-hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .us-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.75) 100%);
+      z-index: 1;
+    }
+    .us-hero-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: var(--gap-15);
+      max-width: var(--grid-col-8);
+      padding: var(--section-pad-lg) var(--container-gutter) var(--section-pad);
+    }
+    .hero-email-form {
+      display: flex;
+      gap: var(--gap-05);
+      max-width: 480px;
+      width: 100%;
+    }
+    .hero-email-input {
+      flex: 1;
+      height: var(--btn-height);
+      padding: 8px var(--btn-px-sm);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--btn-radius);
+      color: #FEFAF3;
+      font-size: 14px;
+      font-family: var(--font-body);
+    }
+    .hero-email-input::placeholder { color: rgba(254,250,243,0.3); }
+
+    /* ═══════ FEATURES ═══════ */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: var(--grid-gap-m);
+    }
+    .feature-card {
+      border: 1px solid var(--color-dark-12);
+      border-radius: var(--radius);
+      background: var(--color-glass-surface);
+      box-shadow: 0 4px 18px 0 rgba(0,0,0,0.12);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .feature-card-img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+    .feature-card-body {
+      padding: var(--gap-15) var(--gap) var(--gap);
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap);
+      flex: 1;
+    }
+
+    /* ═══════ MESSAGE WIDGET ═══════ */
+    .msg-widget {
+      margin-top: var(--gap);
+      padding: var(--gap-075);
+      border: 1px solid var(--color-glass-border);
+      border-radius: var(--radius-2x);
+      background: var(--color-glass-surface);
+      backdrop-filter: blur(var(--glass-blur));
+      box-shadow: var(--glass-shadow);
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-075);
+    }
+    .msg-widget-header {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-075);
+    }
+    .msg-widget-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .msg-widget-attach {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-05);
+      padding: var(--gap-05) var(--gap-075);
+      background: rgba(255,255,255,0.05);
+      border-radius: var(--radius-2x);
+      margin-top: 4px;
+    }
+
+    /* ═══════ PARTNER LOGOS ═══════ */
+    .partner-logos-row {
+      display: flex;
+      gap: var(--gap-3);
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      padding: 16px 24px;
+      border-radius: 8px;
+    }
+    .partner-logos-row img { filter: invert(1) brightness(0.8); }
+
+    /* ═══════ FOOTER ═══════ */
+    .footer { padding: var(--gap-4) 0 var(--gap-2); background: #000; color: #FEFAF3; }
+    .footer-content { gap: var(--gap-5); display: flex; flex-direction: column; }
+    .footer-top { gap: var(--gap); display: grid; grid-template-columns: 1fr 1fr; }
+    .subscribe-form { max-width: var(--grid-col-4); gap: var(--gap-05); width: 100%; display: flex; }
+    .subscribe-input { flex: 1; height: var(--btn-height); padding: 8px var(--btn-px-sm); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--btn-radius); color: #FEFAF3; font-size: 14px; font-family: var(--font-body); }
+    .subscribe-input::placeholder { color: rgba(254,250,243,0.3); }
+    .footer-link { color: #FEFAF3; opacity: .5; transition: opacity .2s, color .2s; }
+    .footer-link:hover { opacity: 1; }
+    .footer-cr { padding-top: var(--gap); border-top: 1px solid rgba(254,250,243,0.1); display: flex; flex-direction: column; gap: var(--gap); }
+
+    /* ═══════ MOBILE MENU ═══════ */
+    .mobile-menu { display: none; background: #0A0A0A; border-top: 1px solid rgba(255,255,255,0.1); padding: var(--gap-075) var(--container-gutter) var(--gap); }
+    .mobile-menu.open { display: flex; flex-direction: column; gap: var(--gap-075); }
+
+    /* ═══════ RESPONSIVE ═══════ */
+    @media (max-width: 991px) {
+      .nav-links, .nav-btns, .navbar-right { display: none !important; }
+      .nav-hamburger { display: flex !important; }
+      h1 { font-size: 47.31px; line-height: 1em; }
+      h2 { font-size: 37.5px; line-height: 1.1em; }
+      h3 { font-size: 29.7px; line-height: 1.2em; }
+      h4 { font-size: 23.6px; line-height: 1.25em; }
+      .features-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      .us-hero { min-height: 80vh; }
+      .us-hero-content { padding: var(--section-pad) var(--container-gutter); }
+      .hero-email-form { flex-direction: column; }
+      .partner-logos-row { gap: var(--gap-15); }
+    }
+    @media (min-width: 992px) { .nav-hamburger { display: none !important; } }
+
+    /* ═══════ LIGHT THEME ═══════ */
+    [data-theme="light"] {
+      --color-light-1: #FEFAF3;
+      --color-light-2: #F1EADD;
+      --color-dark: #000;
+      --color-dark-7: rgba(47,44,37,0.06);
+      --color-dark-12: rgba(47,44,37,0.12);
+      --color-light-1-10: rgba(254,250,243,0.1);
+      --color-light-1-30: rgba(254,250,243,0.3);
+      --color-glass-border: rgba(255,255,255,0.4);
+      --color-glass-surface: rgba(254,250,243,0.6);
+      --glass-shadow: 0 2px 18px 0 rgba(0,0,0,0.12);
+    }
+    [data-theme="light"] ::selection { background: rgba(0,0,0,0.15); color: #000; }
+    [data-theme="light"] body { background: #FEFAF3; }
+    [data-theme="light"] .navbar { background: #FEFAF3; }
+    [data-theme="light"] .button { background: #000; color: #FEFAF3; }
+    [data-theme="light"] .button:hover { background-color: rgba(25,25,24,0.75); box-shadow: rgba(0,0,0,0.12) 0px 1px 1px 0px, rgba(32,32,31,0.16) 0px 0px 0px 1px; }
+    [data-theme="light"] .button.light-2 { background: #F1EADD; color: #000; border: 1px solid transparent; }
+    [data-theme="light"] .button.light-2:hover { background-color: #e8e1d4; }
+    [data-theme="light"] .button.light-1 { background: #FEFAF3; color: #000; }
+    [data-theme="light"] .button.outline { background: transparent; color: #000; border: 1px solid rgba(47,44,37,0.12); }
+    [data-theme="light"] .button.outline:hover { background-color: rgba(0,0,0,0.04); border-color: rgba(47,44,37,0.3); }
+    [data-theme="light"] .feature-card { background: rgba(254,250,243,0.6); border-color: rgba(47,44,37,0.12); }
+    [data-theme="light"] .footer { background: #000; color: #FEFAF3; }
+    [data-theme="light"] .footer-link { color: #FEFAF3; }
+    [data-theme="light"] .subscribe-input { background: rgba(254,250,243,0.1); color: #FEFAF3; }
+    [data-theme="light"] .mobile-menu { background: #FEFAF3; border-color: rgba(47,44,37,0.12); }
+
+    /* Light mode: logo swap */
+    .logo-light-mode { display: none; }
+    [data-theme="light"] .logo-dark-mode { display: none !important; }
+    [data-theme="light"] .logo-light-mode { display: inline-block !important; }
+    [data-theme="light"] .navbar .outsome-symbol { filter: invert(1); }
+
+    /* Light mode: hamburger */
+    [data-theme="light"] .nav-hamburger svg line { stroke: #000; }
+
+    /* Light mode: star icons */
+    [data-theme="light"] img[src*="icon-interface-arrow-up-right"], [data-theme="light"] img[src*="icon-interface-star"] { filter: none; }
+
+    /* Light mode: partner logos */
+    [data-theme="light"] .partner-logos-row img { filter: none; }
+
+    /* Light mode: hero overlay */
+    [data-theme="light"] .us-hero-overlay { background: linear-gradient(180deg, rgba(254,250,243,0.25) 0%, rgba(254,250,243,0.6) 100%); }
+    [data-theme="light"] .us-hero-content { color: #000; }
+    [data-theme="light"] .us-hero-content .text-badge { color: #000; }
+    [data-theme="light"] .us-hero-content h1 { color: #000; }
+    [data-theme="light"] .us-hero-content .text-lead { color: #000; }
+    [data-theme="light"] .hero-email-input { background: rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.12); color: #000; }
+    [data-theme="light"] .hero-email-input::placeholder { color: rgba(0,0,0,0.3); }
+    [data-theme="light"] .us-hero-content .text-small { color: #000; }
+
+    /* ═══════ THEME TOGGLE ═══════ */
+    .theme-toggle { background: none; border: 1px solid rgba(255,255,255,0.15); border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--color-dark); transition: border-color 0.2s, background 0.2s; flex-shrink: 0; }
+    .theme-toggle:hover { background: rgba(255,255,255,0.08); }
+    [data-theme="light"] .theme-toggle { border-color: rgba(0,0,0,0.15); }
+    [data-theme="light"] .theme-toggle:hover { background: rgba(0,0,0,0.05); }
+    [data-theme="light"] .icon-sun { display: none !important; }
+    [data-theme="light"] .icon-moon { display: block !important; }
+
+    /* ═══════ SMOOTH TRANSITION ═══════ */
+    html, body, .navbar, .section, .feature-card, .button, .footer, .mobile-menu { transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+  </style>
+  <script>
+  (function(){
+    var saved = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    if(theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  })();
+  function toggleTheme(){
+    var current = document.documentElement.getAttribute('data-theme');
+    var next = current === 'light' ? 'dark' : 'light';
+    if(next === 'dark') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', next);
+  }
+  </script>
+</head>
+<body>
+
+<!-- ══════ NAVBAR ══════ -->
+<nav class="navbar">
+  <div class="main-container">
+    <div class="navbar-row">
+      <a href="index.html" style="display:flex;align-items:center;gap:8px;"><img src="slit-logo-light.svg" alt="SL:IT" class="nav-logo logo-dark-mode" style="height:16px;width:auto;" /><img src="slit-logo-dark.svg" alt="SL:IT" class="nav-logo logo-light-mode" style="height:16px;width:auto;" /><span style="opacity:.25;font-size:14px;font-weight:300;">×</span><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" class="outsome-symbol" style="height:24px;width:24px;" /></a>
+       <div class="nav-links">
+         <a href="index.html" class="nav-link">Home</a>
+         <div class="nav-dropdown">
+           <span class="nav-link">Programs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+           <div class="dropdown-panel">
+             <div class="dropdown-left">
+               <div class="dropdown-title">Tracks</div>
+               <a href="index.html#programs" class="dropdown-item"><span class="dropdown-item-label">Overview</span><span class="dropdown-item-desc">Check out our program details.</span></a>
+               <a href="https://outsome.notion.site/foundersprint" target="_blank" class="dropdown-item"><span class="dropdown-item-label">Founder Sprint</span><span class="dropdown-item-desc">Build the foundation that actually holds in 4 weeks here in Seoul.</span></a>
+               <div class="dropdown-item disabled"><span class="dropdown-item-label">US Track <span style="font-size:11px;font-weight:400;">(Coming Soon)</span></span><span class="dropdown-item-desc">Enter the US market under real pressure. On-the-ground immersion in SF.</span></div>
+             </div>
+             <div class="dropdown-right">
+               <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe684_photo-art-09.webp" alt="" class="dropdown-cta-bg" />
+               <div class="dropdown-cta-content">
+                 <div class="text-badge" style="opacity:.6;">Founder Sprint</div>
+                 <p style="font-weight:600;font-size:16px;line-height:1.3;color:#fff;">Ultra Premium Acceleration for 4 Weeks</p>
+                 <a href="apply.html" class="button sm"><span class="btn-wrap"><span class="btn-init">Apply Now</span><span class="btn-reveal">Apply Now</span></span></a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+      <div class="navbar-right">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <div class="nav-btns">
+          <a href="request-demo.html" class="button sm light-2"><span class="btn-wrap"><span class="btn-init">Book a call</span><span class="btn-reveal">Book a call</span></span></a>
+          <a href="apply.html" class="button sm"><span class="btn-wrap"><span class="btn-init">Apply Now</span><span class="btn-reveal">Apply Now</span></span></a>
+        </div>
+      </div>
+      <button class="nav-hamburger" onclick="document.getElementById('mob-nav').classList.toggle('open')">
+        <svg width="20" height="14" fill="none"><line y1="1" x2="20" y2="1" stroke="#FEFAF3" stroke-width="1.5"/><line y1="7" x2="20" y2="7" stroke="#FEFAF3" stroke-width="1.5"/><line y1="13" x2="14" y2="13" stroke="#FEFAF3" stroke-width="1.5"/></svg>
+      </button>
+    </div>
+  </div>
+   <div id="mob-nav" class="mobile-menu">
+     <a href="index.html" class="nav-link">Home</a>
+     <a href="index.html#programs" class="nav-link">Programs</a>
+     <a href="https://outsome.notion.site/foundersprint" target="_blank" class="nav-link" style="padding-left:12px;opacity:.5;font-size:13px;">Founder Sprint</a>
+     <div style="display:flex;gap:var(--gap-05);padding-top:var(--gap-075);border-top:1px solid var(--color-dark-12);align-items:center;">
+      <a href="request-demo.html" class="button sm light-2" style="flex:1">Book a call</a>
+      <a href="apply.html" class="button sm" style="flex:1">Apply Now</a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════ HERO ══════ -->
+<section class="us-hero">
+  <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7ea_IMG_6518.webp" alt="US Track — San Francisco" class="us-hero-bg" />
+  <div class="us-hero-overlay"></div>
+  <div class="us-hero-content anim-fade-up">
+    <div class="text-badge" style="opacity:.5;">US TRACK · SAN FRANCISCO</div>
+    <h1 style="max-width:var(--grid-col-8);">Live together. Build together. <em style="font-style:italic;">Enter the U.S.</em> together.</h1>
+    <p class="text-lead" style="max-width:var(--grid-col-6);opacity:.7;">US Track brings founders into a shared living and working environment in SF, where GTM and narrative are pressure-tested daily with operators, YC founders, and real U.S. buyers.</p>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:var(--gap-075);width:100%;">
+      <p class="text-small text-bold" style="opacity:.8;">Apply for the next US Track</p>
+      <form class="hero-email-form" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" class="hero-email-input" />
+        <button class="button" type="submit"><span class="btn-wrap"><span class="btn-init">Apply now</span><span class="btn-reveal">Apply now</span></span></button>
+      </form>
+      <p class="text-small" style="opacity:.35;">Available only to Founder Sprint graduates. Limited cohort. No observers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FEATURES ═══════ -->
+<section class="section">
+  <div class="main-container">
+    <div style="display:flex;flex-direction:column;gap:var(--gap-4);">
+      <div style="display:flex;flex-direction:column;gap:var(--gap-15);max-width:var(--grid-col-8);">
+        <div class="text-badge text-muted">WHY FOUNDERS CHOOSE US TRACK</div>
+        <h2>Save two years in <em style="font-style:italic;">two weeks.</em></h2>
+        <p class="text-lead text-muted">No simulations. No hypothetical demos. Just fast, direct signals from operators, YC founders, and VCs of Silicon Valley.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1: 24/7 Acceleration -->
+        <div class="feature-card">
+          <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7ec_KakaoTalk_Photo_2026-01-06-04-21-25.webp" alt="24/7 Acceleration" class="feature-card-img" />
+          <div class="feature-card-body">
+            <h4 style="font-size:28px;">24/7 Acceleration</h4>
+            <p class="text-muted" style="line-height:1.6;">Seven startup founders will live and build together in one place. You cook, work out, argue, iterate, break down, and level up together. This will be the most concentrated two weeks of your founder life.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2: Ride in Safe -->
+        <div class="feature-card">
+          <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe688_photo-art-02.webp" alt="Ride in Safe" class="feature-card-img" />
+          <div class="feature-card-body">
+            <h4 style="font-size:28px;">Ride in Safe</h4>
+            <p class="text-muted" style="line-height:1.6;">San Francisco is intense if you don't know it. Peter is on the ground with you, guiding where to stay, eat, move, and eventually settle. You can focus fully on building and selling. Don't worry.</p>
+            <!-- Message widget -->
+            <div class="msg-widget">
+              <div class="msg-widget-header">
+                <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe78d_Peter.png" alt="Candace P." class="msg-widget-avatar" style="object-position:top;" />
+                <div>
+                  <span style="font-weight:600;font-size:12px;">Candace P.</span>
+                  <span class="text-small" style="margin-left:6px;opacity:.3;">12:13pm</span>
+                </div>
+              </div>
+              <p class="text-small" style="opacity:.6;line-height:1.6;">Thanks again for meeting with me today. I'd love to continue the partnership conversation next week.</p>
+              <div class="msg-widget-attach">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:.4;"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span class="text-small" style="flex:1;opacity:.4;">Download Invoice</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: Meet Real Silicon Valley People -->
+        <div class="feature-card">
+          <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7eb_KakaoTalk_Photo_2026-01-06-04-17-38.webp" alt="Meet Real Silicon Valley People" class="feature-card-img" />
+          <div class="feature-card-body">
+            <h4 style="font-size:28px;">Meet Real Silicon Valley People</h4>
+            <p class="text-muted" style="line-height:1.6;">No startup representatives. No HQ tours. Meet real YC founders and pre-seed VCs who actually invest in Korean and global startups. All mentors and guests are personally handpicked.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ PARTNER LOGOS ══════ -->
+<section class="section" style="padding-top:0;">
+  <div class="main-container">
+    <div style="display:flex;flex-direction:column;gap:var(--gap-2);align-items:center;text-align:center;">
+      <p class="text-muted">Join over 20,000 founders already growing with Outsome.</p>
+      <div class="partner-logos-row">
+        <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe768_Group%20324.svg" alt="" style="height:32px;width:auto;opacity:.5;" />
+        <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe76e_image%20492.svg" alt="" style="height:32px;width:auto;opacity:.5;" />
+        <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe76c_Screenshot%202025-11-28%20at%207.56.24%E2%80%AFPM-Photoroom%202.svg" alt="" style="height:32px;width:auto;opacity:.5;" />
+        <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe769_image%20491.svg" alt="" style="height:32px;width:auto;opacity:.5;" />
+        <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe76a_orbt.svg" alt="" style="height:32px;width:auto;opacity:.5;" />
+      </div>
+      <a href="https://outsome.notion.site/2b17922d1a948118a1fce5a1fb84ef74?v=2b17922d1a94817f9f40000cb24cf98a&pvs=74" target="_blank" class="button outline" style="margin-top:var(--gap);"><span class="btn-wrap"><span class="btn-init">Meet our Startups</span><span class="btn-reveal">Meet our Startups</span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FOOTER ══════ -->
+<footer class="footer">
+  <div class="main-container">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div style="display:flex;flex-direction:column;gap:var(--gap-3);">
+          <h3 style="max-width:var(--grid-col-4);">Fast-Track to building startup from ground zero.</h3>
+          <div>
+            <div class="text-badge text-muted" style="margin-bottom:var(--gap-075);">monthly Newsletter</div>
+            <div class="subscribe-form"><input type="email" placeholder="Email" class="subscribe-input" /><button class="button light-1">Subscribe</button></div>
+            <p class="text-small" style="opacity:.2;margin-top:var(--gap-05);">We won't share your data with third parties. Ever.</p>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:var(--gap-3);">
+          <div>
+            <div class="text-badge text-muted" style="margin-bottom:var(--gap-075);text-align:right;">social</div>
+            <div style="display:flex;gap:var(--gap);">
+              <a href="https://www.linkedin.com/school/107497789" target="_blank" class="footer-link">Linkedin</a>
+              <a href="https://www.linkedin.com/in/shndon0220/" target="_blank" class="footer-link">LinkedIn - Peter</a>
+              <a href="https://www.instagram.com/outsome.co/" target="_blank" class="footer-link">Instagram</a>
+              <a href="https://x.com/_seoulrider" target="_blank" class="footer-link">X (Twitter)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-cr">
+          <a href="index.html" style="display:flex;align-items:center;gap:10px;">
+            <img src="slit-logo-light.svg" alt="SL:IT" style="height:32px;width:auto;" />
+            <span style="opacity:.3;font-size:24px;font-weight:300;color:#FEFAF3;">×</span>
+            <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" style="height:36px;width:36px;" />
+          </a>
+          <p class="text-small" style="opacity:.2;">© Copyright SL:IT × Outsome</p>
+        </div>
+        <div style="padding-top:var(--gap);border-top:1px solid rgba(254,250,243,0.1);margin-top:var(--gap);">
+          <p style="font-size:11.11px;opacity:.5;line-height:1.6;max-width:1038px;">본 프로그램은 교육 목적으로 제공되며, 투자 조언이나 수익 보장을 하지 않습니다. SL:IT × Outsome은 참가자에게 지분이나 수익 배분을 요구하지 않습니다. 모든 콘텐츠와 결과물의 지적 재산권은 참가자에게 귀속됩니다. © 2026 SL:IT × Outsome. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -63,9 +63,28 @@
     .navbar { z-index: 99; background: var(--color-light-1); position: sticky; top: 0; border-bottom: 1px solid var(--color-dark-12); }
     .navbar-row { height: var(--nav-height); gap: var(--gap-2); display: flex; align-items: center; max-width: var(--container-max); padding: 0 var(--container-gutter); width: 100%; margin: 0 auto; }
     .nav-links { gap: var(--gap); display: flex; align-items: center; }
-    .nav-link { font-size: 14px; opacity: .7; transition: opacity .2s; }
-    .nav-link:hover, .nav-link.active { opacity: 1; }
-    .nav-link.active { font-weight: 600; }
+     .nav-link { font-size: 14px; opacity: .7; transition: opacity .2s; }
+     .nav-link:hover, .nav-link.active { opacity: 1; }
+     .nav-link.active { font-weight: 600; }
+     .nav-dropdown { position: relative; }
+     .nav-dropdown .nav-link { display:flex;align-items:center;gap:4px;cursor:pointer; }
+     .nav-dropdown .nav-link svg { width:12px;height:12px;transition:transform .2s; }
+     .nav-dropdown:hover .nav-link svg { transform:rotate(180deg); }
+     .nav-dropdown:hover .nav-link { opacity:1; }
+     .dropdown-panel { position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(8px);opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;min-width:560px;background:var(--color-light-1);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);overflow:hidden;display:flex;box-shadow:0 16px 48px rgba(0,0,0,0.4); }
+     .nav-dropdown:hover .dropdown-panel { opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto; }
+     .dropdown-left { padding:var(--gap-15);display:flex;flex-direction:column;gap:4px;flex:1; }
+     .dropdown-title { font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;opacity:.4;margin-bottom:8px; }
+     .dropdown-item { display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:8px;transition:background .2s; }
+     .dropdown-item:hover { background:rgba(255,255,255,0.06); }
+     .dropdown-item-label { font-weight:600;font-size:14px; }
+     .dropdown-item-desc { font-size:12px;opacity:.5;line-height:1.4; }
+     .dropdown-item.disabled { opacity:.35;pointer-events:none; }
+     .dropdown-right { width:240px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end; }
+     .dropdown-right img.dropdown-cta-bg { position:absolute;inset:0;width:100%;height:100%;object-fit:cover; }
+     .dropdown-cta-content { position:relative;z-index:1;padding:var(--gap);display:flex;flex-direction:column;gap:var(--gap-075);background:linear-gradient(transparent,rgba(0,0,0,0.7) 30%); }
+     [data-theme='light'] .dropdown-panel { background:#FEFAF3;border-color:rgba(0,0,0,0.1);box-shadow:0 16px 48px rgba(0,0,0,0.12); }
+     [data-theme='light'] .dropdown-item:hover { background:rgba(0,0,0,0.04); }
     .navbar-right { gap: var(--gap); display: flex; align-items: center; margin-left: auto; }
     .nav-btns { gap: var(--gap-05); display: flex; }
     .nav-logo { height: 18px; width: auto; }
@@ -441,13 +460,31 @@
 <nav class="navbar">
   <div class="navbar-row">
     <a href="index.html" style="display:flex;align-items:center;gap:8px;"><img src="slit-logo-dark.svg" alt="SL:IT" style="height:16px;width:auto;" /><span style="opacity:.25;font-size:14px;font-weight:300;">×</span><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" style="height:24px;width:24px;filter:invert(1);" /></a>
-    <div class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="programs.html" class="nav-link active">Programs</a>
-    </div>
+     <div class="nav-links">
+       <a href="index.html" class="nav-link">Home</a>
+       <div class='nav-dropdown'>
+         <span class='nav-link'>Programs <svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M6 9l6 6 6-6'/></svg></span>
+         <div class='dropdown-panel'>
+           <div class='dropdown-left'>
+             <div class='dropdown-title'>Tracks</div>
+             <a href='index.html#programs' class='dropdown-item'><span class='dropdown-item-label'>Overview</span><span class='dropdown-item-desc'>Check out our program details.</span></a>
+             <a href='https://outsome.notion.site/foundersprint' target='_blank' class='dropdown-item'><span class='dropdown-item-label'>Founder Sprint</span><span class='dropdown-item-desc'>Build the foundation that actually holds in 4 weeks here in Seoul.</span></a>
+             <div class='dropdown-item disabled'><span class='dropdown-item-label'>US Track <span style='font-size:11px;font-weight:400;'>(Coming Soon)</span></span><span class='dropdown-item-desc'>Enter the US market under real pressure. On-the-ground immersion in SF.</span></div>
+           </div>
+           <div class='dropdown-right'>
+             <img src='https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe684_photo-art-09.webp' alt='' class='dropdown-cta-bg' />
+             <div class='dropdown-cta-content'>
+               <div class='text-badge' style='opacity:.6;'>Founder Sprint</div>
+               <p style='font-weight:600;font-size:16px;line-height:1.3;color:#fff;'>Ultra Premium Acceleration for 4 Weeks</p>
+               <a href='apply.html' class='button sm'><span class='btn-wrap'><span class='btn-init'>Apply Now</span><span class='btn-reveal'>Apply Now</span></span></a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
     <div class="navbar-right">
       <div class="nav-btns">
-        <a href="index.html#contact" class="button sm light-2"><span class="btn-wrap"><span class="btn-init">Book a call</span><span class="btn-reveal">Book a call</span></span></a>
+        <a href="request-demo.html" class="button sm light-2"><span class="btn-wrap"><span class="btn-init">Book a call</span><span class="btn-reveal">Book a call</span></span></a>
         <a href="apply.html" class="button sm"><span class="btn-wrap"><span class="btn-init">Apply Now</span><span class="btn-reveal">Apply Now</span></span></a>
       </div>
     </div>
@@ -455,14 +492,15 @@
       <svg width="20" height="14" fill="none"><line y1="1" x2="20" y2="1" stroke="#000" stroke-width="1.5"/><line y1="7" x2="20" y2="7" stroke="#000" stroke-width="1.5"/><line y1="13" x2="14" y2="13" stroke="#000" stroke-width="1.5"/></svg>
     </button>
   </div>
-  <div id="mob-nav" class="mobile-menu">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="programs.html" class="nav-link active">Programs</a>
-    <div style="display:flex;gap:var(--gap-05);padding-top:var(--gap-075);border-top:1px solid var(--color-dark-12);">
-      <a href="index.html#contact" class="button sm light-2" style="flex:1">Book a call</a>
-      <a href="apply.html" class="button sm" style="flex:1">Apply Now</a>
-    </div>
-  </div>
+   <div id="mob-nav" class="mobile-menu">
+     <a href="index.html" class="nav-link">Home</a>
+     <a href="programs.html" class="nav-link active">Programs</a>
+     <a href='https://outsome.notion.site/foundersprint' target='_blank' class='nav-link' style='padding-left:12px;opacity:.5;font-size:13px;'>Founder Sprint</a>
+     <div style="display:flex;gap:var(--gap-05);padding-top:var(--gap-075);border-top:1px solid var(--color-dark-12);">
+       <a href="request-demo.html" class="button sm light-2" style="flex:1">Book a call</a>
+       <a href="apply.html" class="button sm" style="flex:1">Apply Now</a>
+     </div>
+   </div>
 </nav>
 
 <!-- ══════ PAGE CONTENT ══════ -->
@@ -659,31 +697,31 @@
       </thead>
       <tbody>
         <tr>
-          <td style="font-weight:600;">🎯 1:1 Operator Sessions</td>
+          <td style="font-weight:600;">1:1 Operator Sessions</td>
           <td>Peter 및 실리콘밸리 오퍼레이터와 매주 1:1 세션. GTM, IR, Sales Ops 등 당신의 스타트업에 맞춤화된 가이드.</td>
         </tr>
         <tr>
-          <td style="font-weight:600;">🤖 바이브코딩 VOD 전체</td>
+          <td style="font-weight:600;">바이브코딩 VOD 전체</td>
           <td>45개 클립, 총 ~11시간의 Anyon 바이브코딩 강의. 프로그램 종료 후에도 무제한 접근 가능.</td>
         </tr>
         <tr>
-          <td style="font-weight:600;">📊 IR Deck &amp; KPI Dashboard</td>
+          <td style="font-weight:600;">IR Deck &amp; KPI Dashboard</td>
           <td>투자자급 10페이지 IR 덱과 KPI 대시보드를 직접 완성. 프로그램 종료 후 바로 투자 유치에 활용 가능.</td>
         </tr>
         <tr>
-          <td style="font-weight:600;">🌎 US VC 네트워킹</td>
+          <td style="font-weight:600;">US VC 네트워킹</td>
           <td>Zoom을 통한 미국 VC, YC 파운더, FAANG 출신 멘토와의 네트워킹 세션.</td>
         </tr>
         <tr>
-          <td style="font-weight:600;">🍽️ 식사 &amp; 네트워킹</td>
+          <td style="font-weight:600;">식사 &amp; 네트워킹</td>
           <td>6주간의 식사, 커피, 네트워킹 이벤트 포함. 파운더 간 깊은 교류의 장.</td>
         </tr>
         <tr>
-          <td style="font-weight:600;">🔑 Lifetime Alumni Access</td>
+          <td style="font-weight:600;">Lifetime Alumni Access</td>
           <td>Outsome Founder Group 영구 액세스. 졸업 후에도 AMA, 소개, GTM 클리닉 등 지속적 지원.</td>
         </tr>
         <tr>
-          <td style="font-weight:600;">📝 No Equity / No Rev-Share</td>
+          <td style="font-weight:600;">No Equity / No Rev-Share</td>
           <td>지분이나 수익 배분 요구 없음. 모든 결과물의 지적 재산권은 참가자에게 100% 귀속.</td>
         </tr>
       </tbody>
