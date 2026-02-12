@@ -1,0 +1,521 @@
+================================================================================
+OUTSOME.CO - DETAILED LAYOUT MEASUREMENTS (1440px VIEWPORT)
+================================================================================
+
+VIEWPORT SPECIFICATIONS:
+  Width: 1440px
+  Height: 900px
+  Total Page Height: 8016px
+  Analysis Date: February 10, 2025
+
+================================================================================
+SECTION-BY-SECTION MEASUREMENTS
+================================================================================
+
+SECTION 0: HERO + NAVIGATION
+────────────────────────────────────────────────────────────────────────────
+Position:
+  Y Position from top: 72px
+  Height: 1174px
+  Width: 1440px (full width)
+  
+Spacing:
+  Section Padding: 96px (top/bottom) × 0px (left/right)
+  Container Padding: 0px × 24px (left/right gutters)
+  Section Margin: 0px
+  Content Max-Width: 1392px
+  Horizontal Gutters: 24px each side (48px total)
+
+Layout:
+  Display: Block
+  Gap: Normal
+  Flex Direction: Row
+  Flex Elements: 19
+  Grid Elements: 3
+  Child Count: 2
+
+Typography:
+  Main Heading: "Silicon Valley Accelerating for Korean Startups"
+    Font Size: 36px
+    Font Weight: 400
+    Line Height: 36px
+  
+  Body Text:
+    Font Size: 17.64px
+    Font Weight: 400
+    Line Height: 24.696px
+
+Features:
+  - Navigation bar with logo, menu, search, CTAs
+  - Large hero heading with emphasis on "Korean"
+  - Subheading with description
+  - Two CTA buttons (Apply Now, Explore more)
+  - Rating badge (4.97/5 from 100+ reviews)
+  - Interactive chart showing startup growth
+  - Two-column layout: text (left) + visualization (right)
+
+────────────────────────────────────────────────────────────────────────────
+
+SECTION 1: LOGOS/PARTNERS
+────────────────────────────────────────────────────────────────────────────
+Position:
+  Y Position from top: 1246px
+  Height: 463px
+  Width: 1440px (full width)
+
+Spacing:
+  Section Padding: 96px (top/bottom) × 0px (left/right)
+  Container Padding: 0px × 24px (left/right gutters)
+  Section Margin: 0px
+  Content Max-Width: 1392px
+
+Layout:
+  Display: Block
+  Gap: Normal
+  Flex Direction: Row
+  Flex Elements: 5
+  Grid Elements: 0
+  Child Count: 1
+
+Typography:
+  Body Text: "Join over 20,000 founders already growing with Outsome"
+    Font Size: 14px
+    Font Weight: 400
+    Line Height: 19.6px
+
+Features:
+  - Centered text layout
+  - Single column
+  - Call-to-action link ("Meet our Startups")
+  - Likely contains partner/client logos
+
+────────────────────────────────────────────────────────────────────────────
+
+SECTION 2: VALUE PROPOSITIONS (2-COLUMN)
+────────────────────────────────────────────────────────────────────────────
+Position:
+  Y Position from top: 1709px
+  Height: 1315px
+  Width: 1440px (full width)
+
+Spacing:
+  Section Padding: 96px (top/bottom) × 0px (left/right)
+  Container Padding: 0px × 24px (left/right gutters)
+  Section Margin: 0px
+  Content Max-Width: 1392px
+
+Layout:
+  Display: Block
+  Gap: Normal
+  Flex Direction: Row
+  Flex Elements: 9
+  Grid Elements: 2
+  Child Count: 1
+
+Typography:
+  Main Heading: "The advantage every underdog founder wished they had"
+    Font Size: 30px
+    Font Weight: 400
+    Line Height: 33px
+  
+  Sub-headings: "Operator-Led 1:1 Sessions" / "U.S. Market Entry, Simplified"
+    Font Size: 20px
+    Font Weight: 400
+    Line Height: 25px
+  
+  Body Text:
+    Font Size: 14px
+    Font Weight: 400
+    Line Height: 19.6px
+
+Features:
+  - 2-column grid layout for value propositions
+  - Introductory paragraph
+  - Two value prop cards with headings and descriptions
+  - Testimonial quote section below
+  - Emphasis on key benefits
+
+────────────────────────────────────────────────────────────────────────────
+
+SECTION 3: MENTORSHIP/SUCCESS STORIES
+────────────────────────────────────────────────────────────────────────────
+Position:
+  Y Position from top: 3024px
+  Height: 1261px
+  Width: 1440px (full width)
+
+Spacing:
+  Section Padding: 96px (top/bottom) × 0px (left/right)
+  Container Padding: 0px × 24px (left/right gutters)
+  Section Margin: 0px
+  Content Max-Width: 1392px
+
+Layout:
+  Display: Block
+  Gap: Normal
+  Flex Direction: Row
+  Flex Elements: 11
+  Grid Elements: 2
+  Child Count: 1
+
+Typography:
+  Main Heading: "Clarity in Action"
+    Font Size: 30px
+    Font Weight: 400
+    Line Height: 33px
+  
+  Body Text:
+    Font Size: 17.64px
+    Font Weight: 400
+    Line Height: 24.696px
+  
+  Testimonial Text:
+    Font Size: 14px
+    Font Weight: 400
+    Line Height: 22.4px
+
+Features:
+  - 2-column layout: text (left) + testimonial card (right)
+  - Testimonial includes 5-star rating
+  - Founder quote and story link
+  - Resource allocation visualization (pie chart)
+  - Mixed typography for emphasis
+
+────────────────────────────────────────────────────────────────────────────
+
+SECTION 4: PROGRAMS (3-CARD GRID)
+────────────────────────────────────────────────────────────────────────────
+Position:
+  Y Position from top: 4286px
+  Height: 1871px
+  Width: 1440px (full width)
+
+Spacing:
+  Section Padding: 96px (top/bottom) × 0px (left/right)
+  Container Padding: 0px × 24px (left/right gutters)
+  Section Margin: 0px
+  Content Max-Width: 1392px
+
+Layout:
+  Display: Block
+  Gap: Normal
+  Flex Direction: Row
+  Flex Elements: 10
+  Grid Elements: 3
+  Child Count: 1
+
+Typography:
+  Main Heading: "Founder Sprint"
+    Font Size: 30px
+    Font Weight: 400
+    Line Height: 33px
+  
+  Card Headings: "Founder Sprint" / "US Track" / "Alumni Club"
+    Font Size: 28px
+    Font Weight: 400
+    Line Height: 33.6px
+  
+  Body Text:
+    Font Size: 17.64px
+    Font Weight: 400
+    Line Height: 24.696px
+  
+  Feature List Text:
+    Font Size: 14px
+    Font Weight: 400
+    Line Height: 19.6px
+
+Features:
+  - 3-card grid layout (responsive)
+  - Each card contains:
+    * Program name
+    * Description
+    * Feature list with checkmarks (8-10 items)
+    * CTA button
+    * Pricing/duration info
+  - "Stuck on GTM or fundraising?" CTA section below
+  - Contact team button
+
+────────────────────────────────────────────────────────────────────────────
+
+SECTION 5: SUCCESS STORIES (CAROUSEL)
+────────────────────────────────────────────────────────────────────────────
+Position:
+  Y Position from top: 6157px
+  Height: 1133px
+  Width: 1440px (full width)
+
+Spacing:
+  Section Padding: 96px (top/bottom) × 0px (left/right)
+  Container Padding: 0px × 24px (left/right gutters)
+  Section Margin: 0px
+  Content Max-Width: 1392px
+
+Layout:
+  Display: Block
+  Gap: Normal
+  Flex Direction: Row
+  Flex Elements: 2
+  Grid Elements: 1
+  Child Count: 1
+
+Typography:
+  Testimonial Headings:
+    Font Size: 24px
+    Font Weight: 400
+    Line Height: 28.8px
+  
+  Body Text:
+    Font Size: 17.64px
+    Font Weight: 400
+    Line Height: 22.932px
+
+Features:
+  - Carousel/slider layout with navigation arrows
+  - 4 testimonial cards visible
+  - Each card includes:
+    * Founder quote
+    * Founder name and title
+    * Company/context
+  - Previous/Next navigation buttons
+  - Dark card styling for contrast
+
+────────────────────────────────────────────────────────────────────────────
+
+SECTION 6: PRICING (2-CARD LAYOUT)
+────────────────────────────────────────────────────────────────────────────
+Position:
+  Y Position from top: 7290px
+  Height: 2015px
+  Width: 1440px (full width)
+
+Spacing:
+  Section Padding: 96px (top) × 144px (bottom) × 0px (left/right)
+  Container Padding: 0px × 24px (left/right gutters)
+  Section Margin: 0px
+  Content Max-Width: 1392px
+  Extra Bottom Padding: 144px (for spacing before footer)
+
+Layout:
+  Display: Block
+  Gap: Normal
+  Flex Direction: Row
+  Flex Elements: 5
+  Grid Elements: 1
+  Child Count: 1
+
+Typography:
+  Main Heading: "Acceleration designed to scale, without wasting years"
+    Font Size: 30px
+    Font Weight: 400
+    Line Height: 33px
+  
+  Program Headings: "Founder Sprint" / "US Track"
+    Font Size: 28px
+    Font Weight: 400
+    Line Height: 33.6px
+  
+  Body Text:
+    Font Size: 17.64px
+    Font Weight: 400
+    Line Height: 24.696px
+  
+  Feature List Text:
+    Font Size: 14px
+    Font Weight: 400
+    Line Height: 19.6px
+
+Features:
+  - 2-column pricing card layout
+  - Each card includes:
+    * Program name
+    * Duration and description
+    * Detailed feature list (8-10 items each)
+    * CTA button
+    * Pricing information
+  - Introductory text and rating badge
+  - Extra bottom padding for footer spacing
+
+────────────────────────────────────────────────────────────────────────────
+
+SECTION 7: TESTIMONIALS (CAROUSEL)
+────────────────────────────────────────────────────────────────────────────
+Position:
+  Y Position from top: 9305px
+  Height: 656px
+  Width: 1440px (full width)
+
+Spacing:
+  Section Padding: 96px (top/bottom) × 0px (left/right)
+  Container Padding: 0px × 24px (left/right gutters)
+  Section Margin: 0px
+  Content Max-Width: 1392px
+
+Layout:
+  Display: Block
+  Gap: Normal
+  Flex Direction: Row
+  Flex Elements: 9
+  Grid Elements: 0
+  Child Count: 1
+
+Typography:
+  Main Heading: "Real-time clarity and founder insight"
+    Font Size: 30px
+    Font Weight: 400
+    Line Height: 33px
+  
+  Sub-heading: "Need some help?"
+    Font Size: 22px
+    Font Weight: 400
+    Line Height: 27.5px
+  
+  Testimonial Text:
+    Font Size: 14px
+    Font Weight: 400
+    Line Height: 22.4px
+
+Features:
+  - Carousel with 4 testimonial cards
+  - Navigation arrows for previous/next
+  - Each testimonial includes:
+    * Founder quote
+    * Founder name and credentials
+    * Company/context
+  - "Need some help?" CTA section below carousel
+  - Contact team button
+
+================================================================================
+SPACING PATTERNS & RULES
+================================================================================
+
+VERTICAL SPACING:
+  Section Padding (top/bottom): 96px (consistent across all sections)
+  Gap Between Sections: 192px (96px bottom + 96px top)
+  Extra Bottom Padding (Section 6): 144px
+  Total Page Height: 8016px
+
+HORIZONTAL SPACING:
+  Container Gutters: 24px (left/right)
+  Total Horizontal Padding: 48px (24px × 2)
+  Content Max-Width: 1392px (1440px - 48px)
+  Full-Width Sections: 1440px
+
+TYPOGRAPHY SCALE:
+  H1 (Hero): 36px
+  H2 (Section Headings): 30px
+  H3 (Card Headings): 28px
+  H4 (Sub-headings): 20-24px
+  Body Text (Large): 17.64px
+  Body Text (Regular): 14px
+  Body Text (Small): 11.11px
+
+LINE HEIGHTS:
+  Headings: 1.0x - 1.1x font size
+  Body Text: 1.4x - 1.6x font size
+  Testimonials: 1.6x font size
+
+================================================================================
+LAYOUT PATTERNS
+================================================================================
+
+COLUMN LAYOUTS:
+  Section 0: 2-column (text + chart)
+  Section 1: 1-column (centered)
+  Section 2: 2-column (value props)
+  Section 3: 2-column (text + testimonial)
+  Section 4: 3-column (programs grid)
+  Section 5: Carousel (4 cards)
+  Section 6: 2-column (pricing cards)
+  Section 7: Carousel (4 testimonials)
+
+FLEX/GRID USAGE:
+  Flexbox: Primary layout system (2-19 elements per section)
+  CSS Grid: Card layouts (1-3 grids per section)
+  Responsive: Flex containers adapt to viewport changes
+
+DISPLAY PROPERTIES:
+  All sections: display: block
+  Flex Direction: row (for flex containers)
+  Gap: normal (default spacing)
+
+================================================================================
+SUMMARY TABLE
+================================================================================
+
+Section | Y Pos  | Height | Width | V-Pad | H-Pad | Content | H1 Size | Body
+--------|--------|--------|-------|-------|-------|---------|---------|--------
+0: Hero | 72px   | 1174px | 1440px| 96px  | 24px  | 1392px  | 36px    | 17.64px
+1: Logo | 1246px | 463px  | 1440px| 96px  | 24px  | 1392px  | —       | 14px
+2: Val  | 1709px | 1315px | 1440px| 96px  | 24px  | 1392px  | 30px    | 14px
+3: Ment | 3024px | 1261px | 1440px| 96px  | 24px  | 1392px  | 30px    | 17.64px
+4: Prog | 4286px | 1871px | 1440px| 96px  | 24px  | 1392px  | 30px    | 17.64px
+5: Stor | 6157px | 1133px | 1440px| 96px  | 24px  | 1392px  | 24px    | 17.64px
+6: Pric | 7290px | 2015px | 1440px|96/144 | 24px  | 1392px  | 30px    | 17.64px
+7: Test | 9305px | 656px  | 1440px| 96px  | 24px  | 1392px  | 30px    | 14px
+
+================================================================================
+SCREENSHOTS GENERATED
+================================================================================
+
+Full Page:
+  ✓ outsome-desktop-full.png (390KB)
+    - Complete page screenshot at 1440px width
+    - Shows all 8 sections in full
+
+Individual Sections:
+  ✓ section_0.png (94KB) - Hero + Navigation
+  ✓ section_1.png (94KB) - Logos/Partners
+  ✓ section_2.png (17KB) - Value Props
+  ✓ section_3.png (26KB) - Mentorship
+  ✓ section_4.png (72KB) - Programs
+  ✓ section_5.png (182KB) - Success Stories
+  ✓ section_6.png (66KB) - Pricing
+  ✓ section_7.png (66KB) - Testimonials
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. CONSISTENT MODULAR DESIGN
+   - All sections follow the same padding pattern (96px vertical, 24px horizontal)
+   - Content container width is always 1392px
+   - Predictable spacing makes design highly scalable
+
+2. FLEXBOX-FIRST APPROACH
+   - Heavy reliance on flexbox (2-19 elements per section)
+   - Enables responsive design without media queries
+   - Flex containers adapt naturally to different viewport sizes
+
+3. TYPOGRAPHY HIERARCHY
+   - Clear heading scale from 36px (hero) to 14px (body)
+   - Consistent font weight (400) throughout
+   - Line heights optimized for readability (1.4x-1.6x)
+
+4. CARD-BASED COMPONENTS
+   - Programs, pricing, and testimonials use card layouts
+   - Grid system for organizing cards (2-3 columns)
+   - Consistent spacing and styling across cards
+
+5. INTERACTIVE ELEMENTS
+   - Carousel navigation for testimonials
+   - CTA buttons throughout (Apply Now, Contact, Learn More)
+   - Search functionality in header
+   - Dropdown menus for navigation
+
+6. RESPONSIVE DESIGN
+   - Full-width sections with centered content
+   - Flex containers for flexible layouts
+   - Likely uses CSS media queries for mobile adaptation
+   - Carousel for testimonials (responsive)
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
+
+Report Generated: February 10, 2025
+Analysis Tool: Playwright MCP
+Viewport: 1440px × 900px
+Total Sections Analyzed: 8
+Screenshots Captured: 9 (1 full-page + 8 sections)
+

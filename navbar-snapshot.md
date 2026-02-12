@@ -1,0 +1,138 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "SL:IT × Outsome" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "SL:IT" [ref=e6]
+        - generic [ref=e7]: ×
+        - img "Outsome" [ref=e8]
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: index.html
+        - generic [ref=e11]:
+          - generic [ref=e12] [cursor=pointer]:
+            - text: Programs
+            - img [ref=e13]
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - generic [ref=e122]: Tracks
+              - link "Overview Check out our program details." [ref=e123] [cursor=pointer]:
+                - /url: index.html#programs
+                - generic [ref=e124]: Overview
+                - generic [ref=e125]: Check out our program details.
+              - link "Founder Sprint Build the foundation that actually holds in 4 weeks here in Seoul." [ref=e126] [cursor=pointer]:
+                - /url: https://outsome.notion.site/foundersprint
+                - generic [ref=e127]: Founder Sprint
+                - generic [ref=e128]: Build the foundation that actually holds in 4 weeks here in Seoul.
+              - generic:
+                - generic: US Track (Coming Soon)
+                - generic: Enter the US market under real pressure. On-the-ground immersion in SF.
+            - generic [ref=e130]:
+              - generic [ref=e131]: Founder Sprint
+              - paragraph [ref=e132]: Ultra Premium Acceleration for 4 Weeks
+              - link "Apply Now Apply Now" [ref=e133] [cursor=pointer]:
+                - /url: apply.html
+                - generic [ref=e134]:
+                  - generic [ref=e135]: Apply Now
+                  - generic [ref=e136]: Apply Now
+      - generic [ref=e15]:
+        - button "Toggle theme" [ref=e16] [cursor=pointer]:
+          - img [ref=e17]
+        - generic [ref=e23]:
+          - link "Book a call Book a call" [ref=e24] [cursor=pointer]:
+            - /url: request-demo.html
+            - generic [ref=e25]:
+              - generic [ref=e26]: Book a call
+              - generic [ref=e27]: Book a call
+          - link "Apply Now Apply Now" [ref=e28] [cursor=pointer]:
+            - /url: apply.html
+            - generic [ref=e29]:
+              - generic [ref=e30]: Apply Now
+              - generic [ref=e31]: Apply Now
+  - generic [ref=e32]:
+    - img "US Track — San Francisco" [ref=e33]
+    - generic [ref=e35]:
+      - generic [ref=e36]: US TRACK · SAN FRANCISCO
+      - heading "Live together. Build together. Enter the U.S. together." [level=1] [ref=e37]:
+        - text: Live together. Build together.
+        - emphasis [ref=e38]: Enter the U.S.
+        - text: together.
+      - paragraph [ref=e39]: US Track brings founders into a shared living and working environment in SF, where GTM and narrative are pressure-tested daily with operators, YC founders, and real U.S. buyers.
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: Apply for the next US Track
+        - generic [ref=e42]:
+          - textbox "Your email address" [ref=e43]
+          - button "Apply now Apply now" [ref=e44] [cursor=pointer]:
+            - generic [ref=e45]:
+              - generic [ref=e46]: Apply now
+              - generic [ref=e47]: Apply now
+        - paragraph [ref=e48]: Available only to Founder Sprint graduates. Limited cohort. No observers.
+  - generic [ref=e51]:
+    - generic [ref=e52]:
+      - generic [ref=e53]: WHY FOUNDERS CHOOSE US TRACK
+      - heading "Save two years in two weeks." [level=2] [ref=e54]:
+        - text: Save two years in
+        - emphasis [ref=e55]: two weeks.
+      - paragraph [ref=e56]: No simulations. No hypothetical demos. Just fast, direct signals from operators, YC founders, and VCs of Silicon Valley.
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - img "24/7 Acceleration" [ref=e59]
+        - generic [ref=e60]:
+          - heading "24/7 Acceleration" [level=4] [ref=e61]
+          - paragraph [ref=e62]: Seven startup founders will live and build together in one place. You cook, work out, argue, iterate, break down, and level up together. This will be the most concentrated two weeks of your founder life.
+      - generic [ref=e63]:
+        - img "Ride in Safe" [ref=e64]
+        - generic [ref=e65]:
+          - heading "Ride in Safe" [level=4] [ref=e66]
+          - paragraph [ref=e67]: San Francisco is intense if you don't know it. Peter is on the ground with you, guiding where to stay, eat, move, and eventually settle. You can focus fully on building and selling. Don't worry.
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - img "Candace P." [ref=e70]
+              - generic [ref=e71]: Candace P. 12:13pm
+            - paragraph [ref=e72]: Thanks again for meeting with me today. I'd love to continue the partnership conversation next week.
+            - generic [ref=e73]:
+              - img [ref=e74]
+              - generic [ref=e76]: Download Invoice
+      - generic [ref=e77]:
+        - img "Meet Real Silicon Valley People" [ref=e78]
+        - generic [ref=e79]:
+          - heading "Meet Real Silicon Valley People" [level=4] [ref=e80]
+          - paragraph [ref=e81]: No startup representatives. No HQ tours. Meet real YC founders and pre-seed VCs who actually invest in Korean and global startups. All mentors and guests are personally handpicked.
+  - generic [ref=e84]:
+    - paragraph [ref=e85]: Join over 20,000 founders already growing with Outsome.
+    - link "Meet our Startups Meet our Startups" [ref=e87] [cursor=pointer]:
+      - /url: https://outsome.notion.site/2b17922d1a948118a1fce5a1fb84ef74?v=2b17922d1a94817f9f40000cb24cf98a&pvs=74
+      - generic [ref=e88]:
+        - generic [ref=e89]: Meet our Startups
+        - generic [ref=e90]: Meet our Startups
+  - contentinfo [ref=e91]:
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - heading "Fast-Track to building startup from ground zero." [level=3] [ref=e96]
+          - generic [ref=e97]:
+            - generic [ref=e98]: monthly Newsletter
+            - generic [ref=e99]:
+              - textbox "Email" [ref=e100]
+              - button "Subscribe" [ref=e101] [cursor=pointer]
+            - paragraph [ref=e102]: We won't share your data with third parties. Ever.
+        - generic [ref=e104]:
+          - generic [ref=e105]: social
+          - generic [ref=e106]:
+            - link "Linkedin" [ref=e107] [cursor=pointer]:
+              - /url: https://www.linkedin.com/school/107497789
+            - link "LinkedIn - Peter" [ref=e108] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/shndon0220/
+            - link "Instagram" [ref=e109] [cursor=pointer]:
+              - /url: https://www.instagram.com/outsome.co/
+            - link "X (Twitter)" [ref=e110] [cursor=pointer]:
+              - /url: https://x.com/_seoulrider
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - link "SL:IT × Outsome" [ref=e113] [cursor=pointer]:
+            - /url: index.html
+            - img "SL:IT" [ref=e114]
+            - generic [ref=e115]: ×
+            - img "Outsome" [ref=e116]
+          - paragraph [ref=e117]: © Copyright SL:IT × Outsome
+        - paragraph [ref=e119]: 본 프로그램은 교육 목적으로 제공되며, 투자 조언이나 수익 보장을 하지 않습니다. SL:IT × Outsome은 참가자에게 지분이나 수익 배분을 요구하지 않습니다. 모든 콘텐츠와 결과물의 지적 재산권은 참가자에게 귀속됩니다. © 2026 SL:IT × Outsome. All rights reserved.

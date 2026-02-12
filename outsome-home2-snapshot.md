@@ -1,0 +1,117 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e7]:
+        - generic [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /
+          - button "Programs" [ref=e11] [cursor=pointer]:
+            - generic [ref=e12]: Programs
+          - generic:
+            - button
+      - generic [ref=e13]:
+        - generic [ref=e14] [cursor=pointer]:
+          - img "Search icon" [ref=e15]
+          - generic [ref=e16]: Search
+        - generic [ref=e17]:
+          - link "Book a call Book a call" [ref=e18] [cursor=pointer]:
+            - /url: /request-demo
+            - generic [ref=e19]:
+              - generic [ref=e20]: Book a call
+              - generic [ref=e21]: Book a call
+          - link "Apply Now Apply Now" [ref=e22] [cursor=pointer]:
+            - /url: https://tally.so/r/m64llA
+            - generic [ref=e23]:
+              - generic [ref=e24]: Apply Now
+              - generic [ref=e25]: Apply Now
+  - generic [ref=e29]:
+    - generic [ref=e30]:
+      - heading "Live together. Build together. Enter the U.S. together." [level=1] [ref=e31]
+      - generic [ref=e32]: US TRACK · SAN FRANCISCO
+    - generic [ref=e33]:
+      - generic [ref=e34]: US Track brings founders into a shared living and working environment in SF, where GTM and narrative are pressure-tested daily with operators, YC founders, and real U.S. buyers.
+      - generic [ref=e35]:
+        - strong [ref=e37]: Apply for the next US Track
+        - form "Subscribe Form" [ref=e39]:
+          - textbox "Your work email" [ref=e40]
+          - button "Apply now" [ref=e41] [cursor=pointer]
+        - generic [ref=e42]: Available only to Founder Sprint graduates. Limited cohort. No observers.
+  - generic [ref=e45]:
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]: WHY FOUNDERS CHOOSE US TRACK
+        - generic [ref=e49]: Save two years in two weeks.
+      - generic [ref=e50]:
+        - text: No simulations. No hypothetical demos.
+        - text: Just fast, direct signals from operators, YC founders, and VCs of Silicon Valley.
+    - generic [ref=e51]:
+      - generic [ref=e56]:
+        - generic [ref=e57]: 24/7 Acceleration
+        - generic [ref=e58]:
+          - text: Seven startup founders will live and build together in one place.
+          - text: You cook, work out, argue, iterate, break down, and level up together. This will be the most concentrated two weeks of your founder life.
+      - generic [ref=e59]:
+        - generic [ref=e62]:
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - generic [ref=e66]: Candace P.
+              - generic [ref=e67]: 12:13pm
+            - generic [ref=e68]: Thanks again for meeting with me today, you should see the invoice in our feed.
+          - generic [ref=e72]: Download Invoice
+        - generic [ref=e75]:
+          - generic [ref=e76]: Ride in Safe
+          - generic [ref=e77]: San Francisco is intense if you don’t know it. Peter is on the ground with you, guiding where to stay, eat, move, and eventually settle. You can focus fully on building and selling. Don't worry.
+      - generic [ref=e82]:
+        - generic [ref=e83]: Meet Real Silicon Valley People
+        - generic [ref=e84]: No startup representatives. No HQ tours. Meet real YC founders and pre-seed VCs who actually invest in Korean and global startups. All mentors and guests are personally handpicked.
+  - generic [ref=e87]:
+    - generic [ref=e88]: Join over 20,000 founders already growing with Outsome.
+    - link "Meet our Startups Meet our Startups" [ref=e92] [cursor=pointer]:
+      - /url: https://outsome.notion.site/2b17922d1a948118a1fce5a1fb84ef74?v=2b17922d1a94817f9f40000cb24cf98a&pvs=74
+      - generic [ref=e93]:
+        - generic [ref=e94]: Meet our Startups
+        - generic [ref=e95]: Meet our Startups
+  - generic [ref=e98]:
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e101]: Fast-Track to building startup from ground zero.
+        - generic [ref=e102]:
+          - generic [ref=e103]: monthly Newsletter
+          - form "Footer Subscribe Form" [ref=e105]:
+            - textbox "Email" [ref=e106]
+            - button "Subscribe" [ref=e107] [cursor=pointer]
+          - generic [ref=e108]: We won’t share your data with third parties. Ever.
+      - generic [ref=e110]:
+        - generic [ref=e111]: social
+        - generic [ref=e112]:
+          - link "Linkedin - Outsome" [ref=e113] [cursor=pointer]:
+            - /url: https://www.linkedin.com/school/107497789
+          - link "LinkedIn - Peter" [ref=e114] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/shndon0220/
+          - link "Instagram" [ref=e115] [cursor=pointer]:
+            - /url: https://www.instagram.com/outsome.co/
+          - link "X (Twitter)" [ref=e116] [cursor=pointer]:
+            - /url: https://x.com/_seoulrider
+    - generic [ref=e117]:
+      - link "Prospect logo" [ref=e118] [cursor=pointer]:
+        - /url: /
+        - img "Prospect logo" [ref=e119]
+      - generic [ref=e122]: © Copyright Outsome
+    - generic [ref=e123]:
+      - strong [ref=e124]: Legal Disclaimer |
+      - text: Outsome is a company registered in
+      - strong [ref=e125]: Delware], USA
+      - text: (Registration No.
+      - strong [ref=e126]: "7347305"
+      - text: ). Outsome is authorized to conduct business under applicable state and federal laws. Where required, Outsome operates under authorization by the
+      - strong [ref=e127]: DELAWARE Department of Business Oversight
+      - text: pursuant to the
+      - strong [ref=e128]: "[State Money Transmission Act]"
+      - text: . All information provided on this website is for general informational purposes only and does not constitute legal, financial, or investment advice. No content on this site should be relied upon as a substitute for professional advice tailored to your specific circumstances. Outsome does not guarantee the accuracy, completeness, or timeliness of the information presented and assumes no liability for any errors or omissions.Use of this website is subject to our
+      - strong [ref=e129]: Terms of Service
+      - text: and
+      - strong [ref=e130]: Privacy Policy
+      - text: . We do not share your data with third parties without your explicit consent, except where required by law.
+      - text: © Outsome. All rights reserved.

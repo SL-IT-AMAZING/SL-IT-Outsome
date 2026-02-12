@@ -1,0 +1,117 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e7]:
+        - generic [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /
+          - button "Programs" [ref=e11] [cursor=pointer]:
+            - generic [ref=e12]: Programs
+          - generic:
+            - button
+      - generic [ref=e13]:
+        - generic [ref=e14] [cursor=pointer]:
+          - img "Search icon" [ref=e15]
+          - generic [ref=e16]: Search
+        - generic [ref=e17]:
+          - link "Book a call Book a call" [ref=e18] [cursor=pointer]:
+            - /url: /request-demo
+            - generic [ref=e19]:
+              - generic [ref=e20]: Book a call
+              - generic [ref=e21]: Book a call
+          - link "Apply Now Apply Now" [ref=e22] [cursor=pointer]:
+            - /url: https://tally.so/r/m64llA
+            - generic [ref=e23]:
+              - generic [ref=e24]: Apply Now
+              - generic [ref=e25]: Apply Now
+  - generic [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e34]: request a 15 min MEETING with Peter
+        - heading "Close your first +$10K ARR deal" [level=1] [ref=e35]: Close your first +$10K ARR deal
+        - generic [ref=e36]:
+          - text: Outsome gives you direct access to Silicon Valley.
+          - text: Pre-Seed Cross-border VCs, YC Founders, FAANG Operators, and Lifetime Community.
+      - generic [ref=e38]: join over 100 Startups
+    - form "Demo Form" [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: First name
+          - textbox [ref=e45]
+        - generic [ref=e46]:
+          - generic [ref=e47]: Last name
+          - textbox [ref=e48]
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: Email address
+          - textbox [ref=e52]
+        - generic [ref=e53]:
+          - generic [ref=e54]: Phone
+          - textbox [ref=e55]
+      - generic [ref=e56]:
+        - generic [ref=e57]: Startup name
+        - textbox [ref=e58]
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - generic [ref=e61]: Your role (eg. Founder)
+          - textbox [ref=e62]
+        - generic [ref=e63]:
+          - generic [ref=e64]: Job level (eg. CEO)
+          - textbox [ref=e65]
+      - generic [ref=e66]:
+        - generic [ref=e67]: What are you interested in learning about?
+        - combobox [ref=e69] [cursor=pointer]:
+          - option "Select an option" [selected]
+          - option "IR Pitching"
+          - option "Sales & GTM"
+          - option "Product Design"
+          - option "AX · DX"
+      - generic [ref=e70]:
+        - generic [ref=e71]: Anything else you’d like to know?
+        - textbox [ref=e72]
+      - generic [ref=e73]: By clicking submit below, you agree to Prospect’s Privacy Policy and to receive a phone call (if a phone number was provided) from Outsome. We never share your data.
+      - button "Send Request" [ref=e74] [cursor=pointer]
+  - generic [ref=e77]:
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - generic [ref=e80]: Fast-Track to building startup from ground zero.
+        - generic [ref=e81]:
+          - generic [ref=e82]: monthly Newsletter
+          - form "Footer Subscribe Form" [ref=e84]:
+            - textbox "Email" [ref=e85]
+            - button "Subscribe" [ref=e86] [cursor=pointer]
+          - generic [ref=e87]: We won’t share your data with third parties. Ever.
+      - generic [ref=e89]:
+        - generic [ref=e90]: social
+        - generic [ref=e91]:
+          - link "Linkedin - Outsome" [ref=e92] [cursor=pointer]:
+            - /url: https://www.linkedin.com/school/107497789
+          - link "LinkedIn - Peter" [ref=e93] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/shndon0220/
+          - link "Instagram" [ref=e94] [cursor=pointer]:
+            - /url: https://www.instagram.com/outsome.co/
+          - link "X (Twitter)" [ref=e95] [cursor=pointer]:
+            - /url: https://x.com/_seoulrider
+    - generic [ref=e96]:
+      - link "Prospect logo" [ref=e97] [cursor=pointer]:
+        - /url: /
+        - img "Prospect logo" [ref=e98]
+      - generic [ref=e101]: © Copyright Outsome
+    - generic [ref=e102]:
+      - strong [ref=e103]: Legal Disclaimer |
+      - text: Outsome is a company registered in
+      - strong [ref=e104]: Delware], USA
+      - text: (Registration No.
+      - strong [ref=e105]: "7347305"
+      - text: ). Outsome is authorized to conduct business under applicable state and federal laws. Where required, Outsome operates under authorization by the
+      - strong [ref=e106]: DELAWARE Department of Business Oversight
+      - text: pursuant to the
+      - strong [ref=e107]: "[State Money Transmission Act]"
+      - text: . All information provided on this website is for general informational purposes only and does not constitute legal, financial, or investment advice. No content on this site should be relied upon as a substitute for professional advice tailored to your specific circumstances. Outsome does not guarantee the accuracy, completeness, or timeliness of the information presented and assumes no liability for any errors or omissions.Use of this website is subject to our
+      - strong [ref=e108]: Terms of Service
+      - text: and
+      - strong [ref=e109]: Privacy Policy
+      - text: . We do not share your data with third parties without your explicit consent, except where required by law.
+      - text: © Outsome. All rights reserved.

@@ -1,0 +1,411 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "SL:IT × Outsome" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - img "SL:IT" [ref=e6]
+        - generic [ref=e7]: ×
+        - img "Outsome" [ref=e8]
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: "#hero"
+        - link "Programs" [ref=e11] [cursor=pointer]:
+          - /url: "#programs"
+      - generic [ref=e12]:
+        - generic [ref=e13] [cursor=pointer]:
+          - img [ref=e14]
+          - generic [ref=e17]: Search
+        - generic [ref=e18]:
+          - link "Book a call Book a call" [ref=e19] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [ref=e20]:
+              - generic [ref=e21]: Book a call
+              - generic [ref=e22]: Book a call
+          - link "Apply Now Apply Now" [ref=e23] [cursor=pointer]:
+            - /url: apply.html
+            - generic [ref=e24]:
+              - generic [ref=e25]: Apply Now
+              - generic [ref=e26]: Apply Now
+  - generic [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e31]: welcome to SL:IT × Outsome
+      - heading "Silicon Valley Accelerating for Korean Startups" [level=1] [ref=e32]:
+        - text: Silicon Valley
+        - text: Accelerating for
+        - emphasis [ref=e33]: Korean
+        - text: Startups
+      - paragraph [ref=e34]:
+        - text: Anyon으로 제품을 만들고, YC 출신 멘토에게 피드백 받으며, 실리콘밸리 파운더처럼 비즈니스를 연쇄적으로 만들어내는
+        - strong [ref=e35]: 6주 프로그램
+      - generic [ref=e36]:
+        - link "Apply Now Apply Now" [ref=e37] [cursor=pointer]:
+          - /url: apply.html
+          - generic [ref=e38]:
+            - generic [ref=e39]: Apply Now
+            - generic [ref=e40]: Apply Now
+        - link "Explore more Explore more" [ref=e41] [cursor=pointer]:
+          - /url: programs.html
+          - generic [ref=e42]:
+            - generic [ref=e43]: Explore more
+            - generic [ref=e44]: Explore more
+      - generic [ref=e48]: Rated 4.97/5 from 100+ founder reviews
+    - generic [ref=e49]:
+      - generic [ref=e51]:
+        - generic [ref=e53]:
+          - generic [ref=e54]: Startup Growth Since Week 1
+          - generic [ref=e55]:
+            - generic [ref=e56]: $80,000 ARR
+            - generic [ref=e57]:
+              - generic [ref=e59]: Apr
+              - generic [ref=e61]: May
+              - generic [ref=e63]: Jun
+              - generic [ref=e65]: Jul
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]: BUILD
+            - generic [ref=e71]: ·
+            - generic [ref=e72]: GROW
+            - generic [ref=e73]: ·
+            - generic [ref=e74]: SCALE
+            - generic [ref=e75]: ·
+            - generic [ref=e76]: BUILD
+            - generic [ref=e77]: ·
+            - generic [ref=e78]: GROW
+          - generic [ref=e79]:
+            - generic [ref=e80]: SPRINT
+            - generic [ref=e81]: ·
+            - generic [ref=e82]: LAUNCH
+            - generic [ref=e83]: ·
+            - generic [ref=e84]: PITCH
+            - generic [ref=e85]: ·
+            - generic [ref=e86]: SPRINT
+            - generic [ref=e87]: ·
+            - generic [ref=e88]: LAUNCH
+        - generic [ref=e90]:
+          - generic [ref=e91]: WRITING COLD EMAILS
+          - generic [ref=e92]: REFINING ICP
+          - generic [ref=e93]: DEFINING METRICS
+          - generic [ref=e94]: BUILDING US GTM
+          - generic [ref=e95]: RUNNING EXPERIMENTS
+          - generic [ref=e96]: CLOSING EARLY CUSTOMERS
+          - generic [ref=e97]: ALIGNING TEAM
+          - generic [ref=e98]: DESIGNING MVP
+          - generic [ref=e99]: ITERATING FAST
+          - generic [ref=e100]: CRAFTING STORYTELLING
+          - generic [ref=e101]: DISCOVERING DEMAND
+          - generic [ref=e102]: VALIDATING PROBLEM
+          - generic [ref=e103]: MAPPING USER JOURNEY
+          - generic [ref=e104]: DAY 1 TRACTION
+          - generic [ref=e105]: PITCHING INVESTORS
+          - generic [ref=e106]: MAKING FIRST SALES
+          - generic [ref=e107]: TESTING ASSUMPTIONS
+          - generic [ref=e108]: CREATING DEMO
+      - generic [ref=e110]:
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - generic [ref=e115]: Peter S.12:13pm
+            - paragraph [ref=e116]:
+              - text: We matched you with 2 potential investors.
+              - text: Check the intro briefing.
+          - generic [ref=e117]:
+            - generic [ref=e118]: investor_intro_brief.pdf
+            - generic [ref=e119]: Download PDF
+        - generic [ref=e121]:
+          - generic [ref=e122]: Weekly Growth Rate
+          - generic [ref=e123]:
+            - generic [ref=e124]: +25% WoW
+            - generic [ref=e125]:
+              - generic [ref=e127]: W1
+              - generic [ref=e129]: W2
+              - generic [ref=e131]: W3
+              - generic [ref=e133]: W4
+              - generic [ref=e135]: W5
+        - generic [ref=e139]:
+          - generic [ref=e141]: Selene K.3:42pm
+          - paragraph [ref=e142]:
+            - text: Your ICP looks strong. Let's schedule
+            - text: a deep-dive on pricing next week.
+  - generic [ref=e145]:
+    - paragraph [ref=e146]: Join over 20,000 founders already growing with Outsome.
+    - link "Meet our Startups" [ref=e148] [cursor=pointer]:
+      - /url: "#"
+  - generic [ref=e151]:
+    - generic [ref=e152]:
+      - generic [ref=e153]:
+        - heading "The advantage every underdog founder wished they had." [level=2] [ref=e154]:
+          - text: The advantage every
+          - emphasis [ref=e155]: underdog
+          - text: founder wished they had.
+        - paragraph [ref=e156]:
+          - strong [ref=e157]: SL:IT × Outsome
+          - text: 은 간과된 파운더에게 시리즈A까지 지속되는 도구, 멘토, US 시장 진출 경로를 제공합니다.
+      - generic [ref=e160]:
+        - heading "Operator-Led 1:1 Sessions" [level=4] [ref=e161]
+        - paragraph [ref=e162]:
+          - strong [ref=e163]: SL:IT × Outsome
+          - text: 은 YC 파운더, VC, 오퍼레이터와 매칭합니다. 이론 없음. 매주 당신의 스타트업을 앞으로 움직이는 직접적 가이드만.
+      - generic [ref=e166]:
+        - heading "U.S. Market Entry, Simplified" [level=4] [ref=e167]
+        - paragraph [ref=e168]: GTM, ICP 설계, 세일즈 스크립트, IR — 적시에 적절한 결과물을 제공합니다.
+    - generic [ref=e172]:
+      - generic [ref=e173]:
+        - paragraph [ref=e174]:
+          - text: "\"With"
+          - strong [ref=e175]: SL:IT × Outsome
+          - text: ", we secured our first U.S. leads"
+          - emphasis [ref=e176]: in just weeks
+          - text: ."
+        - paragraph [ref=e177]: — Cohort 2 수료 파운더
+      - link "Apply Now Apply Now" [ref=e178] [cursor=pointer]:
+        - /url: apply.html
+        - generic [ref=e179]:
+          - generic [ref=e180]: Apply Now
+          - generic [ref=e181]: Apply Now
+  - generic [ref=e184]:
+    - generic [ref=e185]:
+      - generic [ref=e186]:
+        - heading "Clarity in Action." [level=2] [ref=e187]
+        - paragraph [ref=e188]:
+          - strong [ref=e189]: SL:IT × Outsome
+          - text: 멘토는 파운더에게 명확한 GTM 단계, 고객 인터뷰 준비, 글로벌 파트너십 프레임워크를 제공합니다.
+      - generic [ref=e192]:
+        - paragraph [ref=e194]:
+          - text: "\""
+          - strong [ref=e195]: Outsome changed everything for us — how we enter enterprises.
+          - text: "\" Peter showed us how enterprise sales"
+          - emphasis [ref=e196]: really
+          - text: work.
+        - link "Continue reading Ted's Story" [ref=e197] [cursor=pointer]:
+          - /url: "#"
+        - generic [ref=e199]:
+          - paragraph [ref=e200]: Ted Kim
+          - paragraph [ref=e201]: Founder & CEO
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - generic [ref=e204]: Founder Progress Summary
+        - generic [ref=e205]:
+          - paragraph [ref=e206]:
+            - strong [ref=e207]: "Week 1:"
+            - text: One-Liner + IR Narrative
+          - paragraph [ref=e208]:
+            - strong [ref=e209]: "Week 2:"
+            - text: ICP + 20 US Leads
+          - paragraph [ref=e210]:
+            - strong [ref=e211]: "Week 3:"
+            - text: Pricing Model + KPI Dashboard
+          - paragraph [ref=e212]:
+            - strong [ref=e213]: "Week 4:"
+            - text: IR Deck + Demo Ready
+      - generic [ref=e214]:
+        - generic [ref=e215]: Resource Allocation
+        - generic [ref=e216]:
+          - generic [ref=e218]:
+            - generic [ref=e219]: Resources Spent
+            - generic [ref=e220]: 74%
+          - generic [ref=e224]:
+            - generic [ref=e225]: Available
+            - generic [ref=e226]: 8%
+          - generic [ref=e230]:
+            - generic [ref=e231]: Unallocated
+            - generic [ref=e232]: 18%
+  - generic [ref=e237]:
+    - generic [ref=e238]:
+      - heading "Founder Sprint" [level=2] [ref=e239]
+      - paragraph [ref=e240]:
+        - text: Acceleration that aligns with
+        - emphasis [ref=e241]: your
+        - text: founder reality.
+    - paragraph [ref=e242]:
+      - strong [ref=e243]: SL:IT × Outsome
+      - text: 은 파운더의 실행 방식을 재구성합니다. 오퍼레이터급 플레이북, US 포지셔닝, 수개월의 시행착오를 단 몇 주로 압축합니다.
+    - generic [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e249]:
+          - heading "Founder Sprint" [level=3] [ref=e250]
+          - paragraph [ref=e251]: SL:IT × Outsome의 6주 스프린트. 이론 없음. 오퍼레이터급 플레이북, US 포지셔닝, 수개월의 시행착오를 단 몇 주로 압축.
+          - link "Continue reading on Notion" [ref=e252] [cursor=pointer]:
+            - /url: programs.html
+            - text: Continue reading on
+            - emphasis [ref=e253]: Notion
+        - generic [ref=e257]:
+          - heading "US Track" [level=3] [ref=e258]
+          - paragraph [ref=e259]: Go beyond "market research." 실제 미국 현장으로 — VC, 기업 바이어, 오퍼레이터가 피치, GTM, 프라이싱을 실전 검증.
+          - link "Continue reading" [ref=e260] [cursor=pointer]:
+            - /url: programs.html
+        - generic [ref=e264]:
+          - heading "Alumni Club" [level=3] [ref=e265]
+          - paragraph [ref=e266]: Support that doesn't end at Week 4. AMA, 따뜻한 소개, GTM 클리닉, 파운더 간 피드백 루프가 글로벌 시장 진출 가능성을 높여줍니다.
+          - generic [ref=e267]: Coming Soon
+      - generic [ref=e268]:
+        - generic [ref=e269]:
+          - heading "Stuck on GTM or fundraising?" [level=3] [ref=e270]
+          - paragraph [ref=e271]: Talk to someone who's actually shipped, sold, and scaled. Not a "startup coach".
+        - link "Contact our team Contact our team" [ref=e274] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e275]:
+            - generic [ref=e276]: Contact our team
+            - generic [ref=e277]: Contact our team
+  - generic [ref=e280]:
+    - generic [ref=e282]:
+      - generic [ref=e283]: STARTUP success
+      - paragraph [ref=e284]:
+        - text: "\"Outsome completely rebuilt our"
+        - emphasis [ref=e285]: U.S. playbook
+        - text: from the ground up."
+    - generic [ref=e287]:
+      - generic [ref=e288]: startup success
+      - heading "\"Outsome didn't just sharpen our U.S. story. It rebuilt how we operate as founders.\"" [level=3] [ref=e290]:
+        - text: "\"Outsome didn't just sharpen our U.S. story. It"
+        - emphasis [ref=e291]: rebuilt
+        - text: how we operate as founders."
+    - generic [ref=e293]:
+      - generic [ref=e294]: STARTUP success
+      - paragraph [ref=e295]:
+        - text: "\"We replaced"
+        - emphasis [ref=e296]: months
+        - text: of wandering with Outsome's 6-week system."
+  - generic [ref=e299]:
+    - generic [ref=e300]:
+      - generic [ref=e302]: Rated 4.97/5 from 500+ reviews
+      - heading "Acceleration designed to scale, without wasting years." [level=2] [ref=e303]
+      - paragraph [ref=e304]:
+        - text: Whether you're validating or expanding into the U.S.,
+        - strong [ref=e305]:
+          - emphasis [ref=e306]: SL:IT × Outsome
+        - text: fits how you grow.
+    - generic [ref=e307]:
+      - generic [ref=e308]:
+        - generic [ref=e309]:
+          - generic [ref=e310]:
+            - heading "Founder Sprint" [level=3] [ref=e311]
+            - paragraph [ref=e312]: A 6-week, high-intensity accelerator designed for founders who want traction, clarity, and momentum fast.
+            - paragraph [ref=e313]: No equity, no revenue-share, no hidden terms.
+            - paragraph [ref=e314]:
+              - emphasis [ref=e315]:
+                - text: "* Required to join the"
+                - strong [ref=e316]: US Track.
+          - link "Join Founder Sprint Join Founder Sprint" [ref=e317] [cursor=pointer]:
+            - /url: apply.html
+            - generic [ref=e318]:
+              - generic [ref=e319]: Join Founder Sprint
+              - generic [ref=e320]: Join Founder Sprint
+        - generic [ref=e321]:
+          - generic [ref=e322]: "Includes:"
+          - generic [ref=e323]:
+            - generic [ref=e324]: 6-Weeks in Seoul, In-Person with Peter
+            - generic [ref=e326]: 바이브코딩 VOD 전체 (45클립, ~11시간)
+            - generic [ref=e328]: Meals, coffees, and networking events included
+            - generic [ref=e330]: Zoomcalls with U.S. VCs, YC Founders, and FAANGs
+            - generic [ref=e332]: Pricing model + KPI dashboard
+            - generic [ref=e334]: Investor-grade 10-page IR Deck
+            - generic [ref=e336]: 1:1 Operator Sessions (GTM / IR / Sales Ops)
+            - generic [ref=e338]: Lifetime access to Outsome Founder Group
+            - generic [ref=e340]: U.S.-ready One-Liner + IR Narrative
+            - generic [ref=e342]: ICP Design + 20 U.S. lead list
+            - generic [ref=e344]: Access to apply for US Track
+      - generic [ref=e346]:
+        - generic [ref=e347]:
+          - generic [ref=e348]:
+            - heading "US Track" [level=3] [ref=e349]
+            - paragraph [ref=e350]: A 13-night, immersive Bay Area experience for founders who are ready to meet U.S. buyers, mentors, and operators.
+            - paragraph [ref=e351]: No lock-ins. Join only when you're ready.
+            - paragraph [ref=e352]:
+              - emphasis [ref=e353]:
+                - text: "* Available only to"
+                - strong [ref=e354]: Founder Sprint alumni.
+          - link "Learn about US Track Learn about US Track" [ref=e355] [cursor=pointer]:
+            - /url: programs.html
+            - generic [ref=e356]:
+              - generic [ref=e357]: Learn about US Track
+              - generic [ref=e358]: Learn about US Track
+        - generic [ref=e359]:
+          - generic [ref=e360]: "Includes:"
+          - generic [ref=e361]:
+            - generic [ref=e362]: 2-Weeks in San Francisco, In-Person with Peter
+            - generic [ref=e364]: Full accommodation, meals, local transport (13 nights)
+            - generic [ref=e366]: Network with U.S. VCs, YC Founders, and FAANGs
+            - generic [ref=e368]: Office visits (e.g., Notion, Google, YC Startups)
+            - generic [ref=e370]: U.S. buyer / mentor meetings curated by Outsome
+            - generic [ref=e372]: Hands-on pitch reviews before investor meetings
+            - generic [ref=e374]: Alumni private dinner + Outsome Launch event
+            - generic [ref=e376]: Meta-level production crew creating social content
+  - generic [ref=e380]:
+    - generic [ref=e381]:
+      - generic [ref=e382]: why they chose OUTSOME
+      - heading "Real-time clarity and founder insight." [level=2] [ref=e383]:
+        - text: Real-time clarity
+        - emphasis [ref=e384]: and
+        - text: founder insight.
+    - generic [ref=e385]:
+      - generic [ref=e386]:
+        - generic [ref=e388]:
+          - paragraph [ref=e389]:
+            - text: "\"Outsome compressed our learning curve by"
+            - emphasis [ref=e390]: years
+            - text: . In just days, our ICP became crystal clear, our outbound started converting, and our pricing finally made sense."
+          - generic [ref=e392]:
+            - generic [ref=e393]: Hyunji R.
+            - text: CEO & Founder, Fitculator
+        - generic [ref=e395]:
+          - paragraph [ref=e396]:
+            - text: "\"As a YC founder, I rarely see programs that understand early-stage velocity this well. Outsome doesn't give generic advice, we give"
+            - strong [ref=e397]: operator-level direction
+            - text: you can execute that same afternoon."
+          - generic [ref=e399]:
+            - generic [ref=e400]: Olof M.
+            - text: Outsome Mentor, Co-Founder of Alixia (YC W22)
+        - generic [ref=e402]:
+          - paragraph [ref=e403]: "\"Founders think their bottleneck is strategy — it's usually pressure. Outsome trains founders to operate under load. By the end of US Track, they pitch cleaner, decide faster, and execute with calm.\""
+          - generic [ref=e405]:
+            - generic [ref=e406]: Ajay J.
+            - text: US Track Mentor, Former U.S. Navy SEAL
+        - generic [ref=e408]:
+          - paragraph [ref=e409]: "\"I joined both Founder Sprint and the US Track. Peter's enterprise sales coaching — from procurement to pricing psychology — was something you can't find in books or MBA programs.\""
+          - generic [ref=e411]:
+            - generic [ref=e412]: Go C.
+            - text: Founder, MarkAny (HBS Graduate)
+      - generic [ref=e413]:
+        - button [ref=e414] [cursor=pointer]:
+          - img [ref=e415]
+        - button [ref=e417] [cursor=pointer]:
+          - img [ref=e418]
+    - generic [ref=e420]:
+      - generic [ref=e421]:
+        - heading "Need some help?" [level=4] [ref=e422]
+        - paragraph [ref=e423]: We're here to provide support and assistance.
+      - link "Contact our team Contact our team" [ref=e424] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e425]:
+          - generic [ref=e426]: Contact our team
+          - generic [ref=e427]: Contact our team
+  - contentinfo [ref=e428]:
+    - generic [ref=e430]:
+      - generic [ref=e431]:
+        - generic [ref=e432]:
+          - heading "Fast-Track to building startup from ground zero." [level=3] [ref=e433]
+          - generic [ref=e434]:
+            - generic [ref=e435]: monthly Newsletter
+            - generic [ref=e436]:
+              - textbox "Email" [ref=e437]
+              - button "Subscribe" [ref=e438] [cursor=pointer]
+            - paragraph [ref=e439]: We won't share your data with third parties. Ever.
+        - generic [ref=e441]:
+          - generic [ref=e442]: social
+          - generic [ref=e443]:
+            - link "Linkedin" [ref=e444] [cursor=pointer]:
+              - /url: "#"
+            - link "LinkedIn - Peter" [ref=e445] [cursor=pointer]:
+              - /url: "#"
+            - link "Instagram" [ref=e446] [cursor=pointer]:
+              - /url: "#"
+            - link "X (Twitter)" [ref=e447] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e448]:
+        - generic [ref=e449]:
+          - link "SL:IT × Outsome" [ref=e450] [cursor=pointer]:
+            - /url: "#"
+            - img "SL:IT" [ref=e451]
+            - generic [ref=e452]: ×
+            - img "Outsome" [ref=e453]
+          - paragraph [ref=e454]: © Copyright SL:IT × Outsome
+        - paragraph [ref=e456]: 본 프로그램은 교육 목적으로 제공되며, 투자 조언이나 수익 보장을 하지 않습니다. SL:IT × Outsome은 참가자에게 지분이나 수익 배분을 요구하지 않습니다. 모든 콘텐츠와 결과물의 지적 재산권은 참가자에게 귀속됩니다. © 2026 SL:IT × Outsome. All rights reserved.
