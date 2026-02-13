@@ -1,0 +1,9 @@
+{
+  "name": "slit-outsome-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "npx serve public"
+  }
+}

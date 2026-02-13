@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'BDO Grotesk', 'DM Sans', 'Noto Sans KR', Arial, sans-serif;
+  --font-serif: 'Libre Caslon Condensed', 'Times New Roman', serif;
+  --font-mono: 'Roboto Mono', 'Trebuchet MS', monospace;
+
+  --color-cream: #FEFAF3;
+  --color-cream-dark: #F1EADD;
+  --color-dark: #0A0A0A;
+  --color-dark-soft: #141414;
+  --color-muted: rgba(10,10,10,0.5);
+  --color-border: rgba(47,44,37,0.12);
+  --color-border-light: rgba(47,44,37,0.06);
+  --color-glass: rgba(254,250,243,0.6);
+
+  --animate-slow-spin: spin 20s linear infinite;
+}
+
+/* Glass Morphism Navbar */
+.glass-nav {
+  background: rgba(254, 250, 243, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(47, 44, 37, 0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(47, 44, 37, 0.15); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(47, 44, 37, 0.3); }
+
+/* Text Selection */
+::selection { background-color: #0A0A0A; color: #FEFAF3; }
+
+/* Base Styles */
+body {
+  margin: 0;
+  color: #0A0A0A;
+  background-color: #FEFAF3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,9 @@
+{
+  "buildCommand": "node build.mjs",
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/vibe-coding/(.*)", "destination": "/vibe-coding/index.html" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}

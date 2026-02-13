@@ -2,3 +2,11 @@
 .sisyphus/
 *.png
 peter-사진/
+node_modules/
+dist/
+deploy/public/
+tmp/
+*.json
+!package.json
+!package-lock.json
+!vercel.json
