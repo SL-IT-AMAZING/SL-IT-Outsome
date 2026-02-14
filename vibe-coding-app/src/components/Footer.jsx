@@ -54,7 +54,7 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <form className="space-y-0" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-0" onSubmit={(e) => { e.preventDefault(); window.location.href = '/apply.html'; }}>
                 <input
                   type="text"
                   placeholder="이름 / 스타트업명"

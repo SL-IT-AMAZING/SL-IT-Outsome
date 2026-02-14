@@ -4,14 +4,20 @@ const cards = [
   {
     title: 'Founder Sprint',
     desc: '6주 집중 액셀러레이션. 바이브코딩으로 MVP를 만들고, 실리콘밸리 멘토와 GTM·ICP·IR Deck까지 완성합니다. 무지분, 무수익배분.',
+    link: '/apply.html',
+    linkText: '지원하기',
   },
   {
     title: 'US Track',
     desc: '2주 샌프란시스코 현지 프로그램. 실리콘밸리 VC, YC 파운더, FAANG 오퍼레이터를 직접 만나고, 현장에서 검증합니다.',
+    link: '/us-track.html',
+    linkText: '자세히 보기',
   },
   {
     title: 'Alumni Club',
     desc: '수료 후에도 계속. AMA, VC 소개, GTM 클리닉, Outsome 알럼나이 네트워크로 지속 성장을 지원합니다.',
+    link: null,
+    linkText: 'Coming Soon',
   },
 ];
 
@@ -59,17 +65,21 @@ export default function Services() {
                   {card.desc}
                 </p>
               </div>
-              <div className="w-10 h-10 rounded-full border-2 border-[#0A0A0A]/25 group-hover:border-[rgba(254,250,243,0.3)] flex items-center justify-center transition-colors duration-500">
-                <svg
-                  className="w-4 h-4 text-[#0A0A0A]/40 group-hover:text-[#FEFAF3] transition-colors duration-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
+              {card.link ? (
+                <a
+                  href={card.link}
+                  className="inline-flex items-center gap-2 text-sm font-bold text-[#0A0A0A] group-hover:text-[#FEFAF3] transition-colors duration-500"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                </svg>
-              </div>
+                  {card.linkText}
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </a>
+              ) : (
+                <span className="text-sm font-medium text-[#0A0A0A]/30 group-hover:text-[#FEFAF3]/30 transition-colors duration-500">
+                  {card.linkText}
+                </span>
+              )}
             </motion.div>
           ))}
         </div>

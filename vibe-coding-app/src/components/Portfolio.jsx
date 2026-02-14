@@ -73,12 +73,9 @@ export default function Portfolio() {
                 <span className="text-base font-bold text-[#FEFAF3]/60 w-8 shrink-0">
                   {project.num}
                 </span>
-                <a
-                  href="#"
-                  className="text-2xl md:text-5xl font-medium text-[#FEFAF3]/70 group-hover:text-[#FEFAF3] transition-colors duration-500"
-                >
+                <span className="text-2xl md:text-5xl font-medium text-[#FEFAF3]/70 group-hover:text-[#FEFAF3] transition-colors duration-500">
                   {project.name}
-                </a>
+                </span>
               </div>
               <div className="flex items-center gap-4 mt-4 md:mt-0 pl-12 md:pl-0">
                 <span className="text-xs md:text-sm font-medium tracking-[0.35px] uppercase text-[#FEFAF3]">

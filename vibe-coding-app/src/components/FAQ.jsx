@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: '프로그램 기간과 비용은 어떻게 되나요?',
-    a: '6주 프로그램(서울 강남 오프라인 주 2회)이며, 지분이나 수익 배분을 요구하지 않습니다. 상세 비용은 Apply 후 안내드립니다.',
+    a: <>6주 프로그램(서울 강남 오프라인 주 2회)이며, 지분이나 수익 배분을 요구하지 않습니다. 상세 비용은 <a href="/apply.html" className="underline underline-offset-4 font-semibold hover:text-[#0A0A0A] transition-colors">Apply</a> 후 안내드립니다.</>,
   },
   {
     q: 'US Track은 무엇인가요?',

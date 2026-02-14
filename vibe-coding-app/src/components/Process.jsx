@@ -82,6 +82,24 @@ export default function Process() {
             ))}
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-24 flex justify-center"
+        >
+          <a
+            href="/apply.html"
+            className="inline-flex items-center gap-3 bg-[#0A0A0A] text-[#FEFAF3] text-lg font-bold rounded-full px-10 py-5 hover:bg-[#0A0A0A]/85 transition-all shadow-[0_25px_50px_-12px_rgba(10,10,10,0.1)]"
+          >
+            6주 여정 시작하기
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </motion.div>
       </div>
     </section>
   );

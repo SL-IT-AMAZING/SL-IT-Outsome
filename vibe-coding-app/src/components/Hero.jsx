@@ -70,7 +70,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.a
-          href="#contact"
+          href="/apply.html"
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
           transition={{ duration: 0.6, delay: 0.4 }}
           whileHover={{ scale: 1.05 }}

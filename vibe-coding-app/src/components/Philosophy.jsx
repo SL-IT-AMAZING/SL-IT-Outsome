@@ -65,6 +65,18 @@ export default function Philosophy() {
               일회성이 아닙니다. 비즈니스를 연쇄적으로 만들고 운영할 수 있는 파운더가 됩니다.
             </p>
           </ScrollBlock>
+
+          <ScrollBlock>
+            <a
+              href="#features"
+              className="inline-flex items-center gap-3 text-2xl md:text-4xl font-semibold text-[#D4A574] hover:text-[#0A0A0A] transition-colors"
+            >
+              어떻게 가능한지 알아보기
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+              </svg>
+            </a>
+          </ScrollBlock>
         </div>
       </div>
     </section>
