@@ -89,7 +89,7 @@ export default function Process() {
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true, margin: '-80px' }}
                     transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
-                    className="absolute left-0 top-1.5 -translate-x-1/2 block w-4 h-4 rounded-full border-2 border-[#D4A574] bg-[#FEFAF3]"
+                    className="absolute -left-10 md:-left-12 top-1.5 -translate-x-1/2 block w-4 h-4 rounded-full border-2 border-[#D4A574] bg-[#FEFAF3]"
                   />
 
                   <p className="text-sm font-bold tracking-[1.4px] uppercase text-[#0A0A0A]/40 mb-4">
