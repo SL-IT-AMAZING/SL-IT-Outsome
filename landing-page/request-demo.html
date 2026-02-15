@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Request a Demo — SL:IT × Outsome</title>
   <meta name="description" content="Book a 15-minute meeting with Peter. Close your first +$10K ARR deal with Outsome's Silicon Valley network." />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="상담 예약 — SL:IT × Outsome" />
+  <meta property="og:description" content="SL:IT × Outsome 프로그램에 대해 궁금하신 점이 있으시면 상담을 예약해주세요." />
+  <meta property="og:url" content="https://slit.co.kr/request-demo.html" />
+  <meta property="og:image" content="https://slit.co.kr/og-image.png" />
+  <meta property="og:site_name" content="SL:IT × Outsome" />
+  <meta property="og:locale" content="ko_KR" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="상담 예약 — SL:IT × Outsome" />
+  <meta name="twitter:description" content="SL:IT × Outsome 프로그램에 대해 궁금하신 점이 있으시면 상담을 예약해주세요." />
+  <meta name="twitter:image" content="https://slit.co.kr/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -384,7 +397,7 @@
 
       <!-- RIGHT — Contact Form -->
       <div class="demo-right anim-fade-up anim-delay-2">
-        <form id="demo-form" method="get" action="#" class="form-grid" style="gap:var(--gap-075);" onsubmit="return handleSubmit(event)">
+        <form id="demo-form" class="form-grid" style="gap:var(--gap-075);">
           <!-- First name + Last name -->
           <div class="form-group">
             <label class="form-label" for="demo-first-name">First name</label>
@@ -446,7 +459,7 @@
 
           <!-- Submit -->
           <div class="form-group full">
-            <button type="submit" class="button full-w" style="margin-top:var(--gap-05);">
+            <button type="submit" class="button full-w" id="submit-btn" style="margin-top:var(--gap-05);">
               <span class="btn-wrap"><span class="btn-init">Send Request</span><span class="btn-reveal">Send Request</span></span>
             </button>
           </div>
@@ -485,14 +498,62 @@
 </footer>
 
 <script>
-function handleSubmit(e) {
-  e.preventDefault();
+(function() {
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzZpcifV1y_yefub6DeJ0Fse5iyOdVWJSc3CEqBEwkALTeHLYHlhyNTANVL9owAxhbq/exec';
+
   var form = document.getElementById('demo-form');
-  var success = document.getElementById('form-success');
-  form.style.display = 'none';
-  success.style.display = 'block';
-  return false;
-}
+  var btn = document.getElementById('submit-btn');
+  var successEl = document.getElementById('form-success');
+  var errorEl = document.getElementById('form-error');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Hide any previous messages
+    successEl.style.display = 'none';
+    errorEl.style.display = 'none';
+
+    // Gather form data
+    var data = {
+      firstName: document.getElementById('demo-first-name').value.trim(),
+      lastName: document.getElementById('demo-last-name').value.trim(),
+      email: document.getElementById('demo-email').value.trim(),
+      phone: document.getElementById('demo-phone').value.trim(),
+      startup: document.getElementById('demo-startup').value.trim(),
+      role: document.getElementById('demo-role').value.trim(),
+      jobLevel: document.getElementById('demo-job-level').value.trim(),
+      interest: document.getElementById('demo-interest').value,
+      message: document.getElementById('demo-message').value.trim(),
+      source: 'request-demo'
+    };
+
+    // Disable button and change text
+    btn.disabled = true;
+    var btnWrap = btn.querySelector('.btn-wrap');
+    var originalHTML = btnWrap.innerHTML;
+    btnWrap.innerHTML = '<span class="btn-init">Sending...</span>';
+
+    // Submit to Google Apps Script
+    fetch(SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+    .then(function() {
+      // no-cors returns opaque response, assume success
+      form.style.display = 'none';
+      successEl.style.display = 'block';
+    })
+    .catch(function(err) {
+      // Re-enable button on error
+      btn.disabled = false;
+      btnWrap.innerHTML = originalHTML;
+      errorEl.style.display = 'block';
+      console.error('Form submission error:', err);
+    });
+  });
+})();
 </script>
 </body>
 </html>

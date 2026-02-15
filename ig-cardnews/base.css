@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "BDO Grotesk";
+  src: url("https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe664_BDOGrotesk-VF.ttf") format("truetype");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --cream: #FEFAF3;
+  --cream-dark: #F1EADD;
+  --ink: #0A0A0A;
+  --muted: rgba(10, 10, 10, 0.55);
+  --muted-2: rgba(10, 10, 10, 0.35);
+  --border: rgba(47, 44, 37, 0.12);
+  --accent: #D4A574;
+  --serif: "Libre Caslon Condensed", "Times New Roman", serif;
+  --sans: "BDO Grotesk", "DM Sans", "Noto Sans KR", Arial, sans-serif;
+  --mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #111;
+  font-family: var(--sans);
+}
+
+.card {
+  width: 1080px;
+  height: 1350px;
+  background:
+    radial-gradient(820px 520px at 85% 5%, rgba(212, 165, 116, 0.18), transparent 60%),
+    radial-gradient(700px 540px at -10% 110%, rgba(10, 10, 10, 0.06), transparent 60%),
+    linear-gradient(180deg, var(--cream), var(--cream-dark));
+  border-radius: 48px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pad { padding: 84px; }
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.brand .x { font-weight: 300; opacity: 0.35; }
+
+.kicker {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--muted-2);
+}
+
+.h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.lead {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 650;
+  font-size: 34px;
+  line-height: 1.35;
+}
+
+.pillrow { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.pill {
+  border: 1px solid rgba(10, 10, 10, 0.14);
+  background: rgba(254, 250, 243, 0.65);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-family: var(--mono);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgba(10, 10, 10, 0.75);
+}
+
+.rule {
+  height: 1px;
+  background: var(--border);
+  margin: 34px 0;
+}
+
+.bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 18px;
+}
+
+.bullet {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  margin-top: 8px;
+  background: var(--cream);
+  border: 2px solid var(--accent);
+}
+
+.b-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.b-desc {
+  margin: 6px 0 0;
+  font-size: 24px;
+  font-weight: 650;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 84px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 999px;
+  padding: 16px 22px;
+  background: var(--ink);
+  color: var(--cream);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border: 1px solid rgba(10, 10, 10, 0.15);
+}
+
+.cta .spark {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.url {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 10, 0.42);
+}
+
+.badge {
+  position: absolute;
+  right: 84px;
+  top: 84px;
+  border: 1px solid rgba(10, 10, 10, 0.12);
+  background: rgba(254, 250, 243, 0.7);
+  border-radius: 999px;
+  padding: 12px 14px;
+  font-family: var(--mono);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgba(10, 10, 10, 0.55);
+}
+
+.page {
+  position: absolute;
+  left: 84px;
+  bottom: 64px;
+  font-family: var(--mono);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  font-size: 11px;
+  color: rgba(10, 10, 10, 0.32);
+}

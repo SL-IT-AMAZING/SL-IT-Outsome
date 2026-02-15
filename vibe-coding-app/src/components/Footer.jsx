@@ -18,7 +18,7 @@ export default function Footer() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
           >
-            <h2 className="font-serif text-6xl md:text-[144px] font-extrabold leading-[0.85] tracking-[-3px] md:tracking-[-7.2px]">
+            <h2 className="font-serif text-[32px] sm:text-6xl md:text-[144px] font-extrabold leading-[0.9] tracking-[-0.5px] sm:tracking-[-3px] md:tracking-[-7.2px]">
               <span className="text-[#0A0A0A]">LET'S BUILD</span>
               <br />
               <span className="text-[#0A0A0A]/15">TOGETHER.</span>
