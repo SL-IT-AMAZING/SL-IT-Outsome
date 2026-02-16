@@ -3,6 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1226207976290040');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1226207976290040&ev=PageView&noscript=1"/></noscript>
   <title>Request a Demo — SL:IT × Outsome</title>
   <meta name="description" content="Book a 15-minute meeting with Peter. Close your first +$10K ARR deal with Outsome's Silicon Valley network." />
   <!-- Open Graph -->
@@ -541,7 +554,7 @@
       body: JSON.stringify(data)
     })
     .then(function() {
-      // no-cors returns opaque response, assume success
+      if (typeof fbq === 'function') { fbq('track', 'Lead', { content_name: 'Request Demo', value: 12000000, currency: 'KRW' }); }
       form.style.display = 'none';
       successEl.style.display = 'block';
     })
