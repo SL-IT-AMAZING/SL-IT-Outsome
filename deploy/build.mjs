@@ -15,7 +15,7 @@ if (existsSync(PUBLIC)) rmSync(PUBLIC, { recursive: true });
 mkdirSync(PUBLIC, { recursive: true });
 
 // 1. Copy landing page HTML files + assets
-const landingFiles = ['index.html', 'apply.html', 'programs.html', 'us-track.html', 'request-demo.html', 'slit-logo-dark.svg', 'slit-logo-light.svg', 'hero-bg.png'];
+const landingFiles = ['index.html', 'apply.html', 'programs.html', 'us-track.html', 'request-demo.html', 'slit-logo-dark.svg', 'slit-logo-light.svg', 'hero-bg.png', 'favicon.svg'];
 for (const f of landingFiles) {
   const src = resolve(LANDING, f);
   if (existsSync(src)) cpSync(src, resolve(PUBLIC, f));
