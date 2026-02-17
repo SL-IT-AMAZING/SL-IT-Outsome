@@ -11,6 +11,8 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const slItLogoSrc = `${import.meta.env.BASE_URL}SL_IT.svg`;
+  const outsomeLogoSrc = `${import.meta.env.BASE_URL}outsome.svg`;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 0);
@@ -37,9 +39,18 @@ export default function Navbar() {
         <div className="max-w-[90rem] mx-auto px-6 flex items-center justify-between">
           {/* Logo: SL:IT × Outsome */}
           <a href="/" className="flex items-center gap-2">
-            <span className="text-base font-semibold tracking-tight text-[#0A0A0A]" style={{ fontVariationSettings: '"wght" 600' }}>SL:IT</span>
+            <img
+              src={slItLogoSrc}
+              alt="SL:IT"
+              className="h-[15px] w-auto"
+              style={{ filter: 'invert(1) brightness(0.12)' }}
+            />
             <span className="text-sm font-light text-[#0A0A0A]/25">×</span>
-            <span className="text-base font-semibold tracking-tight text-[#0A0A0A]" style={{ fontVariationSettings: '"wght" 600' }}>Outsome</span>
+            <img
+              src={outsomeLogoSrc}
+              alt="Outsome"
+              className="h-[15px] w-auto"
+            />
           </a>
 
           {/* Desktop nav */}
@@ -95,9 +106,18 @@ export default function Navbar() {
           >
             <div className="flex items-center justify-between px-6 py-8">
               <a href="/" className="flex items-center gap-2">
-                <span className="text-base font-semibold tracking-tight text-[#0A0A0A]" style={{ fontVariationSettings: '"wght" 600' }}>SL:IT</span>
+                <img
+                  src={slItLogoSrc}
+                  alt="SL:IT"
+                  className="h-[15px] w-auto"
+                  style={{ filter: 'invert(1) brightness(0.12)' }}
+                />
                 <span className="text-sm font-light text-[#0A0A0A]/25">×</span>
-                <span className="text-base font-semibold tracking-tight text-[#0A0A0A]" style={{ fontVariationSettings: '"wght" 600' }}>Outsome</span>
+                <img
+                  src={outsomeLogoSrc}
+                  alt="Outsome"
+                  className="h-[15px] w-auto"
+                />
               </a>
               <button
                 className="p-2 text-[#0A0A0A]"
