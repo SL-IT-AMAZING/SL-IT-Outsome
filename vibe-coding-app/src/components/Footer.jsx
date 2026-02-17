@@ -37,10 +37,10 @@ export default function Footer() {
                 연락처
               </p>
               <a
-                href="mailto:hello@outsome.co"
+                href="mailto:wonjun@slit.company"
                 className="block text-3xl md:text-4xl font-semibold text-[#0A0A0A] hover:text-[#0A0A0A]/70 transition-colors"
               >
-                hello@outsome.co
+                wonjun@slit.company
               </a>
               <div className="mt-12">
                 <p className="text-xs font-bold tracking-[2.4px] uppercase text-[#0A0A0A]/40 mb-8">
