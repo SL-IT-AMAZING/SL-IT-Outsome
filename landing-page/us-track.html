@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="lgoo.svg" />
   <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -143,6 +143,9 @@
      .navbar-right { gap: var(--gap); display: flex; align-items: center; margin-left: auto; }
     .nav-btns { gap: var(--gap-05); display: flex; }
     .nav-logo { height: 18px; width: auto; }
+    .navbar .brand-logo-slit { filter: none; }
+    .navbar .brand-logo-outsome { filter: invert(1) brightness(1.9); }
+    .footer .brand-logo-outsome { filter: invert(1) brightness(1.9); }
     .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 12px; }
     img[src*="icon-interface-arrow-up-right"], img[src*="icon-interface-star"] { filter: invert(1); }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
@@ -348,11 +351,9 @@
     [data-theme="light"] .subscribe-input { background: rgba(254,250,243,0.1); color: #FEFAF3; }
     [data-theme="light"] .mobile-menu { background: #FEFAF3; border-color: rgba(47,44,37,0.12); }
 
-    /* Light mode: logo swap */
-    .logo-light-mode { display: none; }
-    [data-theme="light"] .logo-dark-mode { display: none !important; }
-    [data-theme="light"] .logo-light-mode { display: inline-block !important; }
-    [data-theme="light"] .navbar .outsome-symbol { filter: invert(1); }
+    /* Light mode: brand logo tone */
+    [data-theme="light"] .navbar .brand-logo-slit { filter: invert(1) brightness(0.12); }
+    [data-theme="light"] .navbar .brand-logo-outsome { filter: none; }
 
     /* Light mode: hamburger */
     [data-theme="light"] .nav-hamburger svg line { stroke: #000; }
@@ -406,7 +407,7 @@
 <nav class="navbar">
   <div class="main-container">
     <div class="navbar-row">
-      <a href="/" style="display:flex;align-items:center;gap:8px;"><img src="slit-logo-light.svg" alt="SL:IT" class="nav-logo logo-dark-mode" style="height:16px;width:auto;" /><img src="slit-logo-dark.svg" alt="SL:IT" class="nav-logo logo-light-mode" style="height:16px;width:auto;" /><span style="opacity:.25;font-size:14px;font-weight:300;">×</span><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" class="outsome-symbol" style="height:24px;width:24px;" /></a>
+      <a href="/" style="display:flex;align-items:center;gap:8px;"><img src="SL_IT.svg" alt="SL:IT" class="nav-logo brand-logo-slit" style="height:15px;width:auto;" /><span style="opacity:.25;font-size:14px;font-weight:300;">×</span><img src="outsome.svg" alt="Outsome" class="brand-logo-outsome" style="height:16px;width:auto;" /></a>
        <div class="nav-links">
          <a href="/" class="nav-link">Home</a>
          <div class="nav-dropdown">
@@ -582,9 +583,9 @@
       <div>
         <div class="footer-cr">
           <a href="/" style="display:flex;align-items:center;gap:10px;">
-            <img src="slit-logo-light.svg" alt="SL:IT" style="height:32px;width:auto;" />
+            <img src="SL_IT.svg" alt="SL:IT" style="height:27px;width:auto;" />
             <span style="opacity:.3;font-size:24px;font-weight:300;color:#FEFAF3;">×</span>
-            <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" style="height:36px;width:36px;" />
+            <img src="outsome.svg" alt="Outsome" class="brand-logo-outsome" style="height:18px;width:auto;" />
           </a>
           <p class="text-small" style="opacity:.2;">© Copyright SL:IT × Outsome</p>
         </div>

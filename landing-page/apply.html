@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="lgoo.svg" />
   <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -93,6 +93,7 @@
     .navbar { z-index: 99; background: var(--color-light-1); position: sticky; top: 0; border-bottom: 1px solid var(--color-dark-7); }
     .navbar-row { height: var(--nav-height); gap: var(--gap-2); display: flex; align-items: center; }
     .nav-logo { height: 18px; width: auto; }
+    .navbar .brand-logo-slit { filter: invert(1) brightness(0.12); }
     .main-container { max-width: var(--container-max); padding: 0 var(--container-gutter); width: 100%; margin: 0 auto; }
     .navbar-right { gap: var(--gap); display: flex; align-items: center; margin-left: auto; }
     .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; opacity: .6; transition: opacity .2s; }
@@ -111,8 +112,9 @@
       display: flex; align-items: center; justify-content: center;
       box-shadow: 0 4px 24px rgba(0,0,0,0.15);
     }
-    .form-logo-circle img { width: 40px; height: 40px; }
-    .form-logo-circle .slit-text { font-family: var(--font-headings); font-size: 16px; color: var(--color-light-1); letter-spacing: 0.5px; font-weight: 400; }
+    .form-logo-circle img { width: auto; max-width: 52px; height: 20px; }
+    .form-logo-circle .brand-logo-slit { max-width: 46px; height: 18px; }
+    .form-logo-circle .brand-logo-outsome { filter: invert(1) brightness(1.9); height: 16px; }
     .form-logo-sep { font-size: 18px; font-weight: 300; color: var(--color-dark); opacity: 0.25; }
 
     /* ══════ PROGRESS INDICATOR ══════ */
@@ -430,7 +432,7 @@
 <nav class="navbar">
   <div class="main-container">
     <div class="navbar-row">
-      <a href="/" style="display:flex;align-items:center;gap:8px;"><img src="slit-logo-dark.svg" alt="SL:IT" style="height:16px;width:auto;" /><span style="opacity:.25;font-size:14px;font-weight:300;">×</span><img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" style="height:24px;width:24px;filter:invert(1);" /></a>
+      <a href="/" style="display:flex;align-items:center;gap:8px;"><img src="SL_IT.svg" alt="SL:IT" class="nav-logo brand-logo-slit" style="height:15px;width:auto;" /><span style="opacity:.25;font-size:14px;font-weight:300;">×</span><img src="outsome.svg" alt="Outsome" style="height:16px;width:auto;" /></a>
       <div class="navbar-right">
         <a href="/" class="back-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
@@ -449,11 +451,11 @@
       <!-- Logo Circles -->
       <div class="form-logo-wrap anim-fade-up">
         <div class="form-logo-circle">
-          <span class="slit-text">SL:IT</span>
+          <img src="SL_IT.svg" alt="SL:IT" class="brand-logo-slit" />
         </div>
         <span class="form-logo-sep">×</span>
         <div class="form-logo-circle">
-          <img src="https://cdn.prod.website-files.com/697c6a48edd6e073484fe65f/697c6a48edd6e073484fe7c9_Outsome%20Symbol_White_Moving.svg" alt="Outsome" />
+          <img src="outsome.svg" alt="Outsome" class="brand-logo-outsome" />
         </div>
       </div>
 
